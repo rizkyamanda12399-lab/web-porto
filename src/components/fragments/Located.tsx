@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const Located = () => {
     return (
         <div className="absolute left-0 top-1/2 transform -translate-y-1/2 z-40">
@@ -8,7 +10,7 @@ const Located = () => {
                     <p>Indonesia</p>
                 </div>
                 <div className="bg-dark rounded-full p-[18px]">
-                    <img src="icon/globe.svg" alt="" />
+                    <Image src="icon/globe.svg" alt="" width={54} height={54} />
                 </div>
             </div>
         </div>

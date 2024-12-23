@@ -1,3 +1,4 @@
+import Footer from "../Footer"
 
 type AppShellProps = {
     children: React.ReactNode
@@ -8,7 +9,7 @@ const AppShell = (props: AppShellProps) => {
     return (
         <main className="bg-dark text-white ">
             {children}
-            <div className="text-2xl">Footer</div>
+            <Footer />
         </main>
     )
 }

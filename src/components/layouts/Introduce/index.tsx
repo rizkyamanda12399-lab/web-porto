@@ -1,4 +1,5 @@
 import Heading from "@/components/fragments/Heading"
+import Image from "next/image"
 
 const Introduce = () => {
     return (
@@ -13,10 +14,10 @@ const Introduce = () => {
                     </div>
                 </div>
 
-                <div className="relative col-span-4 flex justify-center items-center cursor-pointer">
-                    <img className="animate-slowspin" src="icon/project-scroll.svg" alt="" />
+                <div className="relative col-span-4 flex justify-center items-center">
+                    <Image className="animate-slowspin cursor-pointer" src="icon/project-scroll.svg" alt="" width={267} height={267} />
                     <div className="absolute">
-                        <img src="icon/down-arrow.svg" alt="" />
+                        <Image src="icon/down-arrow.svg" alt="" width={84} height={84} />
                     </div>
                 </div>
 

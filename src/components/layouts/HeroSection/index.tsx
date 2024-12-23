@@ -1,4 +1,5 @@
 
+import Image from "next/image"
 import Navbar from "../Navbar"
 
 const HeroSection = () => {
@@ -13,7 +14,7 @@ const HeroSection = () => {
 
                 <div className="">
                     <div className="absolute grid gap-[100px] top-[150px] xl:left-[1180px] lg:left-[905px] left-[600px]">
-                        <img src="icon/diagonal-arrow.svg" alt="" className="xl:w-[32px] xl:h-[32px] lg:w-[24px] lg:h-[24px]" />
+                        <Image src="icon/diagonal-arrow.svg" alt="" width={32} height={32} />
                         <div className="xl:text-[52px] lg:text-[39px] text-[24px] font-normal leading-[125%]">
                             <p>Freelance</p>
                             <p>UI/UX Designer,</p>
@@ -27,7 +28,8 @@ const HeroSection = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                    <img src="/ehan.png" alt="" className="xl:h-[830px] lg:h-[622px]" />
+                    {/* <img src="/ehan.png" alt="" className="xl:h-[830px] lg:h-[622px]" /> */}
+                    <Image src={"/ehan.png"} alt="" width={595} height={830} />
                 </div>
             </div>
 

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -36,6 +37,8 @@ module.exports = {
         'primary': '#25D377',
         'dark': '#000C04',
         'gray': '#999D9E',
+        'puskur1': '#0063B9',
+        'puskur2': '#0A0F3F',
       },
       animation: {
         "slowspin": 'spin 8s linear infinite',
@@ -46,10 +49,13 @@ module.exports = {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(-100%)' },
         }
-      }
+      },
+      filter: {
+        gray: 'invert(60%) sepia(4%) saturate(20%) hue-rotate(180deg) brightness(90%) contrast(85%)',
+        green: 'invert(45%) sepia(70%) saturate(600%) hue-rotate(100deg) brightness(90%) contrast(85%)',
+      },
     },
   },
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require('tailwindcss-filters')],
 }
 
