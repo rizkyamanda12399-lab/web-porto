@@ -2,9 +2,9 @@
 type ExperienceProps = {
     tittle: string,
     place: string,
-    li: any,
-    li2: any,
-    li3: any,
+    li: React.ReactNode,
+    li2: React.ReactNode,
+    li3: React.ReactNode,
 }
 
 const Experience = (props: ExperienceProps) => {
