@@ -1,4 +1,4 @@
-import Experience from "@/components/elements/Experience"
+import Experience from "@/components/Elements/Experience"
 
 const SelftProject = () => {
     const jobMix = [

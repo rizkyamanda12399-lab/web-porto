@@ -1,4 +1,4 @@
-import Heading from "@/components/fragments/Heading"
+import Heading from "@/components/Fragments/Heading"
 
 const About = () => {
     return (

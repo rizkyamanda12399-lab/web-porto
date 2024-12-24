@@ -1,5 +1,5 @@
-import Experience from "@/components/elements/Experience"
-import Heading from "@/components/fragments/Heading"
+import Experience from "@/components/Elements/Experience"
+import Heading from "@/components/Fragments/Heading"
 
 const Resume = () => {
     const jobUiux = [
