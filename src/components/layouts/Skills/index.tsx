@@ -1,4 +1,4 @@
-import Heading from "@/components/Fragments/Heading";
+import Heading from "@/components/fragments/Heading";
 import Image from "next/image";
 
 const Skills = () => {

@@ -1,5 +1,5 @@
-import DetailProject from "@/components/Fragments/DetailProject"
-import Heading from "@/components/Fragments/Heading"
+import DetailProject from "@/components/fragments/DetailProject"
+import Heading from "@/components/fragments/Heading"
 import Image from "next/image"
 
 const Portfolio = () => {
