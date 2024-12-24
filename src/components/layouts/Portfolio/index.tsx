@@ -132,7 +132,7 @@ const Portfolio = () => {
                             headline="Kemdikbud - Laman Pusat Kurikulum dan Pembelajaran"
                             colorPrimary="bg-puskur-gradient"
                             tittle="Puskurjar"
-                            desc="Develop UI/UX designs for the Curriculum and Learning Center website. Develop actions on the website or web application using programming languages ​​such as PHP, Bootstrap 5, MySQL, etc. Involved in bug fixing on functionality, performance, and design issues with PHP. Create programs and code that support the website database, server, and other applications that may be on it."
+                            desc="Develop UI/UX designs for the Curriculum and Learning Center website. Develop actions on the website or web application using programming languages ​​such as PHP, Bootstrap 5, MySQL, etc. Involved in bug fixing on functionality, performance, and design issues with PHP. Create programs and code that support the website database, server, and other applications that may be on it"
                             img="/project/puskurjar.png"
                             src={project1.map((item, index) => (
                                 <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 p-[12px] rounded-full">
@@ -152,7 +152,7 @@ const Portfolio = () => {
                             headline="Kemdikbud - Laman Pusat Kurikulum dan Pembelajaran"
                             colorPrimary="bg-kontrib-gradient"
                             tittle="Kontributor"
-                            desc="Develop UI/UX designs for the Curriculum and Learning Center website. Develop actions on the website or web application using programming languages ​​such as HTML, Javascript, Tailwind CSS, etc. Involved in bug fixing of functionality, performance, and design issues with JavaScript, HTML, and CSS. Create programs and code that support the website database, server, and other applications it may contain."
+                            desc="Develop UI/UX designs for the Curriculum and Learning Center website. Develop actions on the website or web application using programming languages ​​such as HTML, Javascript, Tailwind CSS, etc. Involved in bug fixing of functionality, performance, and design issues with JavaScript, HTML, and CSS. Create programs and code that support the website database, server, and other applications it may contain"
                             img="/project/kontrib.png"
                             src={project2.map((item, index) => (
                                 <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 p-[12px] rounded-full">
@@ -172,7 +172,7 @@ const Portfolio = () => {
                             headline="Kemdikbud - Laman Balai Media Kebudayaan"
                             colorPrimary="bg-bmk-gradient"
                             tittle="BMK"
-                            desc="Developing interface design and user experience for the website of Balai Media Budaya of the Ministry of Culture, Research and Technology. Collaborating with government teams and website development experts."
+                            desc="Developing interface design and user experience for the website of Balai Media Budaya of the Ministry of Culture, Research and Technology. Collaborating with government teams and website development experts"
                             img="/project/bmk.png"
                             src={project3.map((item, index) => (
                                 <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 p-[12px] rounded-full">
@@ -212,7 +212,7 @@ const Portfolio = () => {
                             headline="Harisenin.com - To Do List App"
                             colorPrimary="bg-todolist-gradient"
                             tittle="To Do List"
-                            desc="Develop UI/UX Design for to do list application using Figma. Develop to do list application using HTML, Tailwind CSS, and Javascript. Create state management using javascript which is saved into local storage of user's device."
+                            desc="Develop UI/UX Design for to do list application using Figma. Develop to do list application using HTML, Tailwind CSS, and Javascript. Create state management using javascript which is saved into local storage of user's device"
                             img="/project/to-do-list.png"
                             src={project5.map((item, index) => (
                                 <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 p-[12px] rounded-full">
@@ -231,7 +231,7 @@ const Portfolio = () => {
                             headline="College Project - Study Connections"
                             colorPrimary="bg-study-gradient"
                             tittle="Study Conn"
-                            desc="Truant behavior often occurs in students from junior high school to college. Based on research by Mogulescu and Segal in a journal made by Minarni in 2017, the research noted that 75-85% of delinquent teenagers are teenagers who have a habit of skipping school or missing school very often. So the purpose of this application was created to connect information from the agency with the student's family in order to get information in real time."
+                            desc="Truant behavior often occurs in students from junior high school to college. Based on research by Mogulescu and Segal in a journal made by Minarni in 2017, the research noted that 75-85% of delinquent teenagers are teenagers who have a habit of skipping school or missing school very often. So the purpose of this application was created to connect information from the agency with the student's family in order to get information in real time"
                             img="/project/study.png"
                             src={project6.map((item, index) => (
                                 <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 p-[12px] rounded-full">
@@ -251,7 +251,7 @@ const Portfolio = () => {
                             headline="Learning Project - Hokben"
                             colorPrimary="bg-hokben-gradient"
                             tittle="Hokben"
-                            desc="Sometimes everyone has a different point of view. This time I was using the HokBen application. I felt that in the HokBen application there were several displays that needed to be adjusted for me, yes, this is back to my personal point of view. Therefore, I re-designed the HokBen application which I think needs to be adjusted or updated."
+                            desc="Sometimes everyone has a different point of view. This time I was using the HokBen application. I felt that in the HokBen application there were several displays that needed to be adjusted for me, yes, this is back to my personal point of view. Therefore, I re-designed the HokBen application which I think needs to be adjusted or updated"
                             img="/project/hokben.png"
                             src={project7.map((item, index) => (
                                 <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 p-[12px] rounded-full">
