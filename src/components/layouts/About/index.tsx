@@ -1,11 +1,9 @@
-import Heading from "@/components/Fragments/Heading"
 
 const About = () => {
     return (
         <div>
             <div className="grid lg:grid-cols-12 gap-[40px]">
                 <div className="grid col-span-6 xl:gap-[40px] lg:gap-[30px]">
-                    <Heading src="about" tittle="About" />
                     <div className="xl:text-[60px] lg:text-[45px] text-[28px] font-light xl:leading-[72px] lg:leading-[54px]">
                         <p>Helping brands stand out in the</p>
                         <p>digital age. Together we will set</p>
