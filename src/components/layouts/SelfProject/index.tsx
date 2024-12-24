@@ -99,8 +99,8 @@ const SelftProject = () => {
 
     return (
         <div>
-            <div className="grid w-full gap-[40px]">
-                <h2 className="xl:text-[60px] lg:text-[45px] text-[28px] font-light xl:leading-[72px] lg:leading-[54px]">Self Project</h2>
+            <div className="grid w-full xl:gap-[40px] lg:gap-[30px] gap-[16px]">
+                <h2 className="xl:text-[60px] lg:text-[45px] text-[36px] font-light xl:leading-[72px] lg:leading-[54px]">Self Project</h2>
 
                 <Experience tittle="Front End Developer & UI/UX Designer" place="Freelance"
                     li={jobMix.map((li) => (

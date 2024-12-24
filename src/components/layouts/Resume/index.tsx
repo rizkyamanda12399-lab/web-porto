@@ -82,9 +82,9 @@ const Resume = () => {
 
     return (
         <div>
-            <div className="grid w-full gap-[40px]">
+            <div className="grid w-full xl:gap-[40px] lg:gap-[30px] gap-[16px]">
                 <Heading src="resume" tittle="Resume" />
-                <h2 className="xl:text-[60px] lg:text-[45px] text-[28px] font-light xl:leading-[72px] lg:leading-[54px]">Experience</h2>
+                <h2 className="xl:text-[60px] lg:text-[45px] text-[36px] font-light xl:leading-[72px] lg:leading-[54px]">Experience</h2>
 
                 <Experience tittle="UI/UX Designer" place="CV Rumah Software RDN (Feb 2023 - Jul 2023)"
                     li={jobUiux.map((li) => (

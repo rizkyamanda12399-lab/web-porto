@@ -16,7 +16,7 @@ const Footer = () => {
                     </div>
                     <div className="grid col-span-1 xl:gap-[32px] lg:gap-[24px] gap-[16px]">
                         <div className="xl:text-[32px] lg:text-[24px] text-[16px] border-b-[2px] border-primary w-fit h-fit">Menu</div>
-                        <div className="flex xl:gap-[80px] lg:gap-[60px] gap-[32px]">
+                        <div className="xl:flex lg:flex grid xl:gap-[80px] lg:gap-[60px] ">
                             <div className="">
                                 <ul className="list-disc pl-8 xl:text-[24px] lg:text-[20px] text-[14px] font-light">
                                     <li className="hover:text-primary cursor-pointer">Home</li>

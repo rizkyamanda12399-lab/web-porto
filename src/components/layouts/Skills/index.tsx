@@ -76,11 +76,11 @@ const Skills = () => {
         <div className="grid grid-cols-12 xl:gap-[32px] lg:gap-[24px] gap-[16px]">
             <div className="grid col-span-11 xl:gap-[40px] lg:gap-[30px] gap-[20px]">
                 <Heading src="skills" tittle="Skills" />
-                <h1 className="xl:text-[60px] lg:text-[40px] text-[24px] font-light xl:leading-[72px] lg:leading-[54px]">My <span className="text-primary">Expertise</span></h1>
+                <h1 className="xl:text-[60px] lg:text-[40px] text-[36px] font-light xl:leading-[72px] lg:leading-[54px]">My <span className="text-primary">Expertise</span></h1>
                 {/* icon */}
                 <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-8 gap-4">
                     {skills1.map((item, index) => (
-                        <div key={index} className="grid justify-center items-center w-[180px] h-[180px] border-[1px] border-gray rounded-[32px] cursor-pointer hover:border-primary hover:border-[2px] group">
+                        <div key={index} className="grid justify-center items-center xl:w-[180px] xl:h-[180px] lg:w-[180px] lg:h-[180px] w-[140px] h-[140px] border-[1px] border-gray rounded-[32px] cursor-pointer hover:border-primary hover:border-[2px] group">
                             <div className="grid gap-2 group">
                                 <Image src={item.img} alt="" width={80} height={80} className="filter-gray group-hover:filter-green transition-all duration-300" />
                                 <p className="text-center text-gray group-hover:text-primary">{item.name}</p>
@@ -91,7 +91,7 @@ const Skills = () => {
 
                 <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-8 gap-4">
                     {skills2.map((item, index) => (
-                        <div key={index} className="grid justify-center items-center w-[180px] h-[180px] border-[1px] border-gray rounded-[32px] cursor-pointer hover:border-primary hover:border-[2px] group">
+                        <div key={index} className="grid justify-center items-center xl:w-[180px] xl:h-[180px] lg:w-[180px] lg:h-[180px] w-[140px] h-[140px] border-[1px] border-gray rounded-[32px] cursor-pointer hover:border-primary hover:border-[2px] group">
                             <div className="grid gap-2 group">
                                 <Image src={item.img} alt="" width={80} height={80} className="filter-gray group-hover:filter-green transition-all duration-300" />
                                 <p className="text-center text-gray group-hover:text-primary">{item.name}</p>

@@ -124,7 +124,7 @@ const Portfolio = () => {
         <div className="grid xl:gap-[32px] lg:gap-[24px] gap-[16px]">
             <div className="grid xl:gap-[40px] lg:gap-[30px] gap-[20px]">
                 <Heading src="portfolio" tittle="Portfolio" />
-                <div className="xl:text-[60px] lg:text-[40px] text-[24px] font-light xl:leading-[72px] lg:leading-[54px]">My Recent<span className="text-primary"> Project</span></div>
+                <div className="xl:text-[60px] lg:text-[40px] text-[36px] font-light xl:leading-[72px] lg:leading-[54px]">My Recent<span className="text-primary"> Project</span></div>
                 {/* Portfolio */}
                 <div className="grid xl:gap-[80px] lg:gap-[60px] gap-[40px]">
                     <a href="https://puskur.kemdikbud.go.id/" target="_blank">
