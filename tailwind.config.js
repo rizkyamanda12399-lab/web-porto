@@ -1,6 +1,6 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: "jit",
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -40,6 +40,15 @@ module.exports = {
         'puskur1': '#0063B9',
         'puskur2': '#0A0F3F',
       },
+      backgroundImage: {
+        'puskur-gradient': 'linear-gradient(to top right, #0063B9, #0A0F3F)',
+        'kontrib-gradient': 'linear-gradient(to top right, #9678F5, #44366E)',
+        'bmk-gradient': 'linear-gradient(to top right, #0063B9, #001B33)',
+        'chill-gradient': 'linear-gradient(to top right, #BE2428, #520608)',
+        'todolist-gradient': 'linear-gradient(to top right, #FFF020, #BC1316)',
+        'study-gradient': 'linear-gradient(to top right, #4497E3, #0D3050)',
+        'hokben-gradient': 'linear-gradient(to top right, #FBB716, #E64101)',
+      },
       animation: {
         "slowspin": 'spin 8s linear infinite',
         "loop-scroll": 'loop-scroll 10s linear infinite',
@@ -56,6 +65,7 @@ module.exports = {
       },
     },
   },
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [require('tailwindcss-filters')],
 }
 

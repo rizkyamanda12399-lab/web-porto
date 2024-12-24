@@ -100,9 +100,9 @@ const SelftProject = () => {
     return (
         <div>
             <div className="grid w-full gap-[40px]">
-                <h2 className="xl:text-[60px] lg:text-[45px] text-[28px] font-light xl:leading-[72px] lg:leading-[54px]">Experience</h2>
+                <h2 className="xl:text-[60px] lg:text-[45px] text-[28px] font-light xl:leading-[72px] lg:leading-[54px]">Self Project</h2>
 
-                <Experience tittle="UI/UX Designer" place="CV Rumah Software RDN (Feb 2023 - Jul 2023)"
+                <Experience tittle="Front End Developer & UI/UX Designer" place="Freelance"
                     li={jobMix.map((li) => (
                         <li key={li.id}>{li.tittle}</li>
                     ))}
@@ -116,7 +116,7 @@ const SelftProject = () => {
 
                 <div className="w-full h-[2px] bg-primary"></div>
 
-                <Experience tittle="Front End Developer" place="CV Rumah Software RDN (Jul 2023 - Feb 2024)"
+                <Experience tittle="FullStack Web Developer" place="Harisenin.com"
                     li={jobFull.map((li) => (
                         <li key={li.id}>{li.tittle}</li>
                     ))}
