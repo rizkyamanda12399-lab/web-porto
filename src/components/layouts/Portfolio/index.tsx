@@ -142,9 +142,8 @@ const Portfolio = () => {
                         />
                     </a>
 
-
                     <div className="grid grid-cols-12">
-                        <div className="col-span-11 w-full h-[1px] bg-primary"></div>
+                        <div className="xl:col-span-11 lg:col-span-11 col-span-12 w-full h-[1px] bg-primary"></div>
                     </div>
 
                     <a href="https://laman-puskur-kontributor.vercel.app/" target="_blank">
@@ -162,9 +161,8 @@ const Portfolio = () => {
                         />
                     </a>
 
-
                     <div className="grid grid-cols-12">
-                        <div className="col-span-11 w-full h-[1px] bg-primary"></div>
+                        <div className="xl:col-span-11 lg:col-span-11 col-span-12 w-full h-[1px] bg-primary"></div>
                     </div>
 
                     <a href="https://balaimediakebudayaan.kemdikbud.go.id/" target="_blank">
@@ -182,9 +180,8 @@ const Portfolio = () => {
                         />
                     </a>
 
-
                     <div className="grid grid-cols-12">
-                        <div className="col-span-11 w-full h-[1px] bg-primary"></div>
+                        <div className="xl:col-span-11 lg:col-span-11 col-span-12 w-full h-[1px] bg-primary"></div>
                     </div>
 
                     <a href="https://react-js-ehan08.vercel.app/" target="_blank">
@@ -202,9 +199,8 @@ const Portfolio = () => {
                         />
                     </a>
 
-
                     <div className="grid grid-cols-12">
-                        <div className="col-span-11 w-full h-[1px] bg-primary"></div>
+                        <div className="xl:col-span-11 lg:col-span-11 col-span-12 w-full h-[1px] bg-primary"></div>
                     </div>
 
                     <a href="https://to-do-list-ehan.vercel.app/" target="_blank">
@@ -223,7 +219,7 @@ const Portfolio = () => {
                     </a>
 
                     <div className="grid grid-cols-12">
-                        <div className="col-span-11 w-full h-[1px] bg-primary"></div>
+                        <div className="xl:col-span-11 lg:col-span-11 col-span-12 w-full h-[1px] bg-primary"></div>
                     </div>
 
                     <a href="https://www.figma.com/proto/KVOQABv46rjFmhzRlpgcIj/PADI?page-id=274%3A876&node-id=274-877&p=f&viewport=275%2C681%2C0.15&t=CeGMAgnB6k3rNZpG-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=274%3A877" target="_blank">
@@ -241,9 +237,8 @@ const Portfolio = () => {
                         />
                     </a>
 
-
                     <div className="grid grid-cols-12">
-                        <div className="col-span-11 w-full h-[1px] bg-primary"></div>
+                        <div className="xl:col-span-11 lg:col-span-11 col-span-12 w-full h-[1px] bg-primary"></div>
                     </div>
 
                     <a href="https://www.figma.com/proto/iCMLsSWqEYshtBvN5fRJfM/PORTFOLIO?page-id=0%3A1&node-id=398-18447&viewport=-1156%2C-456%2C0.21&t=6ZpbdhJBV4Fldgoz-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=398%3A18447&show-proto-sidebar=1" target="_blank">

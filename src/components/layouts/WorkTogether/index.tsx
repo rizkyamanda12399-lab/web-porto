@@ -8,7 +8,7 @@ const WorkTogether = () => {
                         <h1 className="text-center xl:text-[80px] lg:text-[60px] text-[32px] font-normal">Work Together!</h1>
                     </div>
                     <div className="flex justify-center">
-                        <button className="w-fit border border-white-1 border-white xl:text-[32px] lg:text-[24px] text-[16px] xl:px-[32px] lg:px-[24px] px-[16px] xl:py-[16px] lg:py-[24px] py-[16px] hover:bg-gray/70 transition ease-in duration-300 rounded-full">Start Discuss</button>
+                        <button className="w-fit border border-white-1 border-white xl:text-[32px] lg:text-[24px] text-[16px] xl:px-[32px] lg:px-[24px] px-[24px] xl:py-[16px] lg:py-[24px] py-[16px] hover:bg-gray/70 transition ease-in duration-300 rounded-full">Start Discuss</button>
                     </div>
                 </div>
             </div>
