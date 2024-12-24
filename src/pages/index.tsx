@@ -11,13 +11,11 @@ import WorkTogether from "@/components/layouts/WorkTogether";
 
 export default function Home() {
   return (
-    <main className="xl:container lg:container grid gap-[80px]">
+    <main className="relative xl:container lg:container grid gap-[80px]">
       <Located />
       <HeroSection />
+      <NavSidebar />
       <div className="relative grid xl:gap-[200px] gap-[100px]">
-        <div className="">
-          <NavSidebar />
-        </div>
         <Introduce />
         <About />
         <Resume />
