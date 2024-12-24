@@ -13,7 +13,7 @@ const HeroSection = () => {
                 </div>
 
                 <div className="">
-                    <div className="absolute grid gap-[100px] top-[150px] xl:left-[1180px] lg:left-[905px] left-[600px]">
+                    <div className="absolute hidden xl:grid lg:grid gap-[100px] top-[150px] xl:left-[1180px] lg:left-[905px] left-[600px]">
                         <Image src="icon/diagonal-arrow.svg" alt="" width={32} height={32} />
                         <div className="xl:text-[52px] lg:text-[39px] text-[24px] font-normal leading-[125%]">
                             <p>Freelance</p>

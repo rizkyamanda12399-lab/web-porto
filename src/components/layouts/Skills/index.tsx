@@ -78,7 +78,7 @@ const Skills = () => {
                 <Heading src="skills" tittle="Skills" />
                 <h1 className="xl:text-[60px] lg:text-[40px] text-[24px] font-light xl:leading-[72px] lg:leading-[54px]">My <span className="text-primary">Expertise</span></h1>
                 {/* icon */}
-                <div className="flex justify-between">
+                <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-8 gap-4">
                     {skills1.map((item, index) => (
                         <div key={index} className="grid justify-center items-center w-[180px] h-[180px] border-[1px] border-gray rounded-[32px] cursor-pointer hover:border-primary hover:border-[2px] group">
                             <div className="grid gap-2 group">
@@ -89,7 +89,7 @@ const Skills = () => {
                     ))}
                 </div>
 
-                <div className="flex justify-between">
+                <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-8 gap-4">
                     {skills2.map((item, index) => (
                         <div key={index} className="grid justify-center items-center w-[180px] h-[180px] border-[1px] border-gray rounded-[32px] cursor-pointer hover:border-primary hover:border-[2px] group">
                             <div className="grid gap-2 group">
