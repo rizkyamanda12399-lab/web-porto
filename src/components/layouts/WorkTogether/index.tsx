@@ -1,7 +1,7 @@
 const WorkTogether = () => {
     return (
         <div>
-            <div className="w-ful h-screen grid justify-center items-center ">
+            <div className="w-ful xl:h-screen lg:h-screen h-[100%] grid justify-center items-center">
                 <div className="grid xl:gap-[40px] lg:gap-[30px] gap-[20px]">
                     <div className="grid xl:leading-[96px] lg:leading-[72px] leading-[54px]">
                         <h1 className="text-center xl:text-[80px] lg:text-[60px] text-[32px] font-normal">Let’s Make Great</h1>

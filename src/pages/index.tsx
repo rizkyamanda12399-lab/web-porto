@@ -14,8 +14,8 @@ export default function Home() {
     <main className="container grid gap-[80px]">
       <Located />
       <HeroSection />
-      <NavSidebar />
-      <div className="relative grid xl:gap-[200px] gap-[100px]">
+      <div className="relative grid xl:gap-[200px] lg:gap-[200px] gap-[100px]">
+        <NavSidebar />
         <Introduce />
         <About />
         <Resume />
