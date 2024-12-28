@@ -181,8 +181,8 @@ const Portfolio = () => {
                             </a>
                         ))}
                         src={project1.map((item, index) => (
-                            <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 p-[12px] rounded-full w-fit h-fit">
-                                <Image className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] !w-[20px] !h-[20px]" src={item.src} alt="" width={36} height={36} />
+                            <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 xl:p-[12px] lg:p-[12px] p-[8px] rounded-full w-fit h-fit">
+                                <Image className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] w-[18px] h-[18px]" src={item.src} alt="" width={36} height={36} />
                             </div>
                         ))}
                     />
@@ -200,8 +200,8 @@ const Portfolio = () => {
                             </a>
                         ))}
                         src={project2.map((item, index) => (
-                            <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 p-[12px] rounded-full">
-                                <Image className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] !w-[20px] !h-[20px]" src={item.src} alt="" width={36} height={36} />
+                            <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 xl:p-[12px] lg:p-[12px] p-[8px] rounded-full w-fit h-fit">
+                                <Image className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] w-[18px] h-[18px]" src={item.src} alt="" width={36} height={36} />
                             </div>
                         ))}
                     />
@@ -219,8 +219,8 @@ const Portfolio = () => {
                             </a>
                         ))}
                         src={project3.map((item, index) => (
-                            <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 p-[12px] rounded-full">
-                                <Image className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] !w-[20px] !h-[20px]" src={item.src} alt="" width={36} height={36} />
+                            <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 xl:p-[12px] lg:p-[12px] p-[8px] rounded-full w-fit h-fit">
+                                <Image className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] w-[18px] h-[18px]" src={item.src} alt="" width={36} height={36} />
                             </div>
                         ))}
                     />
@@ -238,8 +238,8 @@ const Portfolio = () => {
                             </a>
                         ))}
                         src={project4.map((item, index) => (
-                            <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 p-[12px] rounded-full">
-                                <Image className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] !w-[20px] !h-[20px]" src={item.src} alt="" width={36} height={36} />
+                            <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 xl:p-[12px] lg:p-[12px] p-[8px] rounded-full w-fit h-fit">
+                                <Image className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] w-[18px] h-[18px]" src={item.src} alt="" width={36} height={36} />
                             </div>
                         ))}
                     />
@@ -257,8 +257,8 @@ const Portfolio = () => {
                             </a>
                         ))}
                         src={project5.map((item, index) => (
-                            <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 p-[12px] rounded-full">
-                                <Image className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] !w-[20px] !h-[20px]" src={item.src} alt="" width={36} height={36} />
+                            <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 xl:p-[12px] lg:p-[12px] p-[8px] rounded-full w-fit h-fit">
+                                <Image className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] w-[18px] h-[18px]" src={item.src} alt="" width={36} height={36} />
                             </div>
                         ))}
                     />
@@ -276,8 +276,8 @@ const Portfolio = () => {
                             </a>
                         ))}
                         src={project6.map((item, index) => (
-                            <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 p-[12px] rounded-full">
-                                <Image className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] !w-[20px] !h-[20px]" src={item.src} alt="" width={36} height={36} />
+                            <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 xl:p-[12px] lg:p-[12px] p-[8px] rounded-full w-fit h-fit">
+                                <Image className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] w-[18px] h-[18px]" src={item.src} alt="" width={36} height={36} />
                             </div>
                         ))}
                     />
@@ -295,8 +295,8 @@ const Portfolio = () => {
                             </a>
                         ))}
                         src={project7.map((item, index) => (
-                            <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 p-[12px] rounded-full">
-                                <Image className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] !w-[20px] !h-[20px]" src={item.src} alt="" width={36} height={36} />
+                            <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 xl:p-[12px] lg:p-[12px] p-[8px] rounded-full w-fit h-fit">
+                                <Image className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] w-[18px] h-[18px]" src={item.src} alt="" width={36} height={36} />
                             </div>
                         ))}
                     />

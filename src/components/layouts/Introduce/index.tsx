@@ -2,6 +2,18 @@ import Heading from "@/components/fragments/Heading"
 import Image from "next/image"
 
 const Introduce = () => {
+
+    const handleScroll = (sectionId: string) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            })
+        }
+
+    }
+
     return (
         <div>
             <div id="introduce" className="grid xl:grid-cols-12 lg:grid-cols-12 gap-[32px] xl:scroll-mt-[60px] lg:scroll-mt-[40px] scroll-mt-[20px]">
@@ -15,7 +27,7 @@ const Introduce = () => {
                 </div>
 
                 <div className="relative xl:col-span-4 lg:col-span-4 flex justify-center items-center">
-                    <div className="relative flex justify-center items-center cursor-pointer lg:scale-100 scale-75">
+                    <div className="relative flex justify-center items-center cursor-pointer lg:scale-100 scale-75" onClick={() => handleScroll("portfolio")}>
                         <Image className="animate-slowspin" src="icon/project-scroll.svg" alt="" width={267} height={267} />
                         <div className="absolute">
                             <Image className="" src="icon/down-arrow.svg" alt="" width={84} height={84} />

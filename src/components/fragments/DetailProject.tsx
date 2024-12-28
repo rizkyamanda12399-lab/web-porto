@@ -24,7 +24,7 @@ const DetailProject = (props: DetailProjectProps) => {
                 </div>
                 <div className="relative overflow-hidden grid xl:col-span-9 lg:col-span-9 col-span-12 bg-indigo-600 xl:rounded-[32px] lg:rounded-[32px] rounded-[20px] cursor-pointer group">
                     {img}
-                    <div className="absolute flex xl:gap-[14px] gap-[6px] invisible group-hover:visible xl:left-[24px] xl:bottom-[40px] lg:left-[20px] lg:bottom-[30px] left-[10px] bottom-[20px] object-contain">
+                    <div className="absolute flex xl:gap-[14px] gap-[4px] invisible group-hover:visible xl:left-[24px] xl:bottom-[40px] lg:left-[20px] lg:bottom-[30px] left-[10px] bottom-[20px] object-contain">
                         {src}
                     </div>
                 </div>
