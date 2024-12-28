@@ -18,7 +18,7 @@ const Introduce = () => {
                     <div className="relative flex justify-center items-center cursor-pointer lg:scale-100 scale-75">
                         <Image className="animate-slowspin" src="icon/project-scroll.svg" alt="" width={267} height={267} />
                         <div className="absolute">
-                            <Image className="xl:scale-100" src="icon/down-arrow.svg" alt="" width={84} height={84} />
+                            <Image className="" src="icon/down-arrow.svg" alt="" width={84} height={84} />
                         </div>
                     </div>
                 </div>

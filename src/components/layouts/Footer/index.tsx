@@ -3,8 +3,10 @@ import Image from "next/image"
 
 const Footer = () => {
     return (
-        <div className="bg-dark text-white container">
-            <div className="w-full h-[1px] bg-primary"></div>
+        <div className="bg-dark text-white">
+            <div className="grid grid-cols-12">
+                <div className="xl:col-span-11 lg:col-span-11 col-span-12 w-full h-[1px] bg-primary"></div>
+            </div>
             <div className="grid xl:gap-[80px] lg:gap-[60px] gap-[32px] xl:py-[80px] lg:py-[60px] py-[40px]">
                 <Heading src="contact" tittle="Contact" />
                 <div className="grid grid-cols-2 xl:gap-[32px] lg:gap-[24px] gap-[16px]">

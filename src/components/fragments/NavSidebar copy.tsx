@@ -1,5 +1,7 @@
 import Image from "next/image"
 
+{/* <div className={`fixed z-50 bottom-[24px] left-1/2 transform -translate-x-1/2 w-full xl:w-fit flex xl:justify-end lg:justify-end justify-center xl:pr-[80px] xl:right-[80px] lg:pr-[60px] xl:top-1/2 lg:top-1/2 xl:transform lg:transform xl:-translate-y-1/2 lg:-translate-y-1/2 ${isScrolled ? "bg-slate-100/10" : "bg-slate-600/20"}`}></div> */ }
+
 const NavSidebar = () => {
     return (
         <div className="">
@@ -8,7 +10,7 @@ const NavSidebar = () => {
                     <div className="filter-white hover:filter-green transition-all duration-300 cursor-pointer">
                         <Image className="xl:w-[32px] xl:h-[32px] w-[24px] h-[24px]" src="/icon/home.svg" alt="Home" width={32} height={32} />
                     </div>
-                    <div className="filter-white hover:filter-green transition-all duration-300 cursor-pointer">
+                    <div className="filter-white xhover:filter-green transition-all duration-300 cursor-pointer">
                         <Image className="xl:w-[32px] xl:h-[32px] w-[24px] h-[24px]" src="/icon/about.svg" alt="About" width={32} height={32} />
                     </div>
                     <div className="filter-white hover:filter-green transition-all duration-300 cursor-pointer">

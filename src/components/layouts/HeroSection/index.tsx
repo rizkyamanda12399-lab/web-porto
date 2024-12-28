@@ -1,6 +1,7 @@
 
 import Image from "next/image"
 import Navbar from "../Navbar"
+import Located from "@/components/fragments/Located"
 
 const HeroSection = () => {
     return (
@@ -11,6 +12,7 @@ const HeroSection = () => {
                 <div className="absolute w-full left-0 top-0">
                     <Navbar />
                 </div>
+                <Located />
 
                 <div className="">
                     <div className="absolute hidden xl:grid lg:grid gap-[100px] top-[150px] xl:left-[1180px] lg:left-[905px] left-[600px]">
