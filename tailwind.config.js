@@ -52,12 +52,13 @@ module.exports = {
       animation: {
         "slowspin": 'spin 8s linear infinite',
         "loop-scroll": 'loop-scroll 10s linear infinite',
+        "scroll": 'scroll 15s linear infinite',
       },
       keyframes: {
-        "loop-scroll": {
-          from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-100%)' },
-        }
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
       },
       filter: {
         gray: 'invert(60%) sepia(4%) saturate(20%) hue-rotate(180deg) brightness(90%) contrast(85%)',

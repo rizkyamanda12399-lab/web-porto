@@ -6,7 +6,21 @@ import Located from "@/components/fragments/Located"
 const HeroSection = () => {
     return (
         <div className="relative">
-            <div className="absolute w-full xl:h-[330px] lg:h-[234px] h-[120px] left-0 bottom-0 z-50 bg-gradient-to-t from-[#000C04] to-transparent">
+            <div className="absolute w-full xl:h-[330px] lg:h-[234px] h-[120px] left-0 bottom-0 z-50 bg-gradient-to-t from-[#000C04] to-transparent overflow-hidden uppercase font-normal">
+                <div className="absolute left-0 bottom-0 whitespace-nowrap w-full animate-scroll">
+                    <h1 className="text-white xl:text-[250px] lg:text-[250px] text-[80px] leading-[125%]">
+                        Front End Developer &nbsp; Front End Developer &nbsp; Front End Developer &nbsp;
+                    </h1>
+                    <h1 className="text-white xl:text-[250px] lg:text-[250px] text-[80px] leading-[125%]">
+                        Front End Developer &nbsp; Front End Developer &nbsp; Front End Developer &nbsp;
+                    </h1>
+                    <h1 className="text-white xl:text-[250px] lg:text-[250px] text-[80px] leading-[125%]">
+                        Front End Developer &nbsp; Front End Developer &nbsp; Front End Developer &nbsp;
+                    </h1>
+                    <h1 className="text-white xl:text-[250px] lg:text-[250px] text-[80px] leading-[125%]">
+                        Front End Developer &nbsp; Front End Developer &nbsp; Front End Developer &nbsp;
+                    </h1>
+                </div>
             </div>
             <div className="relative xl:pt-[98px] lg:pt-[70px] pt-[36px]">
                 <div className="absolute w-full left-0 top-0">
