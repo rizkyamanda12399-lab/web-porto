@@ -52,7 +52,7 @@ const NavSidebar: React.FC<NavSidebarProps> = ({
 
     return (
         <div className="">
-            <div className="fixed xl:right-[80px] lg:right-[60px] xl:top-1/2 lg:top-1/2 xl:transform lg:transform xl:-translate-y-1/2 lg:-translate-y-1/2 z-50 bottom-[24px] left-1/2 xl:left-1/2 xl:translate-x-1/2 transform -translate-x-1/2 xl:bottom-auto lg:bottom-auto w-full flex xl:justify-end lg:justify-end justify-center bg-slate-500">
+            <div className={`fixed z-50 bottom-[24px] left-1/2 transform -translate-x-1/2 w-full xl:w-fit flex xl:justify-end lg:justify-end justify-center xl:pr-[80px] xl:right-[80px] lg:pr-[60px] xl:top-1/2 lg:top-1/2 xl:transform lg:transform xl:-translate-y-1/2 lg:-translate-y-1/2 ${isScrolled ? "bg-slate-100/10" : "bg-slate-600/20"}`}>
                 <div className="w-fit flex xl:flex-col lg:flex-col flex-row gap-6 xl:px-[24px] xl:py-[36px] px-[36px] py-[24px] border border-white-1 rounded-full shadow-lg bg-white/10 backdrop-blur-lg">
                     {NavIcons.map((item) => (
                         <div
