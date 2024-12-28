@@ -164,7 +164,7 @@ const Portfolio = () => {
     ]
 
     return (
-        <div className="grid xl:gap-[32px] lg:gap-[24px] gap-[16px]">
+        <div id="portfolio" className="grid xl:gap-[32px] lg:gap-[24px] gap-[16px] xl:scroll-mt-[60px] lg:scroll-mt-[40px] scroll-mt-[20px]">
             <div className="grid xl:gap-[40px] lg:gap-[30px] gap-[20px]">
                 <Heading src="portfolio" tittle="Portfolio" />
                 <div className="xl:text-[60px] lg:text-[40px] text-[36px] font-light xl:leading-[72px] lg:leading-[54px]">My Recent<span className="text-primary"> Project</span></div>
@@ -187,9 +187,7 @@ const Portfolio = () => {
                         ))}
                     />
 
-                    <div className="grid grid-cols-12">
-                        <div className="xl:col-span-11 lg:col-span-11 col-span-12 w-full h-[1px] bg-primary"></div>
-                    </div>
+                    <div className="w-full h-[1px] bg-primary"></div>
 
                     <DetailProject
                         headline="Kemdikbud - Laman Pusat Kurikulum dan Pembelajaran"
@@ -208,9 +206,7 @@ const Portfolio = () => {
                         ))}
                     />
 
-                    <div className="grid grid-cols-12">
-                        <div className="xl:col-span-11 lg:col-span-11 col-span-12 w-full h-[1px] bg-primary"></div>
-                    </div>
+                    <div className="w-full h-[1px] bg-primary"></div>
 
                     <DetailProject
                         headline="Kemdikbud - Laman Balai Media Kebudayaan"
@@ -229,9 +225,7 @@ const Portfolio = () => {
                         ))}
                     />
 
-                    <div className="grid grid-cols-12">
-                        <div className="xl:col-span-11 lg:col-span-11 col-span-12 w-full h-[1px] bg-primary"></div>
-                    </div>
+                    <div className="w-full h-[1px] bg-primary"></div>
 
                     <DetailProject
                         headline="Harisenin.com - Chill Movie App"
@@ -250,9 +244,7 @@ const Portfolio = () => {
                         ))}
                     />
 
-                    <div className="grid grid-cols-12">
-                        <div className="xl:col-span-11 lg:col-span-11 col-span-12 w-full h-[1px] bg-primary"></div>
-                    </div>
+                    <div className="w-full h-[1px] bg-primary"></div>
 
                     <DetailProject
                         headline="Harisenin.com - To Do List App"
@@ -271,9 +263,7 @@ const Portfolio = () => {
                         ))}
                     />
 
-                    <div className="grid grid-cols-12">
-                        <div className="xl:col-span-11 lg:col-span-11 col-span-12 w-full h-[1px] bg-primary"></div>
-                    </div>
+                    <div className="w-full h-[1px] bg-primary"></div>
 
                     <DetailProject
                         headline="College Project - Study Connections"
@@ -292,9 +282,7 @@ const Portfolio = () => {
                         ))}
                     />
 
-                    <div className="grid grid-cols-12">
-                        <div className="xl:col-span-11 lg:col-span-11 col-span-12 w-full h-[1px] bg-primary"></div>
-                    </div>
+                    <div className="w-full h-[1px] bg-primary"></div>
 
                     <DetailProject
                         headline="Learning Project - Hokben"

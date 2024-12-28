@@ -13,15 +13,15 @@ export default function Home() {
   return (
     <main className="relative grid gap-[80px]">
       <HeroSection />
-      <div className="grid grid-cols-12">
-        <div className="col-span-11">
+      <div className="grid xl:grid-cols-12 lg:grid-cols-12">
+        <div className="xl:col-span-11 lg:col-span-11">
           <div className="relative container grid xl:gap-[200px] lg:gap-[200px] gap-[100px]">
             <Introduce />
             <About />
             <Resume />
+            <SelftProject />
             <Portfolio />
             <Skills />
-            <SelftProject />
             <WorkTogether />
             <Footer />
           </div>

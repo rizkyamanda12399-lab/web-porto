@@ -73,13 +73,13 @@ const Skills = () => {
     ]
 
     return (
-        <div className="grid xl:gap-[40px] lg:gap-[30px] gap-[20px]">
+        <div id="skills" className="grid xl:gap-[40px] lg:gap-[30px] gap-[20px] xl:scroll-mt-[60px] lg:scroll-mt-[40px] scroll-mt-[20px]">
             <Heading src="skills" tittle="Skills" />
             <h1 className="xl:text-[60px] lg:text-[40px] text-[36px] font-light xl:leading-[72px] lg:leading-[54px]">My <span className="text-primary">Expertise</span></h1>
-            <div className="grid grid-cols-12 xl:gap-[32px] lg:gap-[24px] gap-[16px]">
-                <div className="grid xl:col-span-11 lg:col-span-11 col-span-12 xl:justify-start lg:justify-start justify-center xl:gap-[40px] lg:gap-[30px] gap-[20px]">
+            <div className="grid xl:gap-[32px] lg:gap-[24px] gap-[16px]">
+                <div className="grid xl:justify-start lg:justify-start justify-center xl:gap-[40px] lg:gap-[30px] gap-[20px]">
                     {/* icon */}
-                    <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-8 gap-4">
+                    <div className="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-8 gap-4">
                         {skills1.map((item, index) => (
                             <div key={index} className="grid justify-center items-center xl:w-[180px] xl:h-[180px] lg:w-[180px] lg:h-[180px] w-[140px] h-[140px] border-[1px] border-gray rounded-[32px] cursor-pointer hover:border-primary hover:border-[2px] group">
                                 <div className="grid gap-2 group">

@@ -114,9 +114,7 @@ const SelftProject = () => {
                     ))}
                 />
 
-                <div className="grid grid-cols-12">
-                    <div className="xl:col-span-11 lg:col-span-11 col-span-12 w-full h-[1px] bg-primary"></div>
-                </div>
+                <div className="w-full h-[1px] bg-primary"></div>
 
                 <Experience tittle="FullStack Web Developer" place="Harisenin.com"
                     li={jobFull.map((li) => (

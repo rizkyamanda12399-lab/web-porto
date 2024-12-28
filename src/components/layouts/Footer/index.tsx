@@ -2,11 +2,15 @@ import Heading from "@/components/fragments/Heading"
 import Image from "next/image"
 
 const Footer = () => {
+    const handleScroll = (sectionId: string) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+    };
     return (
-        <div className="bg-dark text-white">
-            <div className="grid grid-cols-12">
-                <div className="xl:col-span-11 lg:col-span-11 col-span-12 w-full h-[1px] bg-primary"></div>
-            </div>
+        <div id="contact" className="bg-dark text-white xl:scroll-mt-[60px] lg:scroll-mt-[40px] scroll-mt-[20px]">
+            <div className="w-full h-[1px] bg-primary"></div>
             <div className="grid xl:gap-[80px] lg:gap-[60px] gap-[32px] xl:py-[80px] lg:py-[60px] py-[40px]">
                 <Heading src="contact" tittle="Contact" />
                 <div className="grid grid-cols-2 xl:gap-[32px] lg:gap-[24px] gap-[16px]">
@@ -21,16 +25,16 @@ const Footer = () => {
                         <div className="xl:flex lg:flex grid xl:gap-[80px] lg:gap-[60px] ">
                             <div className="">
                                 <ul className="list-disc pl-8 xl:text-[24px] lg:text-[20px] text-[14px] font-light">
-                                    <li className="hover:text-primary cursor-pointer">Home</li>
-                                    <li className="hover:text-primary cursor-pointer">About</li>
-                                    <li className="hover:text-primary cursor-pointer">Resume</li>
+                                    <li className="hover:text-primary cursor-pointer" onClick={() => handleScroll("introduce")}>Home</li>
+                                    <li className="hover:text-primary cursor-pointer" onClick={() => handleScroll("about")}>About</li>
+                                    <li className="hover:text-primary cursor-pointer" onClick={() => handleScroll("resume")}>Resume</li>
                                 </ul>
                             </div>
                             <div className="">
                                 <ul className="list-disc pl-8 xl:text-[24px] lg:text-[20px] text-[14px] font-light ">
-                                    <li className="hover:text-primary cursor-pointer">Skill</li>
-                                    <li className="hover:text-primary cursor-pointer">Portfolio</li>
-                                    <li className="hover:text-primary cursor-pointer">Contact</li>
+                                    <li className="hover:text-primary cursor-pointer" onClick={() => handleScroll("skills")}>Skill</li>
+                                    <li className="hover:text-primary cursor-pointer" onClick={() => handleScroll("portfolio")}>Portfolio</li>
+                                    <li className="hover:text-primary cursor-pointer" onClick={() => handleScroll("contact")}>Contact</li>
                                 </ul>
                             </div>
                         </div>

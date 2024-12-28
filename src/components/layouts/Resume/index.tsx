@@ -82,7 +82,7 @@ const Resume = () => {
 
     return (
         <div className="">
-            <div className="grid w-full xl:gap-[40px] lg:gap-[30px] gap-[16px]">
+            <div id="resume" className="grid w-full xl:gap-[40px] lg:gap-[30px] gap-[16px] xl:scroll-mt-[60px] lg:scroll-mt-[40px] scroll-mt-[20px]">
                 <Heading src="resume" tittle="Resume" />
                 <h2 className="xl:text-[60px] lg:text-[45px] text-[36px] font-light xl:leading-[72px] lg:leading-[54px]">Experience</h2>
 
@@ -98,9 +98,7 @@ const Resume = () => {
                     ))}
                 />
 
-                <div className="grid grid-cols-12">
-                    <div className="xl:col-span-11 lg:col-span-11 col-span-12 w-full h-[1px] bg-primary"></div>
-                </div>
+                <div className="w-full h-[1px] bg-primary"></div>
 
                 <Experience tittle="Front End Developer" place="CV Rumah Software RDN (Jul 2023 - Feb 2024)"
                     li={jobFront.map((li) => (
