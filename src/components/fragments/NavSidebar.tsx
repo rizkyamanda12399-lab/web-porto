@@ -20,7 +20,7 @@ const NavSidebar = () => {
     };
     return (
         <div className="xl:sticky lg:sticky fixed xl:right-[80px] lg:right-[60px] xl:top-1/2 lg:top-1/2 xl:transform lg:transform xl:-translate-y-1/2 lg:-translate-y-1/2 z-50 bottom-[24px] left-1/2 transform -translate-x-1/2 w-full flex justify-center mx-auto">
-            <div className="w-fit flex xl:flex-col lg:flex-col flex-row gap-6 xl:px-[24px] xl:py-[36px] px-[36px] py-[24px] border border-white-1 rounded-full shadow-lg bg-white/10 backdrop-blur-lg">
+            <div className="w-fit flex xl:flex-col lg:flex-col flex-row gap-6 xl:px-[24px] lg:px-[24px] xl:py-[36px] lg:py-[36px] px-[36px] py-[24px] border border-white-1 rounded-full shadow-lg bg-white/10 backdrop-blur-lg">
                 {NavIcons.map((item, index) => (
                     <div
                         key={index}

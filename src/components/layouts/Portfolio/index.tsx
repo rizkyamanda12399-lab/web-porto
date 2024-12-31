@@ -172,6 +172,7 @@ const Portfolio = () => {
                 <div className="grid xl:gap-[80px] lg:gap-[60px] gap-[40px]">
                     <DetailProject
                         headline="Kemdikbud - Laman Pusat Kurikulum dan Pembelajaran"
+                        job="UI/UX Designer & Frontend Developer"
                         colorPrimary="bg-puskur-gradient"
                         tittle="Puskurjar"
                         desc="Develop UI/UX designs for the Curriculum and Learning Center website. Develop actions on the website or web application using programming languages ​​such as PHP, Bootstrap 5, MySQL, etc. Involved in bug fixing on functionality, performance, and design issues with PHP. Create programs and code that support the website database, server, and other applications that may be on it"
@@ -191,6 +192,7 @@ const Portfolio = () => {
 
                     <DetailProject
                         headline="Kemdikbud - Laman Pusat Kurikulum dan Pembelajaran"
+                        job="UI/UX Designer & Frontend Developer"
                         colorPrimary="bg-kontrib-gradient"
                         tittle="Kontributor"
                         desc="Develop UI/UX designs for the Curriculum and Learning Center website. Develop actions on the website or web application using programming languages ​​such as HTML, Javascript, Tailwind CSS, etc. Involved in bug fixing of functionality, performance, and design issues with JavaScript, HTML, and CSS. Create programs and code that support the website database, server, and other applications it may contain"
@@ -210,6 +212,7 @@ const Portfolio = () => {
 
                     <DetailProject
                         headline="Kemdikbud - Laman Balai Media Kebudayaan"
+                        job="UI/UX Designer"
                         colorPrimary="bg-bmk-gradient"
                         tittle="BMK"
                         desc="Developing interface design and user experience for the website of Balai Media Budaya of the Ministry of Culture, Research and Technology. Collaborating with government teams and website development experts"
@@ -229,6 +232,7 @@ const Portfolio = () => {
 
                     <DetailProject
                         headline="Harisenin.com - Chill Movie App"
+                        job="Fullstack Developer"
                         colorPrimary="bg-chill-gradient"
                         tittle="Chill Movie"
                         desc="Developing a movie website using React JS, Tailwind CSS, Node JS, and Express JS. Implementing API integration to Design, Develop, and Maintain RESTful APIs to enable system interactions. Implementing atomic design principles, state management using react-redux. implementing login authentication using google. Creating a movie website for a final project as a full stack web developer"
@@ -248,6 +252,7 @@ const Portfolio = () => {
 
                     <DetailProject
                         headline="Harisenin.com - To Do List App"
+                        job="Frontend Developer"
                         colorPrimary="bg-todolist-gradient"
                         tittle="To Do List"
                         desc="Develop UI/UX Design for to do list application using Figma. Develop to do list application using HTML, Tailwind CSS, and Javascript. Create state management using javascript which is saved into local storage of user's device"
@@ -267,6 +272,7 @@ const Portfolio = () => {
 
                     <DetailProject
                         headline="College Project - Study Connections"
+                        job="UI/UX Designer"
                         colorPrimary="bg-study-gradient"
                         tittle="Study Conn"
                         desc="Truant behavior often occurs in students from junior high school to college. Based on research by Mogulescu and Segal in a journal made by Minarni in 2017, the research noted that 75-85% of delinquent teenagers are teenagers who have a habit of skipping school or missing school very often. So the purpose of this application was created to connect information from the agency with the student's family in order to get information in real time"
@@ -286,6 +292,7 @@ const Portfolio = () => {
 
                     <DetailProject
                         headline="Learning Project - Hokben"
+                        job="UI/UX Designer"
                         colorPrimary="bg-hokben-gradient"
                         tittle="Hokben"
                         desc="Sometimes everyone has a different point of view. This time I was using the HokBen application. I felt that in the HokBen application there were several displays that needed to be adjusted for me, yes, this is back to my personal point of view. Therefore, I re-designed the HokBen application which I think needs to be adjusted or updated"
