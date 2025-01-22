@@ -2,7 +2,6 @@ import Heading from "@/components/fragments/Heading"
 import Image from "next/image"
 
 const Introduce = () => {
-
     const handleScroll = (sectionId: string) => {
         const section = document.getElementById(sectionId);
         if (section) {
@@ -11,7 +10,6 @@ const Introduce = () => {
                 block: "start",
             })
         }
-
     }
 
     return (
