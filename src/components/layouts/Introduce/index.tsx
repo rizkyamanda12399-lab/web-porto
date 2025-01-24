@@ -17,6 +17,7 @@ const Introduce = () => {
             <div id="introduce" className="grid xl:grid-cols-12 lg:grid-cols-12 gap-[32px] xl:scroll-mt-[60px] lg:scroll-mt-[40px] scroll-mt-[20px]">
                 <div className="grid xl:col-span-8 lg:col-span-8 xl:gap-[40px] lg:gap-[30px] gap-[20px]">
                     <Heading src="home" tittle="Introduce" />
+
                     <div className="xl:text-[80px] lg:text-[60px] text-[32px] font-light xl:leading-[96px] lg:leading-[72px]">
                         <p>Hi, What&apos;s going on?</p>
                         <p>Regrads from Ehan, Front</p>

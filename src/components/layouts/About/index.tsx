@@ -1,3 +1,4 @@
+import ShinyText from "@/components/elements/ShinyText";
 import Heading from "@/components/fragments/Heading"
 
 const About = () => {
@@ -14,11 +15,14 @@ const About = () => {
                     </div>
                 </div>
                 <div className="relative flex col-span-5 justify-center items-end xl:gap-[16px] group">
-                    <div className="border-l-2 border-gray pl-4 xl:text-[32px] lg:text-[24px] text-[16px] font-light xl:leading-[130%] lg:leading-[130&] text-gray">
-                        <p>My combination of passions for UI,
+                    <div className="border-l-2 flex flex-col border-gray pl-4 xl:text-[32px] lg:text-[24px] text-[16px] font-light xl:leading-[130%] lg:leading-[130&] text-gray">
+                        <ShinyText text="My combination of passions for UI," disabled={false} speed={3} className='custom-class' />
+                        <ShinyText text="code & interaction puts me in a unique" disabled={false} speed={3} className='custom-class' />
+                        <ShinyText text="place in the front end developer field." disabled={false} speed={3} className='custom-class' />
+                        {/* <p>My combination of passions for UI,
                             <span className="block">code & interaction puts me in a unique</span>
                             <span className="block">place in the front end developer field.</span>
-                        </p>
+                        </p> */}
                     </div>
                 </div>
             </div>

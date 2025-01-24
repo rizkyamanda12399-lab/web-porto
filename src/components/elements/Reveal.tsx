@@ -3,7 +3,6 @@ import { useEffect, useRef } from "react";
 
 interface Props {
     children: React.ReactNode;
-
 }
 
 const Reveal = ({ children }: Props) => {
@@ -14,9 +13,9 @@ const Reveal = ({ children }: Props) => {
 
     useEffect(() => {
         if (isInView) {
-            // fire the animation
             mainControls.start("visible")
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isInView])
 
     const transition = {
