@@ -1,21 +1,21 @@
 import { cva, type VariantProps } from 'class-variance-authority'
-import { Sun } from 'lucide-react'
 
 const buttonVariants = cva("flex items-center gap-2 text-sm font-medium rounded-md w-fit", {
     variants: {
         background: {
-            primary: "bg-primary text-primary-foreground",
-            secondary: "bg-secondary text-secondary-foreground",
+            blue: "bg-indigo-600 text-primary-foreground hover:bg-indigo-700",
+            green: "bg-green-600 text-secondary-foreground hover:bg-green-700",
+            red: "bg-red-600 text-primary-foreground hover:bg-red-700",
         },
         size: {
             default: "px-4 py-3",
             sm: "px-3 py-2 text-xs",
-            lg: "px-8 py-4",
+            md: "px-4 py-3 text-sm",
+            lg: "px-8 py-4 text-lg",
         },
         position: {
-            left: "justify-start",
-            center: "justify-center",
-            right: "justify-end",
+            left: "flex-row",
+            right: "flex-row-reverse",
         },
         disabled: {
             false: null,
@@ -24,7 +24,7 @@ const buttonVariants = cva("flex items-center gap-2 text-sm font-medium rounded-
     },
     defaultVariants: {
         disabled: false,
-        background: "primary",
+        background: "blue",
         size: "default",
         position: "left",
     }
@@ -33,7 +33,9 @@ const buttonVariants = cva("flex items-center gap-2 text-sm font-medium rounded-
 export interface ButtonProps
     extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "disabled">,
     VariantProps<typeof buttonVariants> {
-    icon?: boolean;
+    icon?: React.ReactNode;
+    tooltip?: string;
+    tooltipPosition?: "top" | "bottom" | "left" | "right"; // Tooltip position
 }
 
 export const ButtonCustom: React.FC<ButtonProps> = ({
@@ -41,19 +43,36 @@ export const ButtonCustom: React.FC<ButtonProps> = ({
     background,
     size,
     position,
+    tooltip,
+    tooltipPosition = "top",
     disabled,
     icon,
     children,
     ...props
 }) => {
+    const tooltipPositionClasses = {
+        top: "bottom-full left-1/2 transform -translate-x-1/2 mb-2",
+        bottom: "top-full left-1/2 transform -translate-x-1/2 mt-2",
+        left: "right-full top-1/2 transform -translate-y-1/2 mr-2",
+        right: "left-full top-1/2 transform -translate-y-1/2 ml-2",
+    };
+
     return (
-        <button
-            className={buttonVariants({ background, size, position, disabled, className })}
-            disabled={disabled || undefined}
-            {...props}
-        >
-            {icon && <Sun className='w-4 h-4' />}
-            {children}
-        </button>
+        <div className="relative w-fit group">
+            <button
+                className={buttonVariants({ background, size, position, disabled, className })}
+                disabled={disabled || undefined}
+                {...props}
+            >
+                {icon}
+                {children}
+            </button>
+            {tooltip && (
+                <div className={`absolute w-full z-10 hidden px-2 py-1 text-xs text-white bg-black rounded-md shadow-sm shadow-white group-hover:flex ${tooltipPositionClasses[tooltipPosition]}`}
+                >
+                    {tooltip}
+                </div>
+            )}
+        </div>
     )
 }

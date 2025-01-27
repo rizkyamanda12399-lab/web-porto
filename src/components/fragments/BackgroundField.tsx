@@ -1,7 +1,7 @@
 
 import Image from "next/image"
-import SplitText from "../elements/SplitText"
 import Reveal from "../elements/Reveal";
+import SplitText from "../elements/SplitText.jsx";
 
 const BackgroundField = () => {
     const handleAnimationComplete = () => {
