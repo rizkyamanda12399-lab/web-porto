@@ -3,6 +3,7 @@ import Image from "next/image"
 import Navbar from "../Navbar"
 import Located from "@/components/fragments/Located"
 import BackgroundField from "@/components/fragments/BackgroundField"
+// import TextPressure from "@/components/elements/TextPressure"
 import RunningText from "@/components/elements/RunningText"
 
 const HeroSection = () => {

@@ -39,7 +39,7 @@ const BackgroundField = () => {
                             onLetterAnimationComplete={handleAnimationComplete}
                         />
                     </div>
-                    <div className="flex gap-3 group cursor-pointer">
+                    <div className="flex gap-1 group cursor-pointer">
                         <SplitText
                             text="Front End"
                             className="xl:text-[52px] lg:text-[39px] text-[24px] font-normal leading-[125%]"
