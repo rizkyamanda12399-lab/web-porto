@@ -1,4 +1,5 @@
 import Experience from "@/components/elements/Experience"
+import AnimatedContent from "@/components/elements/Reactbits/AnimatedContent"
 
 const SelftProject = () => {
     const jobMix = [
@@ -101,32 +102,40 @@ const SelftProject = () => {
         <div>
             <div className="grid w-full xl:gap-[40px] lg:gap-[30px] gap-[16px]">
                 <h2 className="xl:text-[60px] lg:text-[45px] text-[36px] font-light xl:leading-[72px] lg:leading-[54px]">Self Project</h2>
-
-                <Experience tittle="Front End Developer & UI/UX Designer" place="Freelance"
-                    li={jobMix.map((li) => (
-                        <li key={li.id}>{li.tittle}</li>
-                    ))}
-                    li2={toolsMix1.map((li, index) => (
-                        <li key={index}>{li.tools}</li>
-                    ))}
-                    li3={toolsMix2.map((li, index) => (
-                        <li key={index}>{li.tools}</li>
-                    ))}
-                />
+                <AnimatedContent
+                    direction="vertical"
+                    reverse={false}
+                >
+                    <Experience tittle="Front End Developer & UI/UX Designer" place="Freelance"
+                        li={jobMix.map((li) => (
+                            <li key={li.id}>{li.tittle}</li>
+                        ))}
+                        li2={toolsMix1.map((li, index) => (
+                            <li key={index}>{li.tools}</li>
+                        ))}
+                        li3={toolsMix2.map((li, index) => (
+                            <li key={index}>{li.tools}</li>
+                        ))}
+                    />
+                </AnimatedContent>
 
                 <div className="w-full h-[1px] bg-primary"></div>
-
-                <Experience tittle="FullStack Web Developer" place="Harisenin.com"
-                    li={jobFull.map((li) => (
-                        <li key={li.id}>{li.tittle}</li>
-                    ))}
-                    li2={toolsFull1.map((li, index) => (
-                        <li key={index}>{li.tools}</li>
-                    ))}
-                    li3={toolsFull2.map((li, index) => (
-                        <li key={index}>{li.tools}</li>
-                    ))}
-                />
+                <AnimatedContent
+                    direction="vertical"
+                    reverse={false}
+                >
+                    <Experience tittle="FullStack Web Developer" place="Harisenin.com"
+                        li={jobFull.map((li) => (
+                            <li key={li.id}>{li.tittle}</li>
+                        ))}
+                        li2={toolsFull1.map((li, index) => (
+                            <li key={index}>{li.tools}</li>
+                        ))}
+                        li3={toolsFull2.map((li, index) => (
+                            <li key={index}>{li.tools}</li>
+                        ))}
+                    />
+                </AnimatedContent>
 
             </div>
         </div>

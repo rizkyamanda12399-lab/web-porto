@@ -1,4 +1,5 @@
 import Experience from "@/components/elements/Experience"
+import AnimatedContent from "@/components/elements/Reactbits/AnimatedContent"
 import Heading from "@/components/fragments/Heading"
 
 const Resume = () => {
@@ -85,32 +86,42 @@ const Resume = () => {
             <div id="resume" className="grid w-full xl:gap-[40px] lg:gap-[30px] gap-[16px] xl:scroll-mt-[60px] lg:scroll-mt-[40px] scroll-mt-[20px]">
                 <Heading src="resume" tittle="Resume" />
                 <h2 className="xl:text-[60px] lg:text-[45px] text-[36px] font-light xl:leading-[72px] lg:leading-[54px]">Experience</h2>
+                <AnimatedContent
+                    direction="vertical"
+                    reverse={false}
+                >
+                    <Experience tittle="UI/UX Designer" place="CV Rumah Software RDN (Feb 2023 - Jul 2023)"
+                        li={jobUiux.map((li) => (
+                            <li key={li.id}>{li.tittle}</li>
+                        ))}
+                        li2={toolsUiux1.map((li, index) => (
+                            <li key={index}>{li.tools}</li>
+                        ))}
+                        li3={toolsUiux2.map((li, index) => (
+                            <li key={index}>{li.tools}</li>
+                        ))}
+                    />
 
-                <Experience tittle="UI/UX Designer" place="CV Rumah Software RDN (Feb 2023 - Jul 2023)"
-                    li={jobUiux.map((li) => (
-                        <li key={li.id}>{li.tittle}</li>
-                    ))}
-                    li2={toolsUiux1.map((li, index) => (
-                        <li key={index}>{li.tools}</li>
-                    ))}
-                    li3={toolsUiux2.map((li, index) => (
-                        <li key={index}>{li.tools}</li>
-                    ))}
-                />
+                </AnimatedContent>
 
                 <div className="w-full h-[1px] bg-primary"></div>
 
-                <Experience tittle="Front End Developer" place="CV Rumah Software RDN (Jul 2023 - Feb 2024)"
-                    li={jobFront.map((li) => (
-                        <li key={li.id}>{li.tittle}</li>
-                    ))}
-                    li2={toolsFront1.map((li, index) => (
-                        <li key={index}>{li.tools}</li>
-                    ))}
-                    li3={toolsFront2.map((li, index) => (
-                        <li key={index}>{li.tools}</li>
-                    ))}
-                />
+                <AnimatedContent
+                    direction="vertical"
+                    reverse={false}
+                >
+                    <Experience tittle="Front End Developer" place="CV Rumah Software RDN (Jul 2023 - Feb 2024)"
+                        li={jobFront.map((li) => (
+                            <li key={li.id}>{li.tittle}</li>
+                        ))}
+                        li2={toolsFront1.map((li, index) => (
+                            <li key={index}>{li.tools}</li>
+                        ))}
+                        li3={toolsFront2.map((li, index) => (
+                            <li key={index}>{li.tools}</li>
+                        ))}
+                    />
+                </AnimatedContent>
 
             </div>
         </div>

@@ -1,5 +1,5 @@
 import Reveal from "@/components/elements/Reveal";
-import SplitText from "@/components/elements/SplitText";
+import SplitText from "@/components/elements/Reactbits/SplitText";
 import Image from "next/image"
 
 const Navbar = () => {
@@ -20,16 +20,18 @@ const Navbar = () => {
                     <Reveal>
                         <Image className="w-[20px] h-[20px] xl:w-[24px] xl:h-[24px]" src="/icon/copyright.svg" alt="" width={24} height={24} />
                     </Reveal>
-                    <SplitText
-                        text="Code by Ehan"
-                        className="xl:text-[24px] lg:text-[18px] text-[16px] font-normal"
-                        delay={150}
-                        animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
-                        animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
-                        threshold={0.2}
-                        rootMargin="-50px"
-                        onLetterAnimationComplete={handleAnimationComplete}
-                    />
+                    <div className="xl:text-[24px] lg:text-[18px] text-[14px] font-normal">
+                        <SplitText
+                            text="Code by Ehan"
+                            delay={150}
+                            animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                            animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                            threshold={0.2}
+                            rootMargin="-50px"
+                            onLetterAnimationComplete={handleAnimationComplete}
+                        />
+                    </div>
+
                 </div>
                 <div className="hidden xl:flex lg:flex md:flex gap-4">
                     <div className="grid gap-1 px-3 py-1 group cursor-pointer" onClick={() => handleScroll("introduce")}>

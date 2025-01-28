@@ -1,13 +1,9 @@
 
 import Image from "next/image"
 import Reveal from "../elements/Reveal";
-import SplitText from "../elements/SplitText.jsx";
+import SplitText from "../elements/Reactbits/SplitText.jsx";
 
 const BackgroundField = () => {
-    const handleAnimationComplete = () => {
-        console.log('All letters have animated!');
-    };
-
     return (
         <div className="">
             <div className="absolute hidden xl:grid lg:grid gap-[100px] xl:top-[150px] lg:top-[110px] xl:left-[1275px] lg:left-[1006px] left-[600px]">
@@ -23,9 +19,7 @@ const BackgroundField = () => {
                             animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
                             animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
                             threshold={0.2}
-                            rootMargin="-50px"
-                            onLetterAnimationComplete={handleAnimationComplete}
-                        />
+                            rootMargin="-50px" onLetterAnimationComplete={undefined} />
                     </div>
                     <div className="">
                         <SplitText
@@ -35,9 +29,7 @@ const BackgroundField = () => {
                             animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
                             animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
                             threshold={0.2}
-                            rootMargin="-50px"
-                            onLetterAnimationComplete={handleAnimationComplete}
-                        />
+                            rootMargin="-50px" onLetterAnimationComplete={undefined} />
                     </div>
                     <div className="flex gap-1 group cursor-pointer">
                         <SplitText
@@ -47,12 +39,18 @@ const BackgroundField = () => {
                             animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
                             animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
                             threshold={0.2}
-                            rootMargin="-50px"
-                            onLetterAnimationComplete={handleAnimationComplete}
-                        />
+                            rootMargin="-50px" onLetterAnimationComplete={undefined} />
                         <div className="origin-top-left rotate-[8deg] group-hover:rotate-0 ease-in-out duration-300">
                             <Reveal>
-                                <span className="text-primary">Developer</span>
+                                <SplitText
+                                    text="Developer"
+                                    className="text-primary"
+                                    delay={150}
+                                    animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+                                    animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+                                    threshold={0.2}
+                                    rootMargin="-50px" onLetterAnimationComplete={undefined} />
+                                {/* <span className="text-primary">Developer</span> */}
                             </Reveal>
                         </div>
                     </div>

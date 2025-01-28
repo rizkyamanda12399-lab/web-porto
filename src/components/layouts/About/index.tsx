@@ -1,5 +1,5 @@
-import DecryptedText from "@/components/elements/DecryptedText";
-import ShinyText from "@/components/elements/ShinyText";
+import DecryptedText from "@/components/elements/Reactbits/DecryptedText";
+import ShinyText from "@/components/elements/Reactbits/ShinyText";
 import Heading from "@/components/fragments/Heading"
 
 const About = () => {
