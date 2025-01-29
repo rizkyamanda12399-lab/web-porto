@@ -33,12 +33,12 @@ const Introduce = () => {
         <div>
             <AnimatedContent
                 distance={150}
-                direction="horizontal"
+                direction="vertical"
                 reverse={false}
                 config={{ tension: 80, friction: 20 }}
                 initialOpacity={0.2}
                 animateOpacity
-                scale={1.1}
+                scale={1}
                 threshold={0.2}
             >
 

@@ -18,7 +18,7 @@ const DetailProject = (props: DetailProjectProps) => {
         <div className="grid xl:gap-[24px] lg:gap-[20px] gap-[16px]">
             <div className="xl:flex lg:flex grid items-center xl:gap-8 lg:gap-8 gap-1">
                 <AnimatedContent
-                    direction="horizontal"
+                    direction="vertical"
                     reverse={false}
                 >
                     <h2 className="xl:text-[40px] lg:text-[32px] text-[24px] font-normal">{headline}</h2>

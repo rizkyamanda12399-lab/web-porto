@@ -85,7 +85,7 @@ const Skills = () => {
                         {skills1.map((item, index) => (
                             <div key={index}>
                                 <AnimatedContent
-                                    direction="horizontal"
+                                    direction="vertical"
                                     reverse={false}
                                 >
                                     <div className="grid justify-center items-center xl:w-[180px] xl:h-[180px] lg:w-[130px] lg:h-[130px] w-[90px] h-[90px] border-[1px] border-gray xl:rounded-[32px] lg:rounded-[24px] rounded-[16px] cursor-pointer hover:border-primary hover:border-[2px] group">
@@ -106,7 +106,7 @@ const Skills = () => {
                         {skills2.map((item, index) => (
                             <div key={index} >
                                 <AnimatedContent
-                                    direction="horizontal"
+                                    direction="vertical"
                                     reverse={false}
                                     config={{ tension: 80, friction: 20 }}
                                 >
