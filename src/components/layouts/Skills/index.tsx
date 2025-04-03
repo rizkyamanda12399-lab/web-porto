@@ -1,78 +1,9 @@
 import AnimatedContent from "@/components/elements/Reactbits/AnimatedContent";
 import Heading from "@/components/fragments/Heading";
 import Image from "next/image";
+import { skills1, skills2 } from "./constant";
 
 const Skills = () => {
-    const skills1 = [
-        {
-            img: "icon/html.svg",
-            name: "HTML"
-        },
-        {
-            img: "icon/css.svg",
-            name: "CSS"
-        },
-        {
-            img: "icon/js.svg",
-            name: "Javascript"
-        },
-        {
-            img: "icon/php.svg",
-            name: "PHP"
-        },
-        {
-            img: "icon/node.svg",
-            name: "Node JS"
-        },
-        {
-            img: "icon/express.svg",
-            name: "Express"
-        },
-        {
-            img: "icon/react.svg",
-            name: "React"
-        },
-        {
-            img: "icon/react-native.svg",
-            name: "React Native"
-        },
-    ]
-
-    const skills2 = [
-        {
-            img: "icon/next.svg",
-            name: "Next JS"
-        },
-        {
-            img: "icon/bootstrap.svg",
-            name: "Bootstrap 5"
-        },
-        {
-            img: "icon/tailwind.svg",
-            name: "Tailwind CSS"
-        },
-        {
-            img: "icon/laravel.svg",
-            name: "Laravel"
-        },
-        {
-            img: "icon/mysql.svg",
-            name: "MySQL"
-        },
-        {
-            img: "icon/figma.svg",
-            name: "Figma"
-        },
-        {
-            img: "icon/ai.svg",
-            name: "Illustrator"
-        },
-        {
-            img: "icon/ps.svg",
-            name: "Photoshop"
-        },
-    ]
-
     return (
         <div id="skills" className="grid xl:gap-[40px] lg:gap-[30px] gap-[20px] xl:scroll-mt-[60px] lg:scroll-mt-[40px] scroll-mt-[20px]">
             <Heading src="skills" tittle="Skills" />

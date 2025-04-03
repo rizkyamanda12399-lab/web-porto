@@ -9,7 +9,7 @@ const Footer = () => {
         }
     };
     return (
-        <div id="contact" className="bg-dark text-white xl:scroll-mt-[60px] lg:scroll-mt-[40px] scroll-mt-[20px]">
+        <div id="contact" className=" text-white xl:scroll-mt-[60px] lg:scroll-mt-[40px] scroll-mt-[20px]">
             <div className="w-full h-[1px] bg-primary"></div>
             <div className="grid xl:gap-[80px] lg:gap-[60px] gap-[32px] xl:py-[80px] lg:py-[60px] py-[40px]">
                 <Heading src="contact" tittle="Contact" />
