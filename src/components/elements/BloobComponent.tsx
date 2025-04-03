@@ -16,7 +16,7 @@ const BlobCursor: React.FC = () => {
     }, []);
 
     return (
-        <div className="blob fixed w-[450px] h-[450px] rounded-full bg-gradient-to-r from-green-300 via-indigo-300 to-pink-300 blur-[150px] opacity-70 transition-all ease-out duration-1000 left-0 top-0 transform translate-x-[-50%] translate-y-[-50%] pointer-events-none"></div>
+        <div className="blob fixed xl:w-[450px] lg:w-[450px] xl:h-[450px] lg:h-[450px] w-[250px] h-[250px] rounded-full bg-gradient-to-r from-green-400 via-indigo-400 to-pink-400 opacity-80 xl:blur-[150px] lg:blur-[150px] blur-[75px] transition-all ease-out duration-1000 left-0 top-0 transform translate-x-[-50%] translate-y-[-50%] pointer-events-none"></div>
     );
 };
 

@@ -30,7 +30,7 @@ const Introduce = () => {
     ]
 
     return (
-        <div>
+        <div className="">
             <AnimatedContent
                 distance={150}
                 direction="vertical"
