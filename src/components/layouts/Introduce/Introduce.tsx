@@ -1,5 +1,6 @@
 import AnimatedContent from "@/components/elements/Reactbits/AnimatedContent";
 import BlurText from "@/components/elements/Reactbits/BlurText";
+import CircularText from "@/components/elements/Reactbits/CircularText";
 import Heading from "@/components/fragments/Heading"
 import Image from "next/image"
 
@@ -58,17 +59,24 @@ const Introduce = () => {
                                 </div>
                             ))}
                         </div>
-                        {/* <div className="xl:text-[80px] lg:text-[60px] text-[32px] font-light xl:leading-[96px] lg:leading-[72px]">
-                        <p>Hi, What&apos;s going on?</p>
-                        <p>Regrads from Ehan, Front</p>
-                        <p>End Developer and Designer</p>
-                    </div> */}
                     </div>
 
-                    <div className="relative xl:col-span-4 lg:col-span-4 flex justify-center items-center">
-                        <div className="relative flex justify-center items-center cursor-pointer lg:scale-100 scale-75" onClick={() => handleScroll("portfolio")}>
+                    <div className="relative xl:col-span-4 lg:col-span-4 grid gap-10 justify-center items-center">
+                        {/* <div className="relative flex justify-center items-center cursor-pointer lg:scale-100 scale-75" onClick={() => handleScroll("portfolio")}>
                             <Image className="animate-slowspin" src="icon/project-scroll.svg" alt="" width={267} height={267} />
                             <div className="absolute">
+                                <Image className="" src="icon/down-arrow.svg" alt="" width={84} height={84} />
+                            </div>
+                        </div> */}
+
+                        <div className="relative flex justify-center items-center cursor-pointer lg:scale-100 scale-75 group" onClick={() => handleScroll("portfolio")}>
+                            <CircularText
+                                text="SCROLL TO MY PROJECT ~ SCROLL TO MY PROJECT ~ "
+                                onHover="goBonkers"
+                                spinDuration={60}
+                                className=""
+                            />
+                            <div className="absolute group-hover:pointer-events-none">
                                 <Image className="" src="icon/down-arrow.svg" alt="" width={84} height={84} />
                             </div>
                         </div>

@@ -1,13 +1,13 @@
 import NavSidebar from "@/components/fragments/NavSidebar";
-import About from "@/components/layouts/About";
-import Footer from "@/components/layouts/Footer";
-import HeroSection from "@/components/layouts/HeroSection";
-import Introduce from "@/components/layouts/Introduce";
-import Portfolio from "@/components/layouts/Portfolio";
-import Resume from "@/components/layouts/Resume";
-import SelftProject from "@/components/layouts/SelfProject";
-import Skills from "@/components/layouts/Skills";
-import WorkTogether from "@/components/layouts/WorkTogether";
+import About from "@/components/layouts/About/About";
+import Footer from "@/components/layouts/Footer/Footer";
+import HeroSection from "@/components/layouts/HeroSection/HeroSection";
+import Introduce from "@/components/layouts/Introduce/Introduce";
+import Portfolio from "@/components/layouts/Portfolio/Portfolio";
+import Resume from "@/components/layouts/Resume/Resume";
+import SelftProject from "@/components/layouts/SelfProject/SelfProject";
+import Skills from "@/components/layouts/Skills/Skills";
+import WorkTogether from "@/components/layouts/WorkTogether/WorkTogether";
 import { Provider } from "react-redux";
 import store from "../redux/store";
 
