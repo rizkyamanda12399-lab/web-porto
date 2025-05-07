@@ -77,7 +77,8 @@ module.exports = {
 				'chill-gradient': 'linear-gradient(to top right, #BE2428, #520608)',
 				'todolist-gradient': 'linear-gradient(to top right, #FFF020, #BC1316)',
 				'study-gradient': 'linear-gradient(to top right, #4497E3, #0D3050)',
-				'hokben-gradient': 'linear-gradient(to top right, #FBB716, #E64101)'
+				'hokben-gradient': 'linear-gradient(to top right, #FBB716, #E64101)',
+				'nuha-gradient': 'linear-gradient(to top right, #0B6463, #032626)'
 			},
 			animation: {
 				'slowspin': 'spin 8s linear infinite',

@@ -1,86 +1,9 @@
 import DetailProject from "@/components/fragments/DetailProject"
 import Heading from "@/components/fragments/Heading"
 import Image from "next/image"
+import { Bmk, BmkIcon, Kontributor, KontributorIcon, Nuha, NuhaIcon, Puskur, PuskurIcon } from "./constants"
 
 const Portfolio = () => {
-    const project1 = [
-        {
-            src: "/icon/php.svg",
-        },
-        {
-            src: "/icon/laravel.svg",
-        },
-        {
-            src: "/icon/bootstrap.svg",
-        },
-        {
-            src: "/icon/mysql.svg",
-        },
-        {
-            src: "/icon/figma.svg",
-        },
-        {
-            src: "/icon/ai.svg",
-        },
-        {
-            src: "/icon/ps.svg",
-        },
-    ]
-
-    const project11 = [
-        {
-            href: "https://puskur.kemdikbud.go.id/",
-            src: "/project/puskurjar.png",
-        }
-    ]
-
-    const project2 = [
-        {
-            src: "/icon/html.svg",
-        },
-        {
-            src: "/icon/css.svg",
-        },
-        {
-            src: "/icon/js.svg",
-        },
-        {
-            src: "/icon/tailwind.svg",
-        },
-        {
-            src: "/icon/figma.svg",
-        },
-        {
-            src: "/icon/ai.svg",
-        },
-        {
-            src: "/icon/ps.svg",
-        },
-    ]
-    const project22 = [
-        {
-            href: "https://laman-puskur-kontributor.vercel.app/",
-            src: "/project/kontrib.png",
-        }
-    ]
-
-    const project3 = [
-        {
-            src: "/icon/figma.svg",
-        },
-        {
-            src: "/icon/ai.svg",
-        },
-        {
-            src: "/icon/ps.svg",
-        },
-    ]
-    const project33 = [
-        {
-            href: "https://balaimediakebudayaan.kemdikbud.go.id/",
-            src: "/project/bmk.png",
-        }
-    ]
 
     const project4 = [
         {
@@ -176,12 +99,12 @@ const Portfolio = () => {
                         colorPrimary="bg-puskur-gradient"
                         tittle="Puskurjar"
                         desc="Develop UI/UX designs for the Curriculum and Learning Center website. Develop actions on the website or web application using programming languages ​​such as PHP, Bootstrap 5, MySQL, etc. Involved in bug fixing on functionality, performance, and design issues with PHP. Create programs and code that support the website database, server, and other applications that may be on it"
-                        img={project11.map((item, index) => (
+                        img={Puskur.map((item, index) => (
                             <a key={index} href={item.href} target="_blank">
                                 <Image className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src={item.src} alt="" width={1163} height={677} />
                             </a>
                         ))}
-                        src={project1.map((item, index) => (
+                        src={PuskurIcon.map((item, index) => (
                             <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 xl:p-[12px] lg:p-[12px] p-[8px] rounded-full w-fit h-fit">
                                 <Image className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] w-[18px] h-[18px]" src={item.src} alt="" width={36} height={36} />
                             </div>
@@ -196,12 +119,12 @@ const Portfolio = () => {
                         colorPrimary="bg-kontrib-gradient"
                         tittle="Kontributor"
                         desc="Develop UI/UX designs for the Curriculum and Learning Center website. Develop actions on the website or web application using programming languages ​​such as HTML, Javascript, Tailwind CSS, etc. Involved in bug fixing of functionality, performance, and design issues with JavaScript, HTML, and CSS. Create programs and code that support the website database, server, and other applications it may contain"
-                        img={project22.map((item, index) => (
+                        img={Kontributor.map((item, index) => (
                             <a key={index} href={item.href} target="_blank">
                                 <Image className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src={item.src} alt="" width={1163} height={677} />
                             </a>
                         ))}
-                        src={project2.map((item, index) => (
+                        src={KontributorIcon.map((item, index) => (
                             <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 xl:p-[12px] lg:p-[12px] p-[8px] rounded-full w-fit h-fit">
                                 <Image className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] w-[18px] h-[18px]" src={item.src} alt="" width={36} height={36} />
                             </div>
@@ -216,12 +139,12 @@ const Portfolio = () => {
                         colorPrimary="bg-bmk-gradient"
                         tittle="BMK"
                         desc="Developing interface design and user experience for the website of Balai Media Budaya of the Ministry of Culture, Research and Technology. Collaborating with government teams and website development experts"
-                        img={project33.map((item, index) => (
+                        img={Bmk.map((item, index) => (
                             <a key={index} href={item.href} target="_blank">
                                 <Image className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src={item.src} alt="" width={1163} height={677} />
                             </a>
                         ))}
-                        src={project3.map((item, index) => (
+                        src={BmkIcon.map((item, index) => (
                             <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 xl:p-[12px] lg:p-[12px] p-[8px] rounded-full w-fit h-fit">
                                 <Image className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] w-[18px] h-[18px]" src={item.src} alt="" width={36} height={36} />
                             </div>
@@ -302,6 +225,24 @@ const Portfolio = () => {
                             </a>
                         ))}
                         src={project7.map((item, index) => (
+                            <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 xl:p-[12px] lg:p-[12px] p-[8px] rounded-full w-fit h-fit">
+                                <Image className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] w-[18px] h-[18px]" src={item.src} alt="" width={36} height={36} />
+                            </div>
+                        ))}
+                    />
+
+                    <DetailProject
+                        headline="Nuha Care Website Company"
+                        job="UI/UX Designer"
+                        colorPrimary="bg-nuha-gradient"
+                        tittle="Nuha Care"
+                        desc="When I worked as a Frontend Developer at PT Data Integrasi Inovasi. My team was pursuing a new Sprint, namely to completely update the company website. In this sprint, I was assigned to handle the UI/UX Designer for the website by my Product Manager."
+                        img={Nuha.map((item, index) => (
+                            <a key={index} href={item.href} target="_blank">
+                                <Image className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src={item.src} alt="" width={1163} height={677} />
+                            </a>
+                        ))}
+                        src={NuhaIcon.map((item, index) => (
                             <div key={index} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 xl:p-[12px] lg:p-[12px] p-[8px] rounded-full w-fit h-fit">
                                 <Image className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] w-[18px] h-[18px]" src={item.src} alt="" width={36} height={36} />
                             </div>
