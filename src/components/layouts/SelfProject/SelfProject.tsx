@@ -119,7 +119,13 @@ const SelftProject = () => {
                     />
                 </AnimatedContent>
 
-                <div className="w-full h-[1px] bg-primary"></div>
+                <AnimatedContent
+                    direction="vertical"
+                    reverse={false}
+                >
+                    <div className="w-full h-[1px] bg-primary"></div>
+                </AnimatedContent>
+
                 <AnimatedContent
                     direction="vertical"
                     reverse={false}

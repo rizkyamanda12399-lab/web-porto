@@ -41,7 +41,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="flex justify-between">
+                <div className="flex justify-between mb-[80px] lg:mb-0 xl:mb-0">
                     <p className="xl:text-[24px] lg:text-[20px] text-[14px]">© 2024 Muhammad Rayhan Fuadi. All Right Reserved</p>
                     <div className="flex items-center xl:gap-[24px] lg:gap-[20px] gap-[14px] group">
                         <p className="xl:text-[24px] lg:text-[20px] text-[14px]">Social Media: </p>
