@@ -17,9 +17,23 @@ import axios from 'axios'
 
 const Home = () => {
   useEffect(() => {
-    axios.post('/api/track-visitor').catch(() => { })
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const { latitude, longitude } = position.coords
+          axios.post('/api/track-visitor', { latitude, longitude })
+        },
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        (error) => {
+          // Jika user tidak mengizinkan lokasi, tetap kirim tapi tanpa koordinat
+          axios.post('/api/track-visitor', {})
+        }
+      )
+    } else {
+      // Browser tidak mendukung
+      axios.post('/api/track-visitor', {})
+    }
   }, [])
-
   return (
     <Provider store={store}>
       <main className="relative grid">
