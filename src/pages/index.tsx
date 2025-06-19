@@ -1,3 +1,4 @@
+
 import NavSidebar from "@/components/fragments/NavSidebar";
 import About from "@/components/layouts/About/About";
 import Footer from "@/components/layouts/Footer/Footer";
@@ -10,8 +11,15 @@ import Skills from "@/components/layouts/Skills/Skills";
 import WorkTogether from "@/components/layouts/WorkTogether/WorkTogether";
 import { Provider } from "react-redux";
 import store from "../redux/store";
+import React, { useEffect } from "react";
+import axios from 'axios'
 
-export default function Home() {
+
+const Home = () => {
+  useEffect(() => {
+    axios.post('/api/track-visitor').catch(() => { })
+  }, [])
+
   return (
     <Provider store={store}>
       <main className="relative grid">
@@ -40,3 +48,5 @@ export default function Home() {
     </Provider>
   );
 }
+
+export default Home;
