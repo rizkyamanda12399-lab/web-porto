@@ -66,18 +66,6 @@ const Introduce = () => {
                                 </div>
                             ))}
                         </div>
-                        <div className="">
-                            <TooltipProvider>
-                                <Tooltip>
-                                    <TooltipTrigger>
-                                        text
-                                    </TooltipTrigger>
-                                    <TooltipContent>
-                                        <p>Add to library</p>
-                                    </TooltipContent>
-                                </Tooltip>
-                            </TooltipProvider>
-                        </div>
                     </div>
 
                     <div className="relative xl:col-span-4 lg:col-span-4 grid gap-10 justify-center items-center">
