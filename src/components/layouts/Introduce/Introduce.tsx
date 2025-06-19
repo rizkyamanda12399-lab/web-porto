@@ -4,12 +4,6 @@ import CircularText from "@/components/elements/Reactbits/CircularText";
 import Heading from "@/components/fragments/Heading"
 import Image from "next/image"
 
-import {
-    Tooltip,
-    TooltipContent,
-    TooltipProvider,
-    TooltipTrigger,
-} from "@/components/ui/tooltip"
 
 const Introduce = () => {
     const handleScroll = (sectionId: string) => {
