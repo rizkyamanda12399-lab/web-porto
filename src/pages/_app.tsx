@@ -1,4 +1,5 @@
 import AppShell from "@/components/layouts/AppShell";
+import { Toaster } from "@/components/ui/toaster";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { Urbanist } from "next/font/google";
@@ -13,6 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <main className={urbanist.className}>
       <AppShell>
         <Component {...pageProps} />
+        <Toaster />
       </AppShell>
     </main>
   )
