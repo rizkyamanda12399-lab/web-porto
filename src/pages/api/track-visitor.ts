@@ -10,7 +10,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     const { latitude, longitude } = req.body
 
-    const ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress
+    // const ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress
+    const ip = '::1'
     const userAgent = req.headers['user-agent'] || ''
     const referer = req.headers['referer'] || ''
 
@@ -44,15 +45,15 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     }
 
     const visitorData = {
-        ip_address: ip?.toString(),
-        country,
-        city,
+        ip_address: ip,
         user_agent: userAgent,
-        referer,
+        referer: referer || '',
         visited_at: new Date().toISOString(),
         latitude,
         longitude,
-        formatted_address: formatted,
+        formatted_address: formatted || 'Unknown',
+        city: city || 'Unknown',
+        country: country || 'Unknown',
         state,
         postcode
     }
