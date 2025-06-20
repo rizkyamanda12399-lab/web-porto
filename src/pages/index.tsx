@@ -19,21 +19,21 @@ const Home = () => {
   useEffect(() => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const { latitude, longitude } = position.coords
-          axios.post('/api/track-visitor', { latitude, longitude })
+        (pos) => {
+          axios.post('/api/track-visitor', {
+            latitude: pos.coords.latitude,
+            longitude: pos.coords.longitude
+          })
         },
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        (error) => {
-          // Jika user tidak mengizinkan lokasi, tetap kirim tapi tanpa koordinat
-          axios.post('/api/track-visitor', {})
+        () => {
+          axios.post('/api/track-visitor') // fallback
         }
       )
     } else {
-      // Browser tidak mendukung
-      axios.post('/api/track-visitor', {})
+      axios.post('/api/track-visitor')
     }
   }, [])
+
   return (
     <Provider store={store}>
       <main className="relative grid">

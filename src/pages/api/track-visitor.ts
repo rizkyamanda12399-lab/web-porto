@@ -32,11 +32,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
             const result = geoResponse.data?.results?.[0]
             if (result) {
-                city = result.components.city || result.components.town || result.components.village || 'Unknown'
-                country = result.components.country || 'Unknown'
+                formatted = result.formatted || ''
+                city = result.components.city || result.components.town || result.components.village || ''
+                country = result.components.country || ''
                 state = result.components.state || ''
                 postcode = result.components.postcode || ''
-                formatted = result.formatted || ''
             }
         } catch (err) {
             console.error('OpenCage error:', err)
