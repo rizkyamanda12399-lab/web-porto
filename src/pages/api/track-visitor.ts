@@ -27,7 +27,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                     q: `${latitude},${longitude}`,
                     key: OPENCAGE_API_KEY,
                     language: 'en',
-                    pretty: 1
                 }
             })
 

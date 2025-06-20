@@ -13,17 +13,17 @@ const About = () => {
             speed: 30,
         },
         {
-            text: "digital age. Together we will set",
+            text: "digital age. Together, we'll create standout products that resonate",
             characters: "abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+",
             speed: 50,
         },
         {
-            text: "products that fit the target. ",
+            text: "with your target audience.",
             characters: "abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+",
             speed: 70,
         },
         {
-            text: "Without further ado, let's discuss!",
+            text: "",
             characters: "abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+",
             speed: 100,
         },

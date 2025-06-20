@@ -22,7 +22,7 @@ const Introduce = () => {
             delay: 50,
         },
         {
-            text: "Regrads from Ehan, Front",
+            text: "Regards from Ehan, Front",
             delay: 100,
         },
         {

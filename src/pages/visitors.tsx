@@ -27,9 +27,11 @@ export default function VisitorPage() {
 
     useEffect(() => {
         axios
-            .get('https://68541b605470323abe94b9d1.mockapi.io/visitors') // Ganti URL ini dengan endpoint MockAPI kamu
+            .get('https://68541b605470323abe94b9d1.mockapi.io/visitors')
             .then((res) => {
-                setVisitors(res.data.reverse()) // urutkan dari terbaru
+                setVisitors(res.data.sort(
+                    (a: Visitor, b: Visitor) => new Date(a.visited_at).getTime() - new Date(b.visited_at).getTime()
+                )) // urutkan dari terbaru
             })
             .catch((err) => {
                 console.error(err)
@@ -69,6 +71,7 @@ export default function VisitorPage() {
                     <Table>
                         <TableHeader>
                             <TableRow>
+                                <TableHead>No</TableHead>
                                 <TableHead>IP</TableHead>
                                 <TableHead>Lokasi</TableHead>
                                 <TableHead>Koordinat</TableHead>
@@ -95,8 +98,9 @@ export default function VisitorPage() {
                                     </TableCell>
                                 </TableRow>
                             ) : (
-                                visitors.map((v) => (
+                                visitors.map((v, index) => (
                                     <TableRow key={v.id}>
+                                        <TableCell>{index + 1}</TableCell>
                                         <TableCell>{v.ip_address}</TableCell>
                                         <TableCell>{v.formatted_address || `${v.city}, ${v.country}`}</TableCell>
                                         <TableCell>
