@@ -8,7 +8,7 @@ const About = () => {
 
     const textAbout = [
         {
-            text: "Helping brands stand out in the",
+            text: "Helping brands thrive in the",
             characters: "abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+",
             speed: 30,
         },
@@ -24,6 +24,11 @@ const About = () => {
         },
         {
             text: "",
+            characters: "abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+",
+            speed: 100,
+        },
+        {
+            text: "Let's get started—time to bring your vision to life!",
             characters: "abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+",
             speed: 100,
         },
@@ -60,11 +65,12 @@ const About = () => {
                         <p>Without further ado, let&apos;s discuss!</p> */}
                         </div>
                     </div>
-                    <div className="relative grid col-span-5 justify-center items-start gap-6 group">
+                    <div className="relative grid col-span-5 justify-center items-start gap-6 group ">
                         <div className="border-l-2 flex flex-col border-gray pl-4 xl:text-[32px] lg:text-[24px] text-[16px] font-light xl:leading-[130%] lg:leading-[130&] text-gray">
-                            <ShinyText text="My combination of passions for UI," disabled={false} speed={3} className='custom-class' />
-                            <ShinyText text="code & interaction puts me in a unique" disabled={false} speed={3} className='custom-class' />
-                            <ShinyText text="place in the front end developer field." disabled={false} speed={3} className='custom-class' />
+                            <ShinyText text="My passion for UI design, clean code," disabled={false} speed={3} className='custom-class' />
+                            <ShinyText text="and interactive experiences puts me in a " disabled={false} speed={3} className='custom-class' />
+                            <ShinyText text="unique position within the front-end" disabled={false} speed={3} className='custom-class' />
+                            <ShinyText text="development field—where creativity meets functionality." disabled={false} speed={3} className='custom-class' />
                         </div>
                         <DownloadCV />
                     </div>

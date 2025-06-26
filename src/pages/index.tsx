@@ -1,7 +1,6 @@
 
 import NavSidebar from "@/components/fragments/NavSidebar";
 import About from "@/components/layouts/About/About";
-import Footer from "@/components/layouts/Footer/Footer";
 import HeroSection from "@/components/layouts/HeroSection/HeroSection";
 import Introduce from "@/components/layouts/Introduce/Introduce";
 import Portfolio from "@/components/layouts/Portfolio/Portfolio";
@@ -13,6 +12,7 @@ import { Provider } from "react-redux";
 import store from "../redux/store";
 import React, { useEffect } from "react";
 import axios from 'axios'
+import FooterNew from "@/components/layouts/Footer/FooterNew";
 
 
 const Home = () => {
@@ -51,7 +51,7 @@ const Home = () => {
               <Portfolio />
               <Skills />
               <WorkTogether />
-              <Footer />
+              <FooterNew />
             </div>
           </div>
           <div className="relative col-span-1">
