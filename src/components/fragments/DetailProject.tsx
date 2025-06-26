@@ -1,5 +1,5 @@
+import AnimatedContent from "@/blocks/Animations/AnimatedContent/AnimatedContent"
 import React from "react"
-import AnimatedContent from "@/components/elements/Reactbits/AnimatedContent"
 
 type DetailProjectProps = {
     headline: string,

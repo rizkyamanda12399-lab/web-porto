@@ -1,5 +1,5 @@
+import SplitText from "@/blocks/TextAnimations/SplitText/SplitText";
 import Reveal from "@/components/elements/Reveal";
-import SplitText from "@/components/elements/Reactbits/SplitText";
 import Image from "next/image"
 
 const Navbar = () => {
@@ -40,8 +40,6 @@ const Navbar = () => {
                         <SplitText
                             text="Code by Ehan"
                             delay={150}
-                            animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
-                            animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
                             threshold={0.2}
                             rootMargin="-50px" onLetterAnimationComplete={undefined}
                         />

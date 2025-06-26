@@ -1,5 +1,5 @@
-import AnimatedContent from "@/components/elements/Reactbits/AnimatedContent";
-import BlurText from "@/components/elements/Reactbits/BlurText";
+import AnimatedContent from "@/blocks/Animations/AnimatedContent/AnimatedContent";
+import BlurText from "@/blocks/TextAnimations/BlurText/BlurText";
 import CircularText from "@/components/elements/Reactbits/CircularText";
 import Heading from "@/components/fragments/Heading"
 import Image from "next/image"
@@ -37,7 +37,7 @@ const Introduce = () => {
                 distance={150}
                 direction="vertical"
                 reverse={false}
-                config={{ tension: 80, friction: 20 }}
+                // config={{ tension: 80, friction: 20 }}
                 initialOpacity={0.2}
                 animateOpacity
                 scale={1}

@@ -1,7 +1,7 @@
 
 import Image from "next/image"
 import Reveal from "../elements/Reveal";
-import SplitText from "../elements/Reactbits/SplitText.jsx";
+import SplitText from "@/blocks/TextAnimations/SplitText/SplitText";
 
 const BackgroundField = () => {
     return (
@@ -16,8 +16,6 @@ const BackgroundField = () => {
                             text="Freelance,"
                             className="xl:text-[52px] lg:text-[39px] text-[24px] font-normal leading-[125%]"
                             delay={150}
-                            animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
-                            animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
                             threshold={0.2}
                             rootMargin="-50px" onLetterAnimationComplete={undefined} />
                     </div>
@@ -26,8 +24,6 @@ const BackgroundField = () => {
                             text="UI/UX Designer,"
                             className="xl:text-[52px] lg:text-[39px] text-[24px] font-normal leading-[125%]"
                             delay={150}
-                            animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
-                            animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
                             threshold={0.2}
                             rootMargin="-50px" onLetterAnimationComplete={undefined} />
                     </div>
@@ -36,8 +32,6 @@ const BackgroundField = () => {
                             text="Front End"
                             className="xl:text-[52px] lg:text-[39px] text-[24px] font-normal leading-[125%]"
                             delay={150}
-                            animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
-                            animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
                             threshold={0.2}
                             rootMargin="-50px" onLetterAnimationComplete={undefined} />
                         <div className="origin-top-left rotate-[8deg] group-hover:rotate-0 ease-in-out duration-300">
@@ -46,8 +40,6 @@ const BackgroundField = () => {
                                     text="Developer"
                                     className="text-primary"
                                     delay={150}
-                                    animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
-                                    animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
                                     threshold={0.2}
                                     rootMargin="-50px" onLetterAnimationComplete={undefined} />
                                 {/* <span className="text-primary">Developer</span> */}
