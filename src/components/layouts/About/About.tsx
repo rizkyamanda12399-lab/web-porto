@@ -1,10 +1,14 @@
+
+import DecryptedText from "@/blocks/TextAnimations/DecryptedText/DecryptedText";
 import DownloadCV from "@/components/elements/DownloadCV";
-import AnimatedContent from "@/components/elements/Reactbits/AnimatedContent";
-import DecryptedText from "@/components/elements/Reactbits/DecryptedText";
 import ShinyText from "@/components/elements/Reactbits/ShinyText";
 import Heading from "@/components/fragments/Heading"
+import dynamic from "next/dynamic";
 
 const About = () => {
+    const AnimatedContent = dynamic(() => import("@/blocks/Animations/AnimatedContent/AnimatedContent"), {
+        ssr: false,
+    });
 
     const textAbout = [
         {
@@ -37,10 +41,7 @@ const About = () => {
     return (
         <div id="about" className="grid gap-[40px] xl:scroll-mt-[60px] lg:scroll-mt-[40px] scroll-mt-[20px]">
             <Heading src="about" tittle="About" />
-            <AnimatedContent
-                direction="vertical"
-                reverse={false}
-            >
+            <AnimatedContent>
                 <div className="grid lg:grid-cols-12 gap-[40px]">
                     <div className="grid col-span-7 xl:gap-[40px] lg:gap-[30px] gap-[20px]">
                         <div className="xl:text-[60px] lg:text-[45px] text-[28px] font-light xl:leading-[72px] lg:leading-[54px]">

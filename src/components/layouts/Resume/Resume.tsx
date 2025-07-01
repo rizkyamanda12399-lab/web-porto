@@ -1,8 +1,11 @@
 import Experience from "@/components/elements/Experience"
-import AnimatedContent from "@/components/elements/Reactbits/AnimatedContent"
 import Heading from "@/components/fragments/Heading"
+import dynamic from "next/dynamic";
 
 const Resume = () => {
+    const AnimatedContent = dynamic(() => import("@/blocks/Animations/AnimatedContent/AnimatedContent"), {
+        ssr: false,
+    });
     const jobUiux = [
         {
             id: 1,
@@ -86,10 +89,7 @@ const Resume = () => {
             <div id="resume" className="grid w-full xl:gap-[40px] lg:gap-[30px] gap-[16px] xl:scroll-mt-[60px] lg:scroll-mt-[40px] scroll-mt-[20px]">
                 <Heading src="resume" tittle="Resume" />
                 <h2 className="xl:text-[60px] lg:text-[45px] text-[36px] font-light xl:leading-[72px] lg:leading-[54px]">Experience</h2>
-                <AnimatedContent
-                    direction="vertical"
-                    reverse={false}
-                >
+                <AnimatedContent>
                     <Experience tittle="UI/UX Designer" place="CV Rumah Software RDN (Feb 2023 - Jul 2023)"
                         li={jobUiux.map((li) => (
                             <li key={li.id}>{li.tittle}</li>
@@ -104,17 +104,11 @@ const Resume = () => {
 
                 </AnimatedContent>
 
-                <AnimatedContent
-                    direction="vertical"
-                    reverse={false}
-                >
+                <AnimatedContent>
                     <div className="w-full h-[1px] bg-primary"></div>
                 </AnimatedContent>
 
-                <AnimatedContent
-                    direction="vertical"
-                    reverse={false}
-                >
+                <AnimatedContent>
                     <Experience tittle="Front End Developer" place="CV Rumah Software RDN (Jul 2023 - Feb 2024)"
                         li={jobFront.map((li) => (
                             <li key={li.id}>{li.tittle}</li>

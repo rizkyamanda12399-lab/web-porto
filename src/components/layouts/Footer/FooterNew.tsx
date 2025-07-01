@@ -15,11 +15,15 @@ const FooterNew = () => {
             <div className="w-full h-[1px] bg-primary"></div>
             <div className="grid xl:gap-[80px] lg:gap-[60px] gap-[32px] xl:py-[80px] lg:py-[60px] py-[40px]">
                 <Heading src="contact" tittle="Contact" />
-                <div className="grid grid-cols-3 xl:gap-[32px] lg:gap-[24px] gap-[16px]">
-                    <div className="grid col-span-2">
-                        <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
+                <div className="grid grid-cols-2 xl:gap-[32px] lg:gap-[24px] gap-[16px]">
+                    <div className="hidden relative h-fit xl:grid col-span-1 lg:grid bg-slate-500/25">
+                        <div className="w-full h-full bg-slate-100/50">
+                            {/* test */}
+                            <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
+                        </div>
                     </div>
-                    <div className="grid col-span-1 xl:gap-[32px] lg:gap-[24px] gap-[16px]">
+                    <div className="grid col-span-1 xl:hidden lg:hidden"></div>
+                    <div className="grid h-fit col-span-1 xl:gap-[32px] lg:gap-[24px] gap-[16px]">
                         <div className="xl:text-[32px] lg:text-[24px] text-[16px] border-b-[2px] border-primary w-fit h-fit">Menu</div>
                         <div className="xl:flex lg:flex grid xl:gap-[80px] lg:gap-[60px] ">
                             <div className="">

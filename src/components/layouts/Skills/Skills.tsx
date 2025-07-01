@@ -1,9 +1,12 @@
-import AnimatedContent from "@/components/elements/Reactbits/AnimatedContent";
 import Heading from "@/components/fragments/Heading";
 import Image from "next/image";
 import { skills1, skills2 } from "./constant";
+import dynamic from "next/dynamic";
 
 const Skills = () => {
+    const AnimatedContent = dynamic(() => import("@/blocks/Animations/AnimatedContent/AnimatedContent"), {
+        ssr: false,
+    });
     return (
         <div id="skills" className="grid xl:gap-[40px] lg:gap-[30px] gap-[20px] xl:scroll-mt-[60px] lg:scroll-mt-[40px] scroll-mt-[20px]">
             <Heading src="skills" tittle="Skills" />
@@ -15,10 +18,7 @@ const Skills = () => {
                     <div className="grid grid-cols-3 lg:grid-cols-8 xl:grid-cols-8 gap-4">
                         {skills1.map((item, index) => (
                             <div key={index}>
-                                <AnimatedContent
-                                    direction="vertical"
-                                    reverse={false}
-                                >
+                                <AnimatedContent>
                                     <div className="grid justify-center items-center xl:w-[180px] xl:h-[180px] lg:w-[130px] lg:h-[130px] w-[90px] h-[90px] border-[1px] border-gray xl:rounded-[32px] lg:rounded-[24px] rounded-[16px] cursor-pointer hover:border-primary hover:border-[2px] group">
 
                                         <div className="grid gap-2 group">
@@ -36,11 +36,7 @@ const Skills = () => {
                     <div className="grid grid-cols-3 lg:grid-cols-8 xl:grid-cols-8 gap-4">
                         {skills2.map((item, index) => (
                             <div key={index} >
-                                <AnimatedContent
-                                    direction="vertical"
-                                    reverse={false}
-                                    config={{ tension: 80, friction: 20 }}
-                                >
+                                <AnimatedContent>
                                     <div className="grid justify-center items-center xl:w-[180px] xl:h-[180px] lg:w-[130px] lg:h-[130px] w-[90px] h-[90px] border-[1px] border-gray xl:rounded-[32px] lg:rounded-[24px] rounded-[16px] cursor-pointer hover:border-primary hover:border-[2px] group">
                                         <div className="grid gap-2 group">
                                             <div className="flex justify-center">

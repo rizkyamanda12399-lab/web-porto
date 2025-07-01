@@ -1,49 +1,39 @@
 
+import dynamic from "next/dynamic";
 import Image from "next/image"
-import Reveal from "../elements/Reveal";
-import SplitText from "@/blocks/TextAnimations/SplitText/SplitText";
+
+const SplitText = dynamic(() => import("@/blocks/TextAnimations/SplitText/SplitText"), {
+    ssr: false,
+});
 
 const BackgroundField = () => {
     return (
         <div className="">
             <div className="absolute hidden xl:grid lg:grid gap-[100px] xl:top-[150px] lg:top-[110px] xl:left-[1275px] lg:left-[1006px] left-[600px]">
-                <Reveal>
-                    <Image src="icon/diagonal-arrow.svg" alt="" width={32} height={32} />
-                </Reveal>
+                <Image src="icon/diagonal-arrow.svg" alt="" width={32} height={32} />
                 <div className="xl:text-[52px] lg:text-[39px] text-[24px] font-normal leading-[125%]">
                     <div className="">
                         <SplitText
                             text="Freelance,"
-                            className="xl:text-[52px] lg:text-[39px] text-[24px] font-normal leading-[125%]"
-                            delay={150}
-                            threshold={0.2}
-                            rootMargin="-50px" onLetterAnimationComplete={undefined} />
+
+                        />
                     </div>
                     <div className="">
                         <SplitText
                             text="UI/UX Designer,"
-                            className="xl:text-[52px] lg:text-[39px] text-[24px] font-normal leading-[125%]"
-                            delay={150}
-                            threshold={0.2}
-                            rootMargin="-50px" onLetterAnimationComplete={undefined} />
+
+                        />
                     </div>
                     <div className="flex gap-1 group cursor-pointer">
                         <SplitText
                             text="Front End"
-                            className="xl:text-[52px] lg:text-[39px] text-[24px] font-normal leading-[125%]"
-                            delay={150}
-                            threshold={0.2}
-                            rootMargin="-50px" onLetterAnimationComplete={undefined} />
+
+                        />
                         <div className="origin-top-left rotate-[8deg] group-hover:rotate-0 ease-in-out duration-300">
-                            <Reveal>
-                                <SplitText
-                                    text="Developer"
-                                    className="text-primary"
-                                    delay={150}
-                                    threshold={0.2}
-                                    rootMargin="-50px" onLetterAnimationComplete={undefined} />
-                                {/* <span className="text-primary">Developer</span> */}
-                            </Reveal>
+                            <SplitText
+                                text="Developer"
+                                className="text-primary"
+                            />
                         </div>
                     </div>
                 </div>

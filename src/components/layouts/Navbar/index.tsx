@@ -1,6 +1,9 @@
-import SplitText from "@/blocks/TextAnimations/SplitText/SplitText";
-import Reveal from "@/components/elements/Reveal";
 import Image from "next/image"
+import dynamic from "next/dynamic";
+
+const SplitText = dynamic(() => import("@/blocks/TextAnimations/SplitText/SplitText"), {
+    ssr: false,
+});
 
 const Navbar = () => {
     const handleScroll = (sectionId: string) => {
@@ -33,15 +36,17 @@ const Navbar = () => {
         <>
             <div className="container xl:flex lg:flex md:flex items-center justify-between xl:py-[40px] lg:py-[40px] py-[20px]">
                 <div className="flex items-center gap-2">
-                    <Reveal>
-                        <Image className="w-[20px] h-[20px] xl:w-[24px] xl:h-[24px]" src="/icon/copyright.svg" alt="" width={24} height={24} />
-                    </Reveal>
-                    <div className="xl:text-[24px] lg:text-[18px] text-[14px] font-normal">
-                        <SplitText
+                    <Image className="w-[20px] h-[20px] xl:w-[24px] xl:h-[24px]" src="/icon/copyright.svg" alt="" width={24} height={24} />
+                    <div className="flex items-center xl:text-[24px] lg:text-[18px] text-[14px] font-normal">
+                        {/* Code by Ehan */}
+                        {/* <SplitText
                             text="Code by Ehan"
                             delay={150}
                             threshold={0.2}
                             rootMargin="-50px" onLetterAnimationComplete={undefined}
+                        /> */}
+                        <SplitText
+                            text="Code by Ehan"
                         />
                     </div>
 

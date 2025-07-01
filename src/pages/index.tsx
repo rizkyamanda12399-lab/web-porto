@@ -14,7 +14,6 @@ import React, { useEffect } from "react";
 import axios from 'axios'
 import FooterNew from "@/components/layouts/Footer/FooterNew";
 
-
 const Home = () => {
   useEffect(() => {
     if (navigator.geolocation) {

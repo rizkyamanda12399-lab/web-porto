@@ -1,4 +1,6 @@
-import AnimatedContent from "@/blocks/Animations/AnimatedContent/AnimatedContent"
+'use client';
+
+import dynamic from "next/dynamic";
 import React from "react"
 
 type DetailProjectProps = {
@@ -14,13 +16,14 @@ type DetailProjectProps = {
 const DetailProject = (props: DetailProjectProps) => {
     const { headline, job, tittle, colorPrimary, desc, img, src } = props
 
+    const AnimatedContent = dynamic(() => import("@/blocks/Animations/AnimatedContent/AnimatedContent"), {
+        ssr: false,
+    });
+
     return (
         <div className="grid xl:gap-[24px] lg:gap-[20px] gap-[16px]">
             <div className="xl:flex lg:flex grid items-center xl:gap-8 lg:gap-8 gap-1">
-                <AnimatedContent
-                    direction="vertical"
-                    reverse={false}
-                >
+                <AnimatedContent>
                     <h2 className="xl:text-[40px] lg:text-[32px] text-[24px] font-normal">{headline}</h2>
                     <div className="h-full w-[1px] bg-white/50"></div>
                     <p className="xl:text-[16px] lg:text-[16px] text-[12px] text-white/70">{job}</p>
@@ -28,10 +31,7 @@ const DetailProject = (props: DetailProjectProps) => {
             </div>
 
 
-            <AnimatedContent
-                direction="vertical"
-                reverse={false}
-            >
+            <AnimatedContent>
                 <div className="grid xl:grid-cols-12 lg:grid-cols-12 xl:gap-[32px] lg:gap-[24px] gap-[16px]">
                     <div className={`grid items-start xl:col-span-4 lg:col-span-4 col-span-12 xl:p-[40px] lg:p-[30px] p-[20px] ${colorPrimary} xl:rounded-[32px] lg:rounded-[32px] rounded-[20px] xl:order-first lg:order-first order-last`}>
                         <div className="grid xl:gap-[24px] lg:gap-[20px] gap-[16px]">

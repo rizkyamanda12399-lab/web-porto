@@ -1,11 +1,16 @@
-import AnimatedContent from "@/blocks/Animations/AnimatedContent/AnimatedContent";
 import BlurText from "@/blocks/TextAnimations/BlurText/BlurText";
-import CircularText from "@/components/elements/Reactbits/CircularText";
+import CircularText from "@/blocks/TextAnimations/CircularText/CircularText";
 import Heading from "@/components/fragments/Heading"
+import dynamic from "next/dynamic";
 import Image from "next/image"
 
 
 const Introduce = () => {
+
+    const AnimatedContent = dynamic(() => import("@/blocks/Animations/AnimatedContent/AnimatedContent"), {
+        ssr: false,
+    });
+
     const handleScroll = (sectionId: string) => {
         const section = document.getElementById(sectionId);
         if (section) {
@@ -33,17 +38,7 @@ const Introduce = () => {
 
     return (
         <div className="">
-            <AnimatedContent
-                distance={150}
-                direction="vertical"
-                reverse={false}
-                // config={{ tension: 80, friction: 20 }}
-                initialOpacity={0.2}
-                animateOpacity
-                scale={1}
-                threshold={0.2}
-            >
-
+            <AnimatedContent>
                 <div id="introduce" className="grid xl:grid-cols-12 lg:grid-cols-12 gap-[32px] xl:scroll-mt-[60px] lg:scroll-mt-[40px] scroll-mt-[20px]">
                     <div className="grid xl:col-span-8 lg:col-span-8 xl:gap-[40px] lg:gap-[30px] gap-[20px]">
                         <Heading src="home" tittle="Introduce" />
@@ -75,7 +70,7 @@ const Introduce = () => {
                                 text="SCROLL TO MY PROJECT ~ SCROLL TO MY PROJECT ~ "
                                 onHover="goBonkers"
                                 spinDuration={60}
-                                className=""
+                                className="text-[32px] font-light text-gray-500"
                             />
                             <div className="absolute group-hover:pointer-events-none">
                                 <Image className="" src="icon/down-arrow.svg" alt="" width={84} height={84} />
