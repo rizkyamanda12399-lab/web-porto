@@ -37,10 +37,11 @@ const FooterNew = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="grid col-span-1 xl:hidden lg:hidden"></div>
+                    {/* <div className="grid col-span-1 xl:hidden lg:hidden">
+                    </div> */}
                     <div className="grid h-fit col-span-1 xl:gap-[32px] lg:gap-[24px] gap-[16px]">
                         <div className="xl:text-[32px] lg:text-[24px] text-[16px] border-b-[2px] border-primary w-fit h-fit">Menu</div>
-                        <div className="xl:flex lg:flex grid xl:gap-[80px] lg:gap-[60px] ">
+                        <div className="xl:flex lg:flex flex xl:gap-[80px] lg:gap-[60px] w-full">
                             <div className="">
                                 <ul className="list-disc pl-8 xl:text-[24px] lg:text-[20px] text-[14px] font-light">
                                     <li className="hover:text-primary cursor-pointer" onClick={() => handleScroll("introduce")}>Home</li>
@@ -56,31 +57,35 @@ const FooterNew = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="">
+                        <div className="hidden xl:block lg:block">
                             <ContactForm />
                         </div>
                     </div>
                 </div>
 
 
+                <div className="grid col-span-1 xl:hidden lg:hidden">
+                    <ContactForm />
+                </div>
 
-
-                <div className="flex justify-between mb-[80px] lg:mb-0 xl:mb-0">
+                <div className="flex justify-between mb-[80px] lg:mb-0 xl:mb-0 gap-[16px]">
                     <p className="xl:text-[24px] lg:text-[20px] text-[14px]">© 2024 Muhammad Rayhan Fuadi. All Right Reserved</p>
-                    <div className="flex items-center xl:gap-[24px] lg:gap-[20px] gap-[14px] group">
+                    <div className="xl:flex lg:flex grid items-center xl:gap-[24px] lg:gap-[20px] gap-[14px] group">
                         <p className="xl:text-[24px] lg:text-[20px] text-[14px]">Social Media: </p>
-                        <a href="https://github.com/rayhanfuadi" target="_blank">
-                            <Image src="icon/github.svg" alt="" width={32} height={32} />
-                        </a>
-                        <a href="https://www.instagram.com/rayhanfuadi/" target="_blank">
-                            <Image src="icon/instagram.svg" alt="" width={32} height={32} />
-                        </a>
-                        <a href="https://www.linkedin.com/in/rayhan-fuadi-36321a134/" target="_blank">
-                            <Image src="icon/linkedin.svg" alt="" width={32} height={32} />
-                        </a>
-                        <a href="https://wa.link/cuy3df" target="_blank">
-                            <Image src="icon/wa.svg" alt="" width={32} height={32} />
-                        </a>
+                        <div className="flex items-center xl:gap-[24px] lg:gap-[20px] gap-[14px]">
+                            <a href="https://github.com/rayhanfuadi" target="_blank">
+                                <Image src="icon/github.svg" alt="" width={32} height={32} />
+                            </a>
+                            <a href="https://www.instagram.com/rayhanfuadi/" target="_blank">
+                                <Image src="icon/instagram.svg" alt="" width={32} height={32} />
+                            </a>
+                            <a href="https://www.linkedin.com/in/rayhan-fuadi-36321a134/" target="_blank">
+                                <Image src="icon/linkedin.svg" alt="" width={32} height={32} />
+                            </a>
+                            <a href="https://wa.link/cuy3df" target="_blank">
+                                <Image src="icon/wa.svg" alt="" width={32} height={32} />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
