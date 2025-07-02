@@ -1,5 +1,5 @@
 /*
-	Installed from https://reactbits.dev/ts/tailwind/
+  Installed from https://reactbits.dev/ts/tailwind/
 */
 
 import { useEffect, useState, useRef } from "react";
@@ -209,9 +209,9 @@ export default function DecryptedText({
   const hoverProps =
     animateOn === "hover"
       ? {
-          onMouseEnter: () => setIsHovering(true),
-          onMouseLeave: () => setIsHovering(false),
-        }
+        onMouseEnter: () => setIsHovering(true),
+        onMouseLeave: () => setIsHovering(false),
+      }
       : {};
 
   return (

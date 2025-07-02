@@ -1,5 +1,6 @@
 
-import DecryptedText from "@/blocks/TextAnimations/DecryptedText/DecryptedText";
+import BlurText from "@/blocks/TextAnimations/BlurText/BlurText";
+// import DecryptedText from "@/blocks/TextAnimations/DecryptedText/DecryptedText";
 import DownloadCV from "@/components/elements/DownloadCV";
 import ShinyText from "@/components/elements/Reactbits/ShinyText";
 import Heading from "@/components/fragments/Heading"
@@ -15,26 +16,31 @@ const About = () => {
             text: "Helping brands thrive in the",
             characters: "abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+",
             speed: 30,
+            delay: 30,
         },
         {
             text: "digital age. Together, we'll create standout products that resonate",
             characters: "abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+",
             speed: 50,
+            delay: 50,
         },
         {
             text: "with your target audience.",
             characters: "abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+",
             speed: 70,
+            delay: 70,
         },
         {
             text: "",
             characters: "abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+",
             speed: 100,
+            delay: 100,
         },
         {
             text: "Let's get started—time to bring your vision to life!",
             characters: "abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+",
             speed: 100,
+            delay: 100,
         },
     ]
 
@@ -47,7 +53,7 @@ const About = () => {
                         <div className="xl:text-[60px] lg:text-[45px] text-[28px] font-light xl:leading-[72px] lg:leading-[54px]">
                             {textAbout.map((item, index) => (
                                 <div key={index}>
-                                    <DecryptedText
+                                    {/* <DecryptedText
                                         text={item.text}
                                         animateOn="view"
                                         speed={item.speed}
@@ -56,6 +62,14 @@ const About = () => {
                                         className="revealed"
                                         parentClassName="all-letters"
                                         encryptedClassName="encrypted"
+                                        revealDirection="start"
+                                    /> */}
+                                    <BlurText
+                                        text={item.text}
+                                        delay={item.delay}
+                                        animateBy="words"
+                                        direction="top"
+                                        animationFrom={undefined} animationTo={undefined} onAnimationComplete={undefined}
                                     />
                                 </div>
                             ))}
