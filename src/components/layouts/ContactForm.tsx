@@ -48,7 +48,7 @@ export default function ContactForm() {
             <form onSubmit={handleSubmit} className="space-y-4 rounded-2xl shadow">
                 <Input
                     name="name"
-                    placeholder="Nama Anda"
+                    placeholder="Your Name"
                     value={form.name}
                     onChange={handleChange}
                     required
@@ -56,7 +56,7 @@ export default function ContactForm() {
                 />
                 <Input
                     name="subject"
-                    placeholder="Subjek"
+                    placeholder="Subject"
                     value={form.subject}
                     onChange={handleChange}
                     required
@@ -64,18 +64,18 @@ export default function ContactForm() {
                 />
                 <Textarea
                     name="message"
-                    placeholder="Pesan"
+                    placeholder="Message"
                     value={form.message}
                     onChange={handleChange}
                     required
                     className="border-primary/40 focus:border-primary focus:ring-1 focus:ring-primary"
                 />
                 <Button type="submit" disabled={status === "loading"}>
-                    {status === "loading" ? "Mengirim..." : "Kirim Pesan"}
+                    {status === "loading" ? "Sending..." : "Send Message"}
                 </Button>
 
-                {status === "success" && <p className="text-green-600">Pesan berhasil dikirim!</p>}
-                {status === "error" && <p className="text-red-600">Terjadi kesalahan. Coba lagi.</p>}
+                {status === "success" && <p className="text-green-600">Message sent successfully!</p>}
+                {status === "error" && <p className="text-red-600">An error occurred. Please try again.</p>}
             </form>
         </div>
     );

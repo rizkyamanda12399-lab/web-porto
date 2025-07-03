@@ -39,9 +39,9 @@ const Introduce = () => {
     return (
         <div className="">
             <AnimatedContent>
-                <div id="introduce" className="grid xl:grid-cols-12 lg:grid-cols-12 gap-[32px] xl:scroll-mt-[60px] lg:scroll-mt-[40px] scroll-mt-[20px]">
+                <Heading src="home" tittle="Introduce" />
+                <div id="introduce" className="grid xl:grid-cols-12 lg:grid-cols-12 gap-[32px] xl:scroll-mt-[60px] lg:scroll-mt-[40px] scroll-mt-[20px] xl:mt-[40px] lg:mt-[30px] mt-[20px]">
                     <div className="grid xl:col-span-8 lg:col-span-8 xl:gap-[40px] lg:gap-[30px] gap-[20px]">
-                        <Heading src="home" tittle="Introduce" />
                         <div className="xl:text-[80px] lg:text-[60px] text-[32px] font-light xl:leading-[96px] lg:leading-[72px]">
                             {textIntroduce.map((item, index) => (
                                 <div key={index}>
@@ -70,7 +70,7 @@ const Introduce = () => {
                                 text="SCROLL TO MY PROJECT ~ SCROLL TO MY PROJECT ~ "
                                 onHover="goBonkers"
                                 spinDuration={60}
-                                className="text-[32px] font-light text-gray-500"
+                                className="text-[32px] font-semibold text-gray-500"
                             />
                             <div className="absolute group-hover:pointer-events-none">
                                 <Image className="" src="icon/down-arrow.svg" alt="" width={84} height={84} />

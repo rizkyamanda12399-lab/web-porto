@@ -15,7 +15,6 @@ const BackgroundField = () => {
                     <div className="">
                         <SplitText
                             text="Freelance,"
-
                         />
                     </div>
                     <div className="">
