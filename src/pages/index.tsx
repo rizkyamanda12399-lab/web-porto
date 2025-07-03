@@ -35,7 +35,7 @@ const Home = () => {
 
   return (
     <Provider store={store}>
-      <main className="relative grid">
+      <main className="relative grid overflow-hidden">
         <HeroSection />
         <div className="grid relative xl:grid-cols-12 lg:grid-cols-12">
           <div className="col-span-12">
