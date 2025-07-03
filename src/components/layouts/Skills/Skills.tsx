@@ -19,8 +19,8 @@ const Skills = () => {
                     <ProfileCard
                         name="M Rayhan Fuadi, S.Kom"
                         title="UI/UX Designer & Frontend Developer"
-                        handle="@rayhanfuadi"
-                        status="Online"
+                        handle="rayhanfuadi"
+                        status="Available"
                         contactText="Contact Me"
                         avatarUrl="/ehan.png"
                         showUserInfo={true}

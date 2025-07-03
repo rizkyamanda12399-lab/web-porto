@@ -35,13 +35,13 @@ const Home = () => {
 
   return (
     <Provider store={store}>
-      <main className="relative grid overflow-hidden">
+      <main className="relative grid">
         <HeroSection />
         <div className="grid relative xl:grid-cols-12 lg:grid-cols-12">
           <div className="col-span-12">
             <div className="h-[80px] bg-gradient-to-b from-[#000C04] to-transparent "></div>
           </div>
-          <div className="xl:col-span-11 lg:col-span-11">
+          <div className="xl:col-span-11 lg:col-span-11 overflow-hidden">
             <div className="relative container grid xl:gap-[200px] lg:gap-[200px] gap-[100px]">
               <Introduce />
               <About />

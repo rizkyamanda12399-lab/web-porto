@@ -37,10 +37,10 @@ const Introduce = () => {
     ]
 
     return (
-        <div className="">
-            <AnimatedContent>
+        <div id="introduce" className="xl:scroll-mt-[60px] lg:scroll-mt-[40px] scroll-mt-[20px] xl:mt-[40px] lg:mt-[30px] mt-[20px]">
+            <AnimatedContent className="grid xl:gap-[40px] lg:gap-[30px] gap-[20px]">
                 <Heading src="home" tittle="Introduce" />
-                <div id="introduce" className="grid xl:grid-cols-12 lg:grid-cols-12 gap-[32px] xl:scroll-mt-[60px] lg:scroll-mt-[40px] scroll-mt-[20px] xl:mt-[40px] lg:mt-[30px] mt-[20px]">
+                <div className="grid xl:grid-cols-12 lg:grid-cols-12 gap-[32px] ">
                     <div className="grid xl:col-span-8 lg:col-span-8 xl:gap-[40px] lg:gap-[30px] gap-[20px]">
                         <div className="xl:text-[80px] lg:text-[60px] text-[32px] font-light xl:leading-[96px] lg:leading-[72px]">
                             {textIntroduce.map((item, index) => (
@@ -58,13 +58,6 @@ const Introduce = () => {
                     </div>
 
                     <div className="relative xl:col-span-4 lg:col-span-4 grid gap-10 justify-center items-center">
-                        {/* <div className="relative flex justify-center items-center cursor-pointer lg:scale-100 scale-75" onClick={() => handleScroll("portfolio")}>
-                            <Image className="animate-slowspin" src="icon/project-scroll.svg" alt="" width={267} height={267} />
-                            <div className="absolute">
-                                <Image className="" src="icon/down-arrow.svg" alt="" width={84} height={84} />
-                            </div>
-                        </div> */}
-
                         <div className="relative flex justify-center items-center cursor-pointer lg:scale-100 scale-75 group" onClick={() => handleScroll("portfolio")}>
                             <CircularText
                                 text="SCROLL TO MY PROJECT ~ SCROLL TO MY PROJECT ~ "
