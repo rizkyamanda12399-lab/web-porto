@@ -20,7 +20,7 @@
     "@react-three/fiber": "^9.1.2",
     "@react-three/rapier": "^2.1.0",
     "@reduxjs/toolkit": "^2.5.0",
-    "@supabase/supabase-js": "^2.50.0",
+    "@supabase/supabase-js": "^2.50.3",
     "aos": "^2.3.4",
     "axios": "^1.10.0",
     "class-variance-authority": "^0.7.1",

@@ -1,42 +1,35 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // pages/api/messages.ts
-import type { NextApiRequest, NextApiResponse } from "next";
-import { PrismaClient } from "@prisma/client";
+import { supabase } from "@/lib/supabase";
 
-const prisma = new PrismaClient();
-
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(req: any, res: any) {
     if (req.method === "GET") {
-        // Ambil semua pesan
-        try {
-            const messages = await prisma.message.findMany({
-                orderBy: { createdAt: "desc" },
-            });
-            return res.status(200).json(messages);
-        } catch (error) {
-            return res.status(500).json({ message: "Gagal mengambil data pesan" });
+        const { data, error } = await supabase
+            .from("Message")
+            .select("*")
+            .order("created_at", { ascending: false });
+
+        if (error) {
+            console.error("GET error:", error.message);
+            return res.status(500).json({ error: error.message });
         }
+
+        return res.status(200).json(data);
     }
 
     if (req.method === "POST") {
-        // Simpan pesan baru
         const { name, subject, message } = req.body;
+        const { data, error } = await supabase
+            .from("Message")
+            .insert([{ name, subject, message }]);
 
-        if (!name || !subject || !message) {
-            return res.status(400).json({ message: "Semua field wajib diisi." });
+        if (error) {
+            console.error("POST error:", error.message);
+            return res.status(500).json({ error: error.message });
         }
 
-        try {
-            await prisma.message.create({
-                data: { name, subject, message },
-            });
-            return res.status(200).json({ message: "Pesan berhasil disimpan!" });
-        } catch (error) {
-            console.error(error);
-            return res.status(500).json({ message: "Gagal menyimpan pesan" });
-        }
+        return res.status(201).json(data);
     }
 
-    // Jika method bukan GET/POST
-    return res.status(405).json({ message: "Method not allowed" });
+    return res.status(405).json({ error: "Method not allowed" });
 }

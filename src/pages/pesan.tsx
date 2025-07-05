@@ -14,8 +14,9 @@ type Message = {
     name: string;
     subject: string;
     message: string;
-    createdAt: string;
+    created_at: string;
 };
+
 
 export default function PesanPage() {
     const [messages, setMessages] = useState<Message[]>([]);
@@ -30,6 +31,7 @@ export default function PesanPage() {
     const fetchMessages = async () => {
         const res = await fetch("/api/messages");
         const data = await res.json();
+        console.log("Fetched messages:", data); // Tambahkan log ini
         setMessages(data);
         setLoading(false);
     };
@@ -107,7 +109,7 @@ export default function PesanPage() {
                                                 </p>
                                                 <p>
                                                     <strong>Dikirim:</strong>{" "}
-                                                    {new Date(selectedMessage?.createdAt || "").toLocaleString("id-ID")}
+                                                    {new Date(selectedMessage?.created_at || "").toLocaleString("id-ID")}
                                                 </p>
                                             </DialogContent>
                                         </Dialog>

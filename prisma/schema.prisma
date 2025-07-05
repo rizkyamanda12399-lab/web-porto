@@ -1,13 +1,14 @@
+// schema.prisma
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
+  provider = "postgresql"
+  url      = env("DATABASE_URL") // gunakan variabel .env
 }
 
-model Message {
+model Message { 
   id        Int      @id @default(autoincrement())
   name      String
   subject   String
