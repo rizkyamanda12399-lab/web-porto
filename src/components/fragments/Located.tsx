@@ -1,4 +1,4 @@
-import DecryptedText from "@/blocks/TextAnimations/DecryptedText/DecryptedText"
+// import DecryptedText from "@/blocks/TextAnimations/DecryptedText/DecryptedText"
 import Image from "next/image"
 
 const Located = () => {
@@ -30,7 +30,7 @@ const Located = () => {
                     <p>Indonesia</p> */}
                     {desc.map((item, index) => (
                         <div className="" key={index}>
-                            <DecryptedText
+                            {/* <DecryptedText
                                 text={item.text}
                                 animateOn="view"
                                 speed={item.speed}
@@ -40,7 +40,8 @@ const Located = () => {
                                 parentClassName="all-letters"
                                 encryptedClassName="encrypted"
                                 revealDirection="start"
-                            />
+                            /> */}
+                            {item.text}
                         </div>
                     ))}
                 </div>

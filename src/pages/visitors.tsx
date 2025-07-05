@@ -102,7 +102,9 @@ export default function VisitorPage() {
                                     <TableRow key={v.id}>
                                         <TableCell>{index + 1}</TableCell>
                                         <TableCell>{v.ip_address}</TableCell>
-                                        <TableCell>{v.formatted_address || `${v.city}, ${v.country}`}</TableCell>
+                                        <TableCell
+                                            className='text-wrap truncate max-w-[150px]'
+                                        >{v.formatted_address || `${v.city}, ${v.country}`}</TableCell>
                                         <TableCell>
                                             {v.latitude && v.longitude ? (
                                                 <a
@@ -117,7 +119,9 @@ export default function VisitorPage() {
                                                 '-'
                                             )}
                                         </TableCell>
-                                        <TableCell>{v.referer || '-'}</TableCell>
+                                        <TableCell
+                                            className='text-wrap truncate max-w-[200px]'
+                                        >{v.referer || '-'}</TableCell>
                                         <TableCell>{new Date(v.visited_at).toLocaleString('id-ID')}</TableCell>
                                         <TableCell>
                                             <button

@@ -37,7 +37,7 @@ const Home = () => {
     <Provider store={store}>
       <main className="relative grid">
         <HeroSection />
-        <div className="grid relative xl:grid-cols-12 lg:grid-cols-12">
+        <div className="grid relative xl:grid-cols-12 lg:grid-cols-12 justify-center">
           <div className="col-span-12">
             <div className="h-[80px] bg-gradient-to-b from-[#000C04] to-transparent "></div>
           </div>
