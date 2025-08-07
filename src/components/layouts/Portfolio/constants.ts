@@ -246,7 +246,7 @@ export const DetailProjects = [
     },
     {
         headline: "Harisenin.com - To Do List App",
-        job: "IU/UX Designer & Frontend Developer",
+        job: "UI/UX Designer & Frontend Developer",
         colorPrimary: "bg-todolist-gradient",
         tittle: "To Do List",
         desc: "Develop UI/UX Design for to do list application using Figma. Develop to do list application using HTML, Tailwind CSS, and Javascript. Create state management using javascript which is saved into local storage of user's device",
@@ -255,7 +255,7 @@ export const DetailProjects = [
     },
     {
         headline: "College Project - Study Connections",
-        job: "IU/UX Designer",
+        job: "UI/UX Designer",
         colorPrimary: "bg-study-gradient",
         tittle: "Study Conn",
         desc: "Truant behavior often occurs in students from junior high school to college. Based on research by Mogulescu and Segal in a journal made by Minarni in 2017, the research noted that 75-85% of delinquent teenagers are teenagers who have a habit of skipping school or missing school very often. So the purpose of this application was created to connect information from the agency with the student's family in order to get information in real time",
@@ -264,7 +264,7 @@ export const DetailProjects = [
     },
     {
         headline: "Learning Project - Hokben",
-        job: "IU/UX Designer",
+        job: "UI/UX Designer",
         colorPrimary: "bg-hokben-gradient",
         tittle: "Hokben App Mobile",
         desc: "Sometimes everyone has a different point of view. This time I was using the HokBen application. I felt that in the HokBen application there were several displays that needed to be adjusted for me, yes, this is back to my personal point of view. Therefore, I re-designed the HokBen application which I think needs to be adjusted or updated",
@@ -273,7 +273,7 @@ export const DetailProjects = [
     },
     {
         headline: "Nuha Care Website Company",
-        job: "IU/UX Designer",
+        job: "UI/UX Designer",
         colorPrimary: "bg-nuha-gradient",
         tittle: "Nuha Care",
         desc: "When I worked as a Frontend Developer at PT Data Integrasi Inovasi. My team was pursuing a new Sprint, namely to completely update the company website. In this sprint, I was assigned to handle the UI/UX Designer for the website by my Product Manager.",
