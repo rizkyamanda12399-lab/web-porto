@@ -31,7 +31,6 @@ export default function PesanPage() {
     const fetchMessages = async () => {
         const res = await fetch("/api/messages");
         const data = await res.json();
-        console.log("Fetched messages:", data); // Tambahkan log ini
         setMessages(data);
         setLoading(false);
     };

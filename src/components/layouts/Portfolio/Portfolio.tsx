@@ -1,7 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import DetailProject from "@/components/fragments/DetailProject"
 import Heading from "@/components/fragments/Heading"
 import Image from "next/image"
-import { Bmk, BmkIcon, ChillMovie, ChillMovieIcon, Hokben, HokbenIcon, Kontributor, KontributorIcon, Nuha, NuhaIcon, Puskur, PuskurIcon, StudyConnections, StudyConnectionsIcon, Todolist, TodolistIcon } from "./constants"
+import { Bmk, BmkIcon, ChillMovie, ChillMovieIcon, DetailProjects, Hokben, HokbenIcon, Kontributor, KontributorIcon, Nuha, NuhaIcon, Puskur, PuskurIcon, StudyConnections, StudyConnectionsIcon, Todolist, TodolistIcon } from "./constants"
 
 const Portfolio = () => {
 
@@ -12,7 +13,8 @@ const Portfolio = () => {
                 <div className="xl:text-[60px] lg:text-[40px] text-[36px] font-light xl:leading-[72px] lg:leading-[54px]">My Recent<span className="text-primary"> Project</span></div>
                 {/* Portfolio */}
                 <div className="grid xl:gap-[80px] lg:gap-[60px] gap-[40px]">
-                    <DetailProject
+
+                    {/* <DetailProject
                         headline="Kemdikbud - Laman Pusat Kurikulum dan Pembelajaran"
                         job="UI/UX Designer & Frontend Developer"
                         colorPrimary="bg-puskur-gradient"
@@ -28,11 +30,34 @@ const Portfolio = () => {
                                 <Image className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] w-[18px] h-[18px]" src={item.src} alt="" width={36} height={36} />
                             </div>
                         ))}
-                    />
+                    /> */}
+                    {DetailProjects.map((project, index) => (
+                        <>
+                            <DetailProject
+                                key={index}
+                                headline={project.headline}
+                                job={project.job}
+                                colorPrimary={project.colorPrimary}
+                                tittle={project.tittle}
+                                desc={project.desc}
+                                img={project.img.map((item: { href: string; src: string }, idx: number) => (
+                                    <a key={idx} href={item.href} target="_blank">
+                                        <Image className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src={item.src} alt="" width={1163} height={677} />
+                                    </a>
+                                ))}
+                                src={project.src.map((item: { src: string }, idx: number) => (
+                                    <div key={idx} className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 xl:p-[12px] lg:p-[12px] p-[8px] rounded-full w-fit h-fit">
+                                        <Image className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] w-[18px] h-[18px]" src={item.src} alt="" width={36} height={36} />
+                                    </div>
+                                ))}
+                            />
+                            <div className="w-full h-[1px] bg-primary"></div>
+                        </>
+                    ))}
 
-                    <div className="w-full h-[1px] bg-primary"></div>
 
-                    <DetailProject
+
+                    {/* <DetailProject
                         headline="Kemdikbud - Laman Pusat Kurikulum dan Pembelajaran"
                         job="UI/UX Designer & Frontend Developer"
                         colorPrimary="bg-kontrib-gradient"
@@ -166,7 +191,7 @@ const Portfolio = () => {
                                 <Image className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] w-[18px] h-[18px]" src={item.src} alt="" width={36} height={36} />
                             </div>
                         ))}
-                    />
+                    /> */}
 
                 </div>
 

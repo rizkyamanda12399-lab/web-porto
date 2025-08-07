@@ -66,7 +66,7 @@ const Introduce = () => {
                                 className="text-[32px] font-semibold text-gray-500"
                             />
                             <div className="absolute group-hover:pointer-events-none">
-                                <Image className="" src="icon/down-arrow.svg" alt="" width={84} height={84} />
+                                <Image className="scale-[1.1] group-hover:scale-[0.9] ease-in-out duration-300" src="icon/down-arrow.svg" alt="" width={84} height={84} />
                             </div>
                         </div>
                     </div>
