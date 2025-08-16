@@ -27,7 +27,7 @@ const Introduce = () => {
             delay: 50,
         },
         {
-            text: "Regards from Manda, Front",
+            text: "Regards from Manda,, Front",
             delay: 100,
         },
         {
