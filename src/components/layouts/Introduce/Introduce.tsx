@@ -23,7 +23,7 @@ const Introduce = () => {
 
     const textIntroduce = [
         {
-            text: "Hi, What's going on?",
+            text: "Hi, What's going on? test",
             delay: 50,
         },
         {

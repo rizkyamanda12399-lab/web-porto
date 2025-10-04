@@ -25,7 +25,7 @@ export const PuskurIcon = [
 export const Puskur = [
     {
         href: "https://puskur.kemdikbud.go.id/",
-        src: "/project/puskurjar.png",
+        src: "/CarauselBP/1-Cr1-betul.jpg",
     }
 ]
 

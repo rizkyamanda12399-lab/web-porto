@@ -29,7 +29,7 @@ const HeroSection = () => {
 
                 <div className="flex justify-center items-center">
                     {/* <img src="/ehan.png" alt="" className="xl:h-[830px] lg:h-[622px]" /> */}
-                    <Image className="xl:h-[830px] xl:w-[595px] lg:h-[622px] lg:w-[446px] w-[390px] h-[544]" src={"/ehan.png"} alt="" width={1200} height={168} />
+                    <Image className="xl:h-[830px] xl:w-[595px] lg:h-[622px] lg:w-[446px] w-[390px] h-[544]" src={"/otop2.png"} alt="" width={800} height={400} />
                 </div>
             </div>
 
