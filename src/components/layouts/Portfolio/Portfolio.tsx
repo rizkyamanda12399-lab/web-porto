@@ -65,21 +65,23 @@ const Portfolio = () => {
                     </a>
                   )
                 )}
-                // src={project.src.map((item: { src: string }, idx: number) => (
-                //   <div
-                //     key={idx}
-                //     className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 xl:p-[12px] lg:p-[12px] p-[8px] rounded-full w-fit h-fit"
-                //   >
-                //     <Image
-                //       className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] w-[18px] h-[18px] object-contain"
-                //       src={item.src}
-                //       alt=""
-                //       width={36}
-                //       height={36}
-                //     />
-                //   </div>
-                // ))}
-                src={project.src}
+                src={Array.isArray(project.src)
+                  ? project.src.map((item: { src: string }, idx: number) => (
+                    <div
+                      key={idx}
+                      className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 xl:p-[12px] lg:p-[12px] p-[8px] rounded-full w-fit h-fit"
+                    >
+                      <Image
+                        className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] w-[18px] h-[18px] object-contain"
+                        src={item.src}
+                        alt=""
+                        width={36}
+                        height={36}
+                      />
+                    </div>
+                  ))
+                  : null}
+              // src={project.src}
               />
               <div className="w-full h-[1px] bg-primary"></div>
             </>

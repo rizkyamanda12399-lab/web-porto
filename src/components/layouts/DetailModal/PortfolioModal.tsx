@@ -52,7 +52,7 @@ export const PortfolioModal: React.FC<PortfolioModalProps> = ({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-5xl p-6 xl:rounded-[32px] lg:rounded-[32px] rounded-[20px] bg-indigo-200 border-[3px] border-white">
+      <DialogContent className="max-w-5xl p-6 xl:rounded-[32px] lg:rounded-[32px] rounded-[20px] bg-indigo-200 border-[3px] border-white mx-10px">
         <DialogHeader>
           <DialogTitle className="text-2xl font-semibold">
             {slides[selectedIndex]?.title}
@@ -69,16 +69,15 @@ export const PortfolioModal: React.FC<PortfolioModalProps> = ({
               {slides.map((slide, idx) => (
                 <div
                   key={idx}
-                  className="relative flex-[0_0_100%] items-center w-full h-fit sm:h-[500px] overflow-hidden rounded-xl"
+                  className="relative flex-[0_0_100%] items-center w-full h-fit  overflow-hidden rounded-xl"
                 >
                   <div className="relative w-full flex justify-center items-center">
                     <Image
                       src={slide.image}
                       alt={slide.title}
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      className="h-auto max-h-[85vh] w-auto object-contain rounded-xl"
+                      width={1162}
+                      height={677}
+                      className="h-auto w-auto object-contain rounded-xl"
                     />
 
                     {/* Tombol kiri-kanan di dalam bungkusan gambar */}
@@ -105,6 +104,7 @@ export const PortfolioModal: React.FC<PortfolioModalProps> = ({
                         height={20}
                       />
                     </button>
+
                   </div>
                 </div>
               ))}
@@ -126,7 +126,7 @@ export const PortfolioModal: React.FC<PortfolioModalProps> = ({
           </button> */}
 
           {/* Dots indicator */}
-          <div className="flex justify-center mt-4 space-x-2">
+          <div className="absolute flex bottom-4">
             {slides.map((_, i) => (
               <button
                 key={i}
