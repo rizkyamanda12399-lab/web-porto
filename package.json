@@ -27,6 +27,7 @@
     "classnames": "^2.5.1",
     "clsx": "^2.1.1",
     "d3-ease": "^3.0.1",
+    "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.19.1",
     "geoip-lite": "^1.4.10",
     "gsap": "^3.13.0",

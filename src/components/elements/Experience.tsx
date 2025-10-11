@@ -16,11 +16,11 @@ const Experience = (props: ExperienceProps) => {
                 {/* left experience */}
                 <div className="grid col-span-6 xl:gap-4 lg:gap-3 gap-3">
                     <div className="flex items-center xl:gap-4 lg:gap-3 gap-2">
-                        <h3 className="xl:text-[32px] lg:text-[24px] text-[24px] font-medium leading-7 xl:mr-2 lg:mr-2">{tittle}</h3>
-                        <p className="text-gray font-bold xl:text-[16px] lg:text-[14px] text-[14px] border-l-2 border-gray xl:pl-4 lg:pl-3 pl-2">{place}</p>
+                        <h3 className="xl:text-[32px] lg:text-[24px] text-[24px] font-semibold leading-7 xl:mr-2 lg:mr-2">{tittle}</h3>
+                        <p className="text-white font-semibold xl:text-[20px] lg:text-[16px] text-[14px] border-l-2 border-gray xl:pl-4 lg:pl-3 pl-2">{place}</p>
                     </div>
                     <div className="">
-                        <ul className="list-disc pl-8 xl:text-[16px] lg:text-[16px] text-[12px] text-gray leading-[170%] xl:font-semibold lg:font-semibold font-normal">
+                        <ul className="list-disc pl-8 xl:text-[16px] lg:text-[16px] text-[12px] text-white leading-[170%] font-normal">
                             {li}
                         </ul>
                     </div>

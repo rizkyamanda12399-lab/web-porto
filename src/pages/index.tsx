@@ -15,23 +15,7 @@ import axios from 'axios'
 import FooterNew from "@/components/layouts/Footer/FooterNew";
 
 const Home = () => {
-  useEffect(() => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (pos) => {
-          axios.post('/api/track-visitor', {
-            latitude: pos.coords.latitude,
-            longitude: pos.coords.longitude
-          })
-        },
-        () => {
-          axios.post('/api/track-visitor') // fallback
-        }
-      )
-    } else {
-      axios.post('/api/track-visitor')
-    }
-  }, [])
+  
 
   return (
     <Provider store={store}>

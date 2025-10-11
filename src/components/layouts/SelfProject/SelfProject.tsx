@@ -104,9 +104,9 @@ const SelftProject = () => {
     return (
         <div>
             <div className="grid w-full xl:gap-[40px] lg:gap-[30px] gap-[16px]">
-                <h2 className="xl:text-[60px] lg:text-[45px] text-[36px] font-light xl:leading-[72px] lg:leading-[54px]">Self Project</h2>
+                <h2 className="xl:text-[60px] lg:text-[45px] text-[36px] font-semibold xl:leading-[72px] lg:leading-[54px]">Self Project</h2>
                 <AnimatedContent>
-                    <Experience tittle="Front End Developer & UI/UX Designer" place="Freelance"
+                    <Experience tittle="FnB" place="Freelance"
                         li={jobMix.map((li) => (
                             <li key={li.id}>{li.tittle}</li>
                         ))}
@@ -124,7 +124,7 @@ const SelftProject = () => {
                 </AnimatedContent>
 
                 <AnimatedContent>
-                    <Experience tittle="FullStack Web Developer" place="Harisenin.com"
+                    <Experience tittle="Product Design" place="Freelance"
                         li={jobFull.map((li) => (
                             <li key={li.id}>{li.tittle}</li>
                         ))}

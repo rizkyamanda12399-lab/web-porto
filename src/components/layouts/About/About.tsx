@@ -11,37 +11,23 @@ const About = () => {
         ssr: false,
     });
 
+// Empowering brands to grow in the digital era.
+// Together, we’ll craft distinctive designs that truly connect with your audience.
+// Let’s bring your vision to life — starting now.
+
     const textAbout = [
         {
-            text: "Helping brands thrive in the",
+            text: "Empowering brands to grow in the digital era. Together, we’ll craft distinctive designs that truly connect with your audience.",
             characters: "abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+",
             speed: 30,
             delay: 30,
         },
         {
-            text: "digital age. Together, we'll create standout products that resonate",
+            text: "Let’s bring your vision to life — starting now.",
             characters: "abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+",
             speed: 50,
             delay: 50,
-        },
-        {
-            text: "with your target audience.",
-            characters: "abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+",
-            speed: 70,
-            delay: 70,
-        },
-        {
-            text: "",
-            characters: "abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+",
-            speed: 100,
-            delay: 100,
-        },
-        {
-            text: "Let's get started—time to bring your vision to life!",
-            characters: "abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+",
-            speed: 100,
-            delay: 100,
-        },
+        }
     ]
 
     return (
@@ -50,7 +36,7 @@ const About = () => {
             <AnimatedContent>
                 <div className="grid lg:grid-cols-12 gap-[40px]">
                     <div className="grid col-span-7 xl:gap-[40px] lg:gap-[30px] gap-[20px]">
-                        <div className="xl:text-[60px] lg:text-[45px] text-[28px] font-light xl:leading-[72px] lg:leading-[54px]">
+                        <div className="font-normal xl:text-[50px] lg:text-[50px] text-[22px] xl:leading-[70px] lg:leading-[30px]">
                             {textAbout.map((item, index) => (
                                 <div key={index}>
                                     {/* <DecryptedText
@@ -82,7 +68,7 @@ const About = () => {
                     </div>
                     <div className="relative grid col-span-5 justify-center items-start gap-6 group ">
                         <div className="border-l-2 flex flex-col border-gray pl-4 xl:text-[32px] lg:text-[24px] text-[16px] font-light xl:leading-[130%] lg:leading-[130&] text-gray">
-                            <ShinyText text="My passion for UI design, clean code," disabled={false} speed={3} className='custom-class' />
+                            <ShinyText text="My passion for Graphic Design," disabled={false} speed={3} className='custom-class' />
                             <ShinyText text="and interactive experiences puts me in a " disabled={false} speed={3} className='custom-class' />
                             <ShinyText text="unique position within the front-end" disabled={false} speed={3} className='custom-class' />
                             <ShinyText text="development field—where creativity meets functionality." disabled={false} speed={3} className='custom-class' />

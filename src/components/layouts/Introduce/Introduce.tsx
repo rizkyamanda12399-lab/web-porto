@@ -23,16 +23,12 @@ const Introduce = () => {
 
     const textIntroduce = [
         {
-            text: "Hi, What's going on? test",
+            text: "I am a professional Graphic Designer with over 2 years of experience in creating creative, functional, and brand-aligned visual designs.",
             delay: 50,
         },
         {
-            text: "Regards from Manda,, Front",
+            text: "Specializing in branding and digital content, I excel at transforming ideas into impactful and visually compelling works.",
             delay: 100,
-        },
-        {
-            text: "End Developer and Designer",
-            delay: 150,
         },
     ]
 
@@ -42,10 +38,11 @@ const Introduce = () => {
                 <Heading src="home" tittle="Introduce" />
                 <div className="grid xl:grid-cols-12 lg:grid-cols-12 gap-[32px] ">
                     <div className="grid xl:col-span-8 lg:col-span-8 xl:gap-[40px] lg:gap-[30px] gap-[20px]">
-                        <div className="xl:text-[80px] lg:text-[60px] text-[32px] font-light xl:leading-[96px] lg:leading-[72px]">
+                        <div className="font-normal xl:text-[50px] lg:text-[50px] text-[22px] xl:leading-[70px] lg:leading-[30px]">
                             {textIntroduce.map((item, index) => (
-                                <div key={index}>
+                                <div className="" key={index}>
                                     <BlurText
+                                    className="text-justify"
                                         text={item.text}
                                         delay={item.delay}
                                         animateBy="words"
