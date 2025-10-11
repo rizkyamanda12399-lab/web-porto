@@ -13,7 +13,7 @@ const AppShell = (props: AppShellProps) => {
                 <BlobCursor />
             </div>
             <Head>
-                <title>Ehan Portfolio</title>
+                <title>Rizky Amanda</title>
             </Head>
             {children}
         </main>
