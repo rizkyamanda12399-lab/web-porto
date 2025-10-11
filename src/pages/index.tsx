@@ -10,12 +10,10 @@ import Skills from "@/components/layouts/Skills/Skills";
 import WorkTogether from "@/components/layouts/WorkTogether/WorkTogether";
 import { Provider } from "react-redux";
 import store from "../redux/store";
-import React, { useEffect } from "react";
-import axios from 'axios'
 import FooterNew from "@/components/layouts/Footer/FooterNew";
 
 const Home = () => {
-  
+
 
   return (
     <Provider store={store}>

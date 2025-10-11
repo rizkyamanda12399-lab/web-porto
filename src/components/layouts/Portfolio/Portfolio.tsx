@@ -1,7 +1,7 @@
 import DetailProject from "@/components/fragments/DetailProject";
 import Heading from "@/components/fragments/Heading";
 import Image from "next/image";
-import { AllProjects, DetailProjects, Puskur } from "./constants";
+import { AllProjects, DetailProjects } from "./constants";
 import { useState } from "react";
 import { PortfolioModal } from "../DetailModal/PortfolioModal";
 import { Slide, PortfolioItem } from "./types";

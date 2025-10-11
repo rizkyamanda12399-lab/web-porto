@@ -1,7 +1,6 @@
 
 import Image from "next/image"
 import Navbar from "../Navbar"
-import Located from "@/components/fragments/Located"
 import BackgroundField from "@/components/fragments/BackgroundField"
 // import RunningText from "@/components/elements/RunningText"
 import ScrollVelocity from "@/blocks/TextAnimations/ScrollVelocity/ScrollVelocity"
