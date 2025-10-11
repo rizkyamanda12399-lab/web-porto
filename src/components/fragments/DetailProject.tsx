@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import React from "react";
 
 type DetailProjectProps = {
@@ -24,8 +25,8 @@ const DetailProject = (props: DetailProjectProps) => {
   );
 
   return (
-    <div className="grid xl:gap-[24px] lg:gap-[20px] gap-[16px]">
-      <div className="xl:flex lg:flex grid items-center xl:gap-8 lg:gap-8 gap-1">
+    <div className="grid xl:gap-[24px] lg:gap-[20px] gap-[16px] rounded-[32px]">
+      <div className="xl:flex lg:flex grid items-center xl:gap-8 lg:gap-8 gap-1 ">
         <AnimatedContent>
           <h2 className="xl:text-[40px] lg:text-[32px] text-[24px] font-normal">
             {headline}
@@ -51,10 +52,16 @@ const DetailProject = (props: DetailProjectProps) => {
               </p>
             </div>
           </div>
-          <div className="relative overflow-hidden  h-fit  grid xl:col-span-8 lg:col-span-8 col-span-12 bg-indigo-600  xl:rounded-[32px] lg:rounded-[32px] rounded-[20px] cursor-pointer group object-contain">
+          <div className="relative overflow-hidden h-fit grid xl:col-span-8 lg:col-span-8 col-span-12 bg-indigo-600  xl:rounded-[32px] lg:rounded-[32px] rounded-[20px] cursor-pointer group object-contain">
             {img}
-            <div className="absolute flex xl:gap-[14px] gap-[4px] invisible group-hover:visible xl:left-[24px] xl:bottom-[40px] lg:left-[20px] lg:bottom-[30px] left-[10px] bottom-[20px] object-contain">
+            {/* <div className="absolute flex xl:gap-[14px] gap-[4px] invisible group-hover:visible xl:left-[24px] xl:bottom-[40px] lg:left-[20px] lg:bottom-[30px] left-[10px] bottom-[20px] object-contain">
               {src}
+            </div> */}
+            <div className="absolute w-full h-fit flex xl:p-4 lg:p-3 p-2 xl:text-[16px] lg:text-[14px] text-[12px] items-center xl:gap-[14px] gap-[4px] invisible group-hover:visible  xl:bottom-[10px]  lg:bottom-[10px] bottom-[10px] object-contain">
+              <div className="bg-black/[44%] flex justify-between w-full h-full xl:px-6 lg:px-6 xl:py-4 lg:py-3 px-4 py-3 xl:rounded-[12px] lg:rounded-[10px] rounded-[6px]">
+                {src}
+                <Image src="/icon/move-right.svg" alt="" width={16} height={16} className="" />
+              </div>
             </div>
           </div>
         </div>

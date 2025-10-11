@@ -56,29 +56,30 @@ const Portfolio = () => {
                       onClick={() => handleOpenModal(item.src)}
                     >
                       <Image
-                        className="w-full h-fit xl:h-[640px] relative top-[20px] object-contain transition-transform duration-500 group-hover:scale-105 "
+                        className="w-full h-fit xl:h-[640px] lg:h-fit relative object-fill transition-transform duration-500 group-hover:scale-105 "
                         src={item.src}
                         alt=""
                         width={600}
-                        height={100}
+                        height={640}
                       />
                     </a>
                   )
                 )}
-                src={project.src.map((item: { src: string }, idx: number) => (
-                  <div
-                    key={idx}
-                    className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 xl:p-[12px] lg:p-[12px] p-[8px] rounded-full w-fit h-fit"
-                  >
-                    <Image
-                      className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] w-[18px] h-[18px] object-contain"
-                      src={item.src}
-                      alt=""
-                      width={36}
-                      height={36}
-                    />
-                  </div>
-                ))}
+                // src={project.src.map((item: { src: string }, idx: number) => (
+                //   <div
+                //     key={idx}
+                //     className="bg-black/40 backdrop-blur-[14px] border border-white border-opacity-40 xl:p-[12px] lg:p-[12px] p-[8px] rounded-full w-fit h-fit"
+                //   >
+                //     <Image
+                //       className="xl:w-[36px] xl:h-[36px] lg:w-[36px] lg:h-[36px] w-[18px] h-[18px] object-contain"
+                //       src={item.src}
+                //       alt=""
+                //       width={36}
+                //       height={36}
+                //     />
+                //   </div>
+                // ))}
+                src={project.src}
               />
               <div className="w-full h-[1px] bg-primary"></div>
             </>

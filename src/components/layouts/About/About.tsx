@@ -11,9 +11,9 @@ const About = () => {
         ssr: false,
     });
 
-// Empowering brands to grow in the digital era.
-// Together, we’ll craft distinctive designs that truly connect with your audience.
-// Let’s bring your vision to life — starting now.
+    // Empowering brands to grow in the digital era.
+    // Together, we’ll craft distinctive designs that truly connect with your audience.
+    // Let’s bring your vision to life — starting now.
 
     const textAbout = [
         {
@@ -36,7 +36,7 @@ const About = () => {
             <AnimatedContent>
                 <div className="grid lg:grid-cols-12 gap-[40px]">
                     <div className="grid col-span-7 xl:gap-[40px] lg:gap-[30px] gap-[20px]">
-                        <div className="font-normal xl:text-[50px] lg:text-[50px] text-[22px] xl:leading-[70px] lg:leading-[30px]">
+                        <div className="font-normal xl:text-[50px] lg:text-[36px] text-[22px] xl:leading-[70px] lg:leading-[55px]">
                             {textAbout.map((item, index) => (
                                 <div key={index}>
                                     {/* <DecryptedText

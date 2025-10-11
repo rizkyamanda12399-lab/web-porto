@@ -38,11 +38,11 @@ const Introduce = () => {
                 <Heading src="home" tittle="Introduce" />
                 <div className="grid xl:grid-cols-12 lg:grid-cols-12 gap-[32px] ">
                     <div className="grid xl:col-span-8 lg:col-span-8 xl:gap-[40px] lg:gap-[30px] gap-[20px]">
-                        <div className="font-normal xl:text-[50px] lg:text-[50px] text-[22px] xl:leading-[70px] lg:leading-[30px]">
+                        <div className="font-normal xl:text-[50px] lg:text-[36px] text-[22px] xl:leading-[70px] lg:leading-[55px]">
                             {textIntroduce.map((item, index) => (
                                 <div className="" key={index}>
                                     <BlurText
-                                    className="text-justify"
+                                        className="text-justify"
                                         text={item.text}
                                         delay={item.delay}
                                         animateBy="words"
