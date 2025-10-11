@@ -9,6 +9,9 @@ type DetailProjectProps = {
   headline: string;
   job: string;
   colorPrimary: string;
+  logoCompany: string;
+  sector: string;
+  year: string;
   tittle: string;
   desc: string;
   img: React.ReactNode;
@@ -16,7 +19,7 @@ type DetailProjectProps = {
 };
 
 const DetailProject = (props: DetailProjectProps) => {
-  const { headline, job, colorPrimary, img, src } = props;
+  const { headline, job, colorPrimary, logoCompany, tittle, sector, year, desc, img, src } = props;
 
   const AnimatedContent = dynamic(
     () => import("@/blocks/Animations/AnimatedContent/AnimatedContent"),
@@ -45,13 +48,21 @@ const DetailProject = (props: DetailProjectProps) => {
             className={`grid items-start xl:col-span-4 lg:col-span-4 col-span-12 xl:p-[40px] lg:p-[30px] p-[20px] ${colorPrimary} xl:rounded-[32px] lg:rounded-[32px] rounded-[20px] xl:order-first lg:order-first order-last`}
           >
             <div className="grid xl:gap-[24px] lg:gap-[20px] gap-[16px]">
-              <div className="flex items-end gap-5 xl:text-[32px] lg:text-[24px] text-[16px] font-semibold ">
-                <Image src="/BP/feed/logoHigh.png" alt="" width={100} height={100} className="object-cover w-fit bg-black/[55%] rounded-[12px]" />
-                Beauty Palace
+              <div className="flex items-center gap-5 xl:text-[20px] lg:text-[15px] text-[16px] font-semibold ">
+                <Image src={logoCompany} alt="" width={60} height={60} className="object-cover w-[85px] h-[85px] bg-black/[55%] rounded-[12px]" />
+                <div className="grid gap-1">
+                  <div className="">Company: {tittle}</div>
+                  <div className="">Sector: {sector}</div>
+                  <div className="">Year: {year}</div>
+                </div>
               </div>
-              <p className="xl:text-[20px] lg:text-[20px] text-[16px] text-justify">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae voluptates laudantium non odit architecto quos ullam pariatur debitis, doloribus unde ad obcaecati. Ad autem recusandae at, facere nisi expedita iste. Inventore blanditiis nulla deserunt distinctio veritatis commodi doloremque? Esse, dolor?
-              </p>
+              {/* <p className="xl:text-[20px] lg:text-[16px] text-[16px] text-justify">
+                {desc}
+              </p> */}
+              <p
+                className="xl:text-[20px] lg:text-[16px] text-[16px] text-justify"
+                dangerouslySetInnerHTML={{ __html: desc }}
+              />
             </div>
           </div>
           <div className="relative overflow-hidden h-fit grid xl:col-span-8 lg:col-span-8 col-span-12 bg-indigo-600  xl:rounded-[32px] lg:rounded-[32px] rounded-[20px] cursor-pointer group object-contain">

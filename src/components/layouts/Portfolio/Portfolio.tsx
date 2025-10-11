@@ -46,7 +46,10 @@ const Portfolio = () => {
                 headline={project.headline}
                 job={project.job}
                 colorPrimary={project.colorPrimary}
+                logoCompany={project.logoCompany}
                 tittle={project.tittle}
+                sector={project.sector}
+                year={project.year}
                 desc={project.desc}
                 img={project.img.map(
                   (item: { href: string; src: string }, idx: number) => (
