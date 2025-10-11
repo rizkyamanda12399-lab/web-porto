@@ -102,9 +102,8 @@ export const PortfolioModal: React.FC<PortfolioModalProps> = ({
               <button
                 key={i}
                 onClick={() => emblaApi?.scrollTo(i)}
-                className={`w-3 h-3 rounded-full transition-all ${
-                  i === selectedIndex ? "bg-black" : "bg-gray-300"
-                }`}
+                className={`w-3 h-3 rounded-full transition-all ${i === selectedIndex ? "bg-black" : "bg-gray-300"
+                  }`}
               />
             ))}
           </div>

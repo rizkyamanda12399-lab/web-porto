@@ -1,6 +1,7 @@
 import AppShell from "@/components/layouts/AppShell";
 import { Toaster } from "@/components/ui/toaster";
 import type { AppProps } from "next/app";
+import "@/styles/globals.css";
 import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
