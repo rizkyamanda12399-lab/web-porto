@@ -5,7 +5,7 @@ import { AllProjects, DetailProjects } from "./constants";
 import { useState } from "react";
 import { PortfolioModal } from "../DetailModal/PortfolioModal";
 import { Slide, PortfolioItem } from "./types";
-
+// test
 const Portfolio = () => {
   const [open, setOpen] = useState(false);
   const [selectedSlides, setSelectedSlides] = useState<Slide[]>([]);
