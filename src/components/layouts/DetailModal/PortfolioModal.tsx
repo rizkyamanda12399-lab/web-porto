@@ -127,12 +127,12 @@ export const PortfolioModal: React.FC<PortfolioModalProps> = ({
           </button> */}
 
             {/* Dots indicator */}
-            <div className="absolute flex bottom-4">
+            <div className="absolute flex justify-center w-full gap-2">
               {slides.map((_, i) => (
                 <button
                   key={i}
                   onClick={() => emblaApi?.scrollTo(i)}
-                  className={`w-3 h-3 rounded-full transition-all ${i === selectedIndex ? "bg-black" : "bg-gray-300"
+                  className={`w-3 h-3 rounded-full transition-all ${i === selectedIndex ? "bg-black/[33%]" : "bg-gray-300"
                     }`}
                 />
               ))}
