@@ -72,7 +72,7 @@ module.exports = {
 			},
 			backgroundImage: {
 				// 'puskur-gradient': 'linear-gradient(to top right, #0063B9, #0A0F3F)',
-				'puskur-gradient': 'url("/BP/feed/bg.png")',
+				'puskur-gradient': 'url("/portfolio/BeautyPalace/bg.png")',
 				'kontrib-gradient': 'linear-gradient(to top right, #9678F5, #44366E)',
 				'bmk-gradient': 'linear-gradient(to top right, #0063B9, #001B33)',
 				'chill-gradient': 'linear-gradient(to top right, #BE2428, #520608)',

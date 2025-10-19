@@ -1,6 +1,6 @@
 import { PortfolioItem } from "./types";
 
-export const PuskurIcon = [
+export const BeautyPalaceIcon = [
   {
     src: "/icon/ps.svg",
   },
@@ -11,19 +11,18 @@ export const PuskurIcon = [
     src: "/icon/figma.svg",
   },
 ];
-export const KontributorIcon = [
+export const BrandIdentityIcon = [
   {
-    src: "/icon/html.svg",
+    src: "/icon/ps.svg",
   },
   {
-    src: "/icon/css.svg",
+    src: "/icon/ai.svg",
   },
   {
-    src: "/icon/js.svg",
+    src: "/icon/figma.svg",
   },
-  {
-    src: "/icon/tailwind.svg",
-  },
+];
+export const LangitIcon = [
   {
     src: "/icon/figma.svg",
   },
@@ -34,18 +33,7 @@ export const KontributorIcon = [
     src: "/icon/ps.svg",
   },
 ];
-export const BmkIcon = [
-  {
-    src: "/icon/figma.svg",
-  },
-  {
-    src: "/icon/ai.svg",
-  },
-  {
-    src: "/icon/ps.svg",
-  },
-];
-export const NuhaIcon = [
+export const MyIceLandIcon = [
   {
     src: "/icon/figma.svg",
   },
@@ -113,83 +101,178 @@ export const TodolistIcon = [
   },
 ];
 
-export const Puskur: PortfolioItem[] = [
+export const BeautyPalace: PortfolioItem[] = [
   {
     href: "https://puskur.kemdikbud.go.id/",
-    src: "/BP/feed/cover.png",
+    src: "/portfolio/BeautyPalace/cover.png",
     slides: [
       {
         title: "Feed Design Beauty Palace",
         description: "Image Resolution: 1920x1080px",
-        image: "/BP/feed/A1.png",
+        image: "/portfolio/BeautyPalace/A1.png",
       },
       {
         title: "Beauty Palace Cover Reels Design",
         description: "Static post: 1080x1920px",
-        image: "/BP/feed/A2.png",
+        image: "/portfolio/BeautyPalace/A2.png",
       },
       {
         title: "Beauty Palace Carousel Design",
         description: "Static post: 1080x1350px & 1080x1080px",
-        image: "/BP/feed/A3.png",
+        image: "/portfolio/BeautyPalace/A3.png",
+      },
+      {
+        title: "Beauty Palace Carousel Design",
+        description: "Static post: 1080x1350px & 1080x1080px",
+        image: "/portfolio/BeautyPalace/A3.png",
+      },
+      {
+        title: "Beauty Palace Carousel Design",
+        description: "Static post: 1080x1350px & 1080x1080px",
+        image: "/portfolio/BeautyPalace/A3.png",
       },
     ],
   },
 ];
 
-export const Kontributor: PortfolioItem[] = [
+export const BrandIdentity: PortfolioItem[] = [
   {
     href: "https://laman-puskur-kontributor.vercel.app/",
-    src: "/project/kontrib.png",
+    src: "/portfolio/BrandIdentity/1.png",
     slides: [
       {
-        title: "KONTRIBUTOR 1",
-        description: "Beautiful landscape of Iceland.",
-        image: "/BP/feed/1.png",
+        title: "Brand Introduce",
+        description: "Image Resolution: 1080x1080px",
+        image: "/portfolio/BrandIdentity/2.png",
       },
       {
-        title: "KONTRIBUTOR 2",
+        title: "Logo",
+        description: "Image Resolution: 1080x1080px",
+        image: "/portfolio/BrandIdentity/3.png",
+      },
+      {
+        title: "Logo Variations - 1",
+        description: "Image Resolution: 1080x1080px",
+        image: "/portfolio/BrandIdentity/4.png",
+      },
+      {
+        title: "Logo Variations - 2",
+        description: "Image Resolution: 1080x1080px",
+        image: "/portfolio/BrandIdentity/5.png",
+      },
+      {
+        title: "Mockup Design",
+        description: "Image Resolution: 1080x1080px",
+        image: "/portfolio/BrandIdentity/6.png",
+      },
+      {
+        title: "Mockup Design",
+        description: "Image Resolution: 1350x1080px",
+        image: "/portfolio/BrandIdentity/7.png",
+      },
+      {
+        title: "Brand Introduce",
+        description: "Image Resolution: 1920x1080px",
+        image: "/portfolio/BrandIdentity/8.png",
+      },
+      {
+        title: "Logo",
+        description: "Image Resolution: 1350x1080px",
+        image: "/portfolio/BrandIdentity/9.png",
+      },
+      {
+        title: "Logo Variations - 1",
+        description: "Image Resolution: 1350x1080px",
+        image: "/portfolio/BrandIdentity/10.png",
+      },
+      {
+        title: "Logo Variations - 2",
+        description: "Image Resolution: 1080x1080px",
+        image: "/portfolio/BrandIdentity/11.png",
+      },
+      {
+        title: "Mockup Design",
+        description: "Image Resolution: 1080x1080px",
+        image: "/portfolio/BrandIdentity/12.png",
+      },
+      {
+        title: "Mockup Logo",
         description: "Another breathtaking view.",
-        image: "/BP/feed/2.png",
+        image: "/portfolio/BrandIdentity/13.png",
       },
     ],
   },
 ];
 
-export const Bmk: PortfolioItem[] = [
+export const Langit: PortfolioItem[] = [
   {
     href: "https://balaimediakebudayaan.kemdikbud.go.id/",
-    src: "/project/bmk.png",
+    src: "/portfolio/Langit/1.png",
     slides: [
       {
-        title: "BMK 1",
-        description: "Beautiful landscape of Iceland.",
-        image: "/BP/feed/1.png",
+        title: "Feeds Instagram Design",
+        description: "Image Resolution: 1080x1080px",
+        image: "/portfolio/Langit/2.png",
       },
       {
-        title: "BMK 2",
-        description: "Another breathtaking view.",
-        image: "/BP/feed/2.png",
+        title: "Instagram Story Design",
+        description: "Image Resolution: 1080x1920px",
+        image: "/portfolio/Langit/3.png",
+      },
+      {
+        title: "Thumbnail Video Design",
+        description: "Image Resolution: 1920x1080px",
+        image: "/portfolio/Langit/4.png",
+      },
+      {
+        title: "Mockup Design",
+        description: "",
+        image: "/portfolio/Langit/5.png",
       },
     ],
   },
 ];
 
 
-export const Nuha: PortfolioItem[] = [
+export const MyIceLand: PortfolioItem[] = [
   {
     href: "https://nuha.care/",
-    src: "/project/nuha.png",
+    src: "/portfolio/MyIceLand/1.png",
     slides: [
       {
-        title: "NUHA 1",
+        title: "Social Media Design My Ice Land",
         description: "Beautiful landscape of Iceland.",
-        image: "/BP/feed/1.png",
+        image: "/portfolio/MyIceLand/2.png",
       },
       {
-        title: "NUHA 2",
+        title: "Feed Design",
         description: "Another breathtaking view.",
-        image: "/BP/feed/2.png",
+        image: "/portfolio/MyIceLand/3.png",
+      },
+      {
+        title: "Instagram Story Design",
+        description: "Another breathtaking view.",
+        image: "/portfolio/MyIceLand/4.png",
+      },
+      {
+        title: "Mockup Design",
+        description: "Another breathtaking view.",
+        image: "/portfolio/MyIceLand/5.png",
+      },
+      {
+        title: "Print Design",
+        description: "Another breathtaking view.",
+        image: "/portfolio/MyIceLand/6.png",
+      },
+      {
+        title: "Banner Design",
+        description: "Another breathtaking view.",
+        image: "/portfolio/MyIceLand/7.png",
+      },
+      {
+        title: "Stand Banner Design",
+        description: "Another breathtaking view.",
+        image: "/portfolio/MyIceLand/8.png",
       },
     ],
   },
@@ -203,12 +286,12 @@ export const Coffeehub: PortfolioItem[] = [
       {
         title: "coffe 1",
         description: "Beautiful landscape of Iceland.",
-        image: "/BP/feed/1.png",
+        image: "/portfolio/BeautyPalace/1.png",
       },
       {
         title: "coffe 2",
         description: "Another breathtaking view.",
-        image: "/BP/feed/2.png",
+        image: "/portfolio/BeautyPalace/2.png",
       },
     ],
   },
@@ -262,49 +345,62 @@ export const ChillMovie = [
 
 export const DetailProjects = [
   {
-    headline: "Kemdikbud - Laman Pusat Kurikulum dan Pembelajaran",
-    job: "UI/UX Designer & Frontend Developer",
+    headline: "Beauty Palace Aesthetic - Social Media Design & Packaging Beauty Product",
+    job: "Graphic Designer",
     colorPrimary: "bg-puskur-gradient",
-    logoCompany: "/BP/feed/logoHigh.png",
+    logoCompany: "/portfolio/BeautyPalace/logoHigh.png",
     tittle: "Beauty Palace",
     sector: "Beauty",
     year: "2024",
     desc: `Beauty Palace Aesthetic is a profesional clinic of a beauty  located in Pluit North Jakarta. This clinic have a good service and there are many public figures or various professions that have successfully realized their dreams of getting healthy and good skin.  <br /><br />  I’m handle the design for social media instagram, cover reels and develop packaging beauty product and other.`,
-    img: Puskur,
-    src: PuskurIcon,
+    img: BeautyPalace,
+    src: BeautyPalaceIcon,
     // src: "PuskurIcon",
   },
   {
     headline: "Kemdikbud - Laman Kontributor Pusat Kurikulum dan Pembelajaran",
     job: "UI/UX Designer & Frontend Developer",
     colorPrimary: "bg-kontrib-gradient",
-    logoCompany: "/BP/feed/logoHigh.png",
+    logoCompany: "/portfolio/BeautyPalace/logoHigh.png",
     tittle: "Kontributor",
     sector: "Beauty",
     year: "2024",
     desc: "Develop UI/UX designs for the Curriculum and Learning Center website. Develop actions on the website or web application using programming languages ​​such as HTML, Javascript, Tailwind CSS, etc. Involved in bug fixing of functionality, performance, and design issues with JavaScript, HTML, and CSS. Create programs and code that support the website database, server, and other applications it may contain",
-    img: Kontributor,
-    src: KontributorIcon,
+    img: BrandIdentity,
+    src: BrandIdentityIcon,
     // src: "PuskurIcon",
   },
   {
     headline: "Kemdikbud - Laman Balai Media Kebudayaan",
     job: "UI/UX Designer",
     colorPrimary: "bg-bmk-gradient",
-    logoCompany: "/BP/feed/logoHigh.png",
+    logoCompany: "/portfolio/BeautyPalace/logoHigh.png",
     tittle: "BMK",
     sector: "Beauty",
     year: "2024",
     desc: "Developing interface design and user experience for the website of Balai Media Budaya of the Ministry of Culture, Research and Technology. Collaborating with government teams and website development experts",
-    img: Bmk,
-    src: BmkIcon,
+    img: Langit,
+    src: LangitIcon,
+    // src: "PuskurIcon",
+  },
+  {
+    headline: "Nuha Care Website Company",
+    job: "UI/UX Designer",
+    colorPrimary: "bg-nuha-gradient",
+    logoCompany: "/portfolio/BeautyPalace/logoHigh.png",
+    tittle: "Nuha Care",
+    sector: "Beauty",
+    year: "2024",
+    desc: "When I worked as a Frontend Developer at PT Data Integrasi Inovasi. My team was pursuing a new Sprint, namely to completely update the company website. In this sprint, I was assigned to handle the UI/UX Designer for the website by my Product Manager.",
+    img: MyIceLand,
+    src: MyIceLandIcon,
     // src: "PuskurIcon",
   },
   {
     headline: "Harisenin.com - Chill Movie App",
     job: "Fullstack Developer",
     colorPrimary: "bg-chill-gradient",
-    logoCompany: "/BP/feed/logoHigh.png",
+    logoCompany: "/portfolio/BeautyPalace/logoHigh.png",
     tittle: "Chill Movie",
     sector: "Beauty",
     year: "2024",
@@ -317,7 +413,7 @@ export const DetailProjects = [
     headline: "Harisenin.com - To Do List App",
     job: "UI/UX Designer & Frontend Developer",
     colorPrimary: "bg-todolist-gradient",
-    logoCompany: "/BP/feed/logoHigh.png",
+    logoCompany: "/portfolio/BeautyPalace/logoHigh.png",
     tittle: "To Do List",
     sector: "Beauty",
     year: "2024",
@@ -330,7 +426,7 @@ export const DetailProjects = [
     headline: "College Project - Study Connections",
     job: "UI/UX Designer",
     colorPrimary: "bg-study-gradient",
-    logoCompany: "/BP/feed/logoHigh.png",
+    logoCompany: "/portfolio/BeautyPalace/logoHigh.png",
     tittle: "Study Conn",
     sector: "Beauty",
     year: "2024",
@@ -343,7 +439,7 @@ export const DetailProjects = [
     headline: "Learning Project - Hokben",
     job: "UI/UX Designer",
     colorPrimary: "bg-hokben-gradient",
-    logoCompany: "/BP/feed/logoHigh.png",
+    logoCompany: "/portfolio/BeautyPalace/logoHigh.png",
     tittle: "Hokben App Mobile",
     sector: "Beauty",
     year: "2024",
@@ -353,23 +449,10 @@ export const DetailProjects = [
     // src: "PuskurIcon",
   },
   {
-    headline: "Nuha Care Website Company",
-    job: "UI/UX Designer",
-    colorPrimary: "bg-nuha-gradient",
-    logoCompany: "/BP/feed/logoHigh.png",
-    tittle: "Nuha Care",
-    sector: "Beauty",
-    year: "2024",
-    desc: "When I worked as a Frontend Developer at PT Data Integrasi Inovasi. My team was pursuing a new Sprint, namely to completely update the company website. In this sprint, I was assigned to handle the UI/UX Designer for the website by my Product Manager.",
-    img: Nuha,
-    src: NuhaIcon,
-    // src: "PuskurIcon",
-  },
-  {
     headline: "Coffeehub - Coffee Shop Website",
     job: "UI/UX Designer & Frontend Developer",
     colorPrimary: "bg-coffeehub-gradient",
-    logoCompany: "/BP/feed/logoHigh.png",
+    logoCompany: "/portfolio/BeautyPalace/logoHigh.png",
     tittle: "Coffeehub",
     sector: "Beauty",
     year: "2024",
@@ -380,4 +463,9 @@ export const DetailProjects = [
   },
 ];
 
-export const AllProjects = [...Puskur, ...Kontributor, ...Bmk, ...Nuha];
+export const AllProjects =
+  [...BeautyPalace,
+  ...BrandIdentity,
+  ...Langit,
+  ...MyIceLand,
+  ];

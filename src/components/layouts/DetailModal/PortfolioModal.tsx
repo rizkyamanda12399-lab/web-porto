@@ -80,7 +80,6 @@ export const PortfolioModal: React.FC<PortfolioModalProps> = ({
                         height={677}
                         className="h-auto w-full object-contain rounded-xl"
                       />
-
                       {/* Tombol kiri-kanan di dalam bungkusan gambar */}
                       <button
                         onClick={scrollPrev}
@@ -132,7 +131,7 @@ export const PortfolioModal: React.FC<PortfolioModalProps> = ({
                 <button
                   key={i}
                   onClick={() => emblaApi?.scrollTo(i)}
-                  className={`w-3 h-3 rounded-full transition-all ${i === selectedIndex ? "bg-black/[33%]" : "bg-gray-300"
+                  className={`w-3 h-3 rounded-full transition-all ${i === selectedIndex ? "bg-black" : "bg-black/[33%]"
                     }`}
                 />
               ))}
