@@ -47,8 +47,8 @@ const DialogContent = React.forwardRef<
       {children}
 
       {/* Tombol close */}
-      <DialogPrimitive.Close className="absolute right-4 top-4 rounded-full bg-white/20 p-1 backdrop-blur-sm text-white hover:bg-white/30 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 transition">
-        <X className="h-5 w-5" />
+      <DialogPrimitive.Close className="absolute xl:right-4 lg:right-3 right-2 xl:top-4 lg:top-3 top-2 rounded-full bg-white/20 p-1 backdrop-blur-sm text-/70 hover:bg-white/30 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 transition">
+        <X className="xl:w-5 lg:w-4 w-3 xl:h-5 lg:h-4 h-3" />
         <span className="sr-only">Close</span>
       </DialogPrimitive.Close>
     </DialogPrimitive.Content>

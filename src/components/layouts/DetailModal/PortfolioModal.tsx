@@ -53,24 +53,24 @@ export const PortfolioModal: React.FC<PortfolioModalProps> = ({
   return (
     <div className="flex w-full px-[30px]">
       <Dialog open={open} onOpenChange={onOpenChange}>
-        <DialogContent className="xl:max-w-5xl lg:max-w-4xl xl:p-6 lg:p-4 p-2 xl:rounded-[32px] lg:rounded-[28px] rounded-[20px] bg-indigo-200 border-[3px] border-white ">
+        <DialogContent className="xl:max-w-5xl lg:max-w-4xl xl:p-6 lg:p-4 p-2 xl:rounded-[32px] lg:rounded-[28px] rounded-[12px] bg-indigo-200 border-[3px] border-white ">
           <DialogHeader>
-            <DialogTitle className="text-2xl font-semibold">
+            <DialogTitle className="xl:text-[32px] lg:text-[24px] text-[16px] font-semibold text-start">
               {slides[selectedIndex]?.title}
             </DialogTitle>
-            <DialogDescription className="text-sm text-muted-foreground">
+            <DialogDescription className="xl:text-[16px] lg:text-[16px] text-[12px] text-black text-start">
               {slides[selectedIndex]?.description}
             </DialogDescription>
           </DialogHeader>
 
           {/* Carousel */}
-          <div className="relative bg-black/50 rounded-xl">
+          <div className="relative bg-black/50 xl:rounded-[32px] lg:rounded-[28px] rounded-[12px]">
             <div className="overflow-hidden" ref={emblaRef}>
               <div className="flex">
                 {slides.map((slide, idx) => (
                   <div
                     key={idx}
-                    className="relative flex-[0_0_100%] items-center w-fit  overflow-hidden rounded-xl"
+                    className="relative flex-[0_0_100%] items-center w-fit  overflow-hidden xl:rounded-[32px] lg:rounded-[28px] rounded-[12px]"
                   >
                     <div className="relative w-full flex justify-center items-center">
                       <Image
@@ -78,14 +78,15 @@ export const PortfolioModal: React.FC<PortfolioModalProps> = ({
                         alt={slide.title}
                         width={1162}
                         height={677}
-                        className="h-auto w-full object-contain rounded-xl"
+                        className="h-auto w-full object-contain xl:rounded-[32px] lg:rounded-[28px] rounded-[12px]"
                       />
                       {/* Tombol kiri-kanan di dalam bungkusan gambar */}
                       <button
                         onClick={scrollPrev}
-                        className="absolute left-3 sm:left-5 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white rounded-full p-2 sm:p-3"
+                        className="absolute xl:left-3 lg:left-2 left-1 sm:left-5 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white xl:rounded-[32px] lg:rounded-[28px] rounded-[12px] p-2 sm:p-3"
                       >
                         <Image
+                          className="xl:w-[20px] lg:w-[16px] w-[12px] xl:h-[20px] lg:h-[16px] h-[12px]"
                           src="/icon/arrow-left.svg"
                           alt="prev"
                           width={20}
@@ -95,9 +96,10 @@ export const PortfolioModal: React.FC<PortfolioModalProps> = ({
 
                       <button
                         onClick={scrollNext}
-                        className="absolute right-3 sm:right-5 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white rounded-full p-2 sm:p-3"
+                        className="absolute xl:right-3 lg:right-2 right-1 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white rounded-full p-2 sm:p-3"
                       >
                         <Image
+                          className="xl:w-[20px] lg:w-[16px] w-[12px] xl:h-[20px] lg:h-[16px] h-[12px]"
                           src="/icon/arrow-right.svg"
                           alt="next"
                           width={20}
@@ -131,7 +133,7 @@ export const PortfolioModal: React.FC<PortfolioModalProps> = ({
                 <button
                   key={i}
                   onClick={() => emblaApi?.scrollTo(i)}
-                  className={`w-3 h-3 rounded-full transition-all ${i === selectedIndex ? "bg-black" : "bg-black/[33%]"
+                  className={`xl:w-[12px] lg:w-[10px] w-[8px] xl:h-[12px] lg:h-[10px] h-[8px] rounded-full transition-all ${i === selectedIndex ? "bg-black" : "bg-black/[33%]"
                     }`}
                 />
               ))}
