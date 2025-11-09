@@ -44,6 +44,20 @@ export const MyIceLandIcon = [
     src: "/icon/ps.svg",
   },
 ];
+
+
+export const KebayaIcon = [
+  {
+    src: "/icon/figma.svg",
+  },
+  {
+    src: "/icon/ai.svg",
+  },
+  {
+    src: "/icon/ps.svg",
+  },
+];
+
 export const CoffeehubIcon = [
   {
     src: "/icon/figma.svg",
@@ -137,7 +151,7 @@ export const BeautyPalace: PortfolioItem[] = [
 
 export const BrandIdentity: PortfolioItem[] = [
   {
-    href: "https://laman-puskur-kontributor.vercel.app/",
+    href: "",
     src: "/portfolio/BrandIdentity/1.png",
     slides: [
       {
@@ -206,7 +220,7 @@ export const BrandIdentity: PortfolioItem[] = [
 
 export const Langit: PortfolioItem[] = [
   {
-    href: "https://balaimediakebudayaan.kemdikbud.go.id/",
+    href: "",
     src: "/portfolio/Langit/1.png",
     slides: [
       {
@@ -236,7 +250,7 @@ export const Langit: PortfolioItem[] = [
 
 export const MyIceLand: PortfolioItem[] = [
   {
-    href: "https://nuha.care/",
+    href: "",
     src: "/portfolio/MyIceLand/1.png",
     slides: [
       {
@@ -273,6 +287,43 @@ export const MyIceLand: PortfolioItem[] = [
         title: "Stand Banner Design",
         description: "Another breathtaking view.",
         image: "/portfolio/MyIceLand/8.png",
+      },
+    ],
+  },
+];
+
+export const Kebaya: PortfolioItem[] = [
+  {
+    href: "",
+    src: "/portfolio/Kebaya/1.png",
+    slides: [
+      {
+        title: "Social Media Design My Ice Land",
+        description: "Beautiful landscape of Iceland.",
+        image: "/portfolio/Kebaya/2.png",
+        gif: "/portfolio/Kebaya/gif/2.gif",
+        // image: "/portfolio/Kebaya/gif/2.gif",
+      },
+      {
+        title: "Feed Design",
+        description: "Another breathtaking view.",
+        image: "/portfolio/Kebaya/3.png",
+        gif: "/portfolio/Kebaya/gif/3.gif",
+      },
+      {
+        title: "Instagram Story Design",
+        description: "Another breathtaking view.",
+        image: "/portfolio/Kebaya/4.png",
+      },
+      {
+        title: "Mockup Design",
+        description: "Another breathtaking view.",
+        image: "/portfolio/Kebaya/5.png",
+      },
+      {
+        title: "Print Design",
+        description: "Another breathtaking view.",
+        image: "/portfolio/Kebaya/6.png",
       },
     ],
   },
@@ -319,29 +370,6 @@ export const Todolist = [
   },
 ];
 
-export const ChillMovieIcon = [
-  {
-    src: "/icon/react.svg",
-  },
-  {
-    src: "/icon/js.svg",
-  },
-  {
-    src: "/icon/tailwind.svg",
-  },
-  {
-    src: "/icon/node.svg",
-  },
-  {
-    src: "/icon/express.svg",
-  },
-];
-export const ChillMovie = [
-  {
-    href: "https://react-js-ehan08.vercel.app/",
-    src: "/project/chillMovie.png",
-  },
-];
 
 export const DetailProjects = [
   {
@@ -405,60 +433,8 @@ export const DetailProjects = [
     sector: "Beauty",
     year: "2024",
     desc: "Developing a movie website using React JS, Tailwind CSS, Node JS, and Express JS. Implementing API integration to Design, Develop, and Maintain RESTful APIs to enable system interactions. Implementing atomic design principles, state management using react-redux. implementing login authentication using google. Creating a movie website for a final project as a full stack web developer",
-    img: ChillMovie,
-    src: ChillMovieIcon,
-    // src: "PuskurIcon",
-  },
-  {
-    headline: "Harisenin.com - To Do List App",
-    job: "UI/UX Designer & Frontend Developer",
-    colorPrimary: "bg-todolist-gradient",
-    logoCompany: "/portfolio/BeautyPalace/logoHigh.png",
-    tittle: "To Do List",
-    sector: "Beauty",
-    year: "2024",
-    desc: "Develop UI/UX Design for to do list application using Figma. Develop to do list application using HTML, Tailwind CSS, and Javascript. Create state management using javascript which is saved into local storage of user's device",
-    img: Todolist,
-    // src: TodolistIcon,
-    src: "PuskurIcon",
-  },
-  {
-    headline: "College Project - Study Connections",
-    job: "UI/UX Designer",
-    colorPrimary: "bg-study-gradient",
-    logoCompany: "/portfolio/BeautyPalace/logoHigh.png",
-    tittle: "Study Conn",
-    sector: "Beauty",
-    year: "2024",
-    desc: "Truant behavior often occurs in students from junior high school to college. Based on research by Mogulescu and Segal in a journal made by Minarni in 2017, the research noted that 75-85% of delinquent teenagers are teenagers who have a habit of skipping school or missing school very often. So the purpose of this application was created to connect information from the agency with the student's family in order to get information in real time",
-    img: StudyConnections,
-    src: StudyConnectionsIcon,
-    // src: "PuskurIcon",
-  },
-  {
-    headline: "Learning Project - Hokben",
-    job: "UI/UX Designer",
-    colorPrimary: "bg-hokben-gradient",
-    logoCompany: "/portfolio/BeautyPalace/logoHigh.png",
-    tittle: "Hokben App Mobile",
-    sector: "Beauty",
-    year: "2024",
-    desc: "Sometimes everyone has a different point of view. This time I was using the HokBen application. I felt that in the HokBen application there were several displays that needed to be adjusted for me, yes, this is back to my personal point of view. Therefore, I re-designed the HokBen application which I think needs to be adjusted or updated",
-    img: Hokben,
-    src: HokbenIcon,
-    // src: "PuskurIcon",
-  },
-  {
-    headline: "Coffeehub - Coffee Shop Website",
-    job: "UI/UX Designer & Frontend Developer",
-    colorPrimary: "bg-coffeehub-gradient",
-    logoCompany: "/portfolio/BeautyPalace/logoHigh.png",
-    tittle: "Coffeehub",
-    sector: "Beauty",
-    year: "2024",
-    desc: `As a coffee enthusiast, I initiated a self-driven project called Coffeehub. Inspired by my passion for all things coffee, I designed a company website and developed a brand identity from scratch. The concept behind Coffeehub revolves around the idea of connection — how a simple cup of coffee can bring people together. In this project, I took full responsibility for the UI/UX design, branding, and website development to simulate a real-world business scenario. I’m handle the design for social media instagram, cover reels and develop packaging beauty product and other.`,
-    img: Coffeehub,
-    src: CoffeehubIcon,
+    img: Kebaya,
+    src: KebayaIcon,
     // src: "PuskurIcon",
   },
 ];
@@ -468,4 +444,5 @@ export const AllProjects =
   ...BrandIdentity,
   ...Langit,
   ...MyIceLand,
+  ...Kebaya,
   ];

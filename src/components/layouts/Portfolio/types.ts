@@ -1,8 +1,10 @@
 // types.ts
+
 export interface Slide {
   title: string;
   description: string;
   image: string;
+  gif?: string;
 }
 
 export interface PortfolioItem {

@@ -2,24 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-/* width */
-::-webkit-scrollbar {
-  width: 12px;
+html,
+body {
+  background-color: transparent;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #25D377 transparent;
+
 }
 
-/* Track */
+/* Ukuran scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track scrollbar (jalur di belakang thumb) */
 ::-webkit-scrollbar-track {
   background: transparent;
+  /* transparan */
   border-radius: 10px;
   border: 1px solid #25D377;
-  padding: 2px;
-  margin-inline: 4px;
+  /* garis tepi */
 }
 
-/* Handle */
+/* Thumb scrollbar (bagian yang bisa digeser) */
 ::-webkit-scrollbar-thumb {
-  background: #25D377;
+  background-color: #25D377;
+  /* warna thumb */
   border-radius: 10px;
+}
+
+/* Opsional: agar tidak ada efek bayangan bawaan */
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
 
 /* Handle on hover */

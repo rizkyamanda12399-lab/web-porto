@@ -17,12 +17,12 @@ const Skills = () => {
                 {/* Profile Card */}
                 <div className="w-fit">
                     <ProfileCard
-                        name="M Rayhan Fuadi, S.Kom"
-                        title="UI/UX Designer & Frontend Developer"
-                        handle="rayhanfuadi"
+                        name="Rizky Amanda, S.Ds"
+                        title="Graphic Designer"
+                        handle="Rizky Amanda"
                         status="Available"
                         contactText="Contact Me"
-                        avatarUrl="/ehan.png"
+                        avatarUrl="/foto123.png"
                         showUserInfo={true}
                         enableTilt={true}
                         onContactClick={() => window.open("https://wa.link/cuy3df", "_blank")}
