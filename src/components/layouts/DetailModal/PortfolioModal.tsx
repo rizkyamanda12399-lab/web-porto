@@ -9,6 +9,7 @@ interface SlideItem {
   description: string;
   image: string;
   gif?: string;
+  href?: string;
 }
 
 interface PortfolioModalProps {
@@ -76,7 +77,10 @@ export const PortfolioModal: React.FC<PortfolioModalProps> = ({
                   key={idx}
                   className="relative flex-[0_0_100%] w-fit overflow-hidden rounded-[16px]"
                 >
-                  <div className="relative w-full flex justify-center items-center">
+                  <a href={slide.href}
+                    className={`relative ${slide.href && "cursor-pointer"} w-full flex justify-center items-center`}
+                    target="_blank"
+                  >
                     <Image
                       src={slide.image}
                       alt={slide.title}
@@ -86,16 +90,18 @@ export const PortfolioModal: React.FC<PortfolioModalProps> = ({
                     />
                     {slide.gif && (
                       <div className="absolute bottom-0 scale-90">
-                        <Image
-                          src={slide.gif}
-                          alt=""
-                          width={300}
-                          height={800}
-                          className="xl:h-full lg:h-full h-[140px] w-full xl:object-contain lg:object-contain rounded-[16px]"
-                        />
+                        <a href={slide.href} className="cursor-pointer" target="_blank">
+                          <Image
+                            src={slide.gif}
+                            alt=""
+                            width={300}
+                            height={800}
+                            className="xl:h-full lg:h-full h-[140px] w-full xl:object-contain lg:object-contain rounded-[16px]"
+                          />
+                        </a>
                       </div>
                     )}
-                  </div>
+                  </a>
                 </div>
               ))}
             </div>

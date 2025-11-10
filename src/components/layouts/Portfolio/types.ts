@@ -5,6 +5,7 @@ export interface Slide {
   description: string;
   image: string;
   gif?: string;
+  href?: string;
 }
 
 export interface PortfolioItem {
