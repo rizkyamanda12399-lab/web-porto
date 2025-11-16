@@ -1,19 +1,23 @@
 export const jobUiux = [
     {
         id: 1,
-        tittle: "Collaborating with the design team to create 15 wireframe designs for web and mobile applications",
+        tittle: "Collaborate with the Public Relations team to determine mood board designs and print designs to suggest to the Vice President",
     },
     {
         id: 2,
-        tittle: "Successfully creating 8 prototypes and providing clear instructions on “how to use each part of the website” including any design  specifications and guidelines",
+        tittle: "Create design requirements for meeting materials for outlet supervisors to improve sales and customer service.",
     },
     {
         id: 3,
-        tittle: "Conducting regular quality assurance checks to ensure that the UI kit is up-to-date and functioning properly",
+        tittle: "Create print design requirements and ensure print results meet the quality desired by the company.",
     },
     {
         id: 4,
-        tittle: "Research 6+ design trends and techniques regularly every month",
+        tittle: "Translating the concept ideas/briefs previously created by the Public Relations team into designs.",
+    },
+    {
+        id: 5,
+        tittle: "Work on designs according to the deadlines set by the Vice President and Public Relations team with the results desired by the company.",
     },
 ]
 export const toolsUiux1 = [
@@ -36,92 +40,150 @@ export const toolsUiux2 = [
 export const jobFront = [
     {
         id: 1,
-        tittle: "Developing websites that comply with the accessibility standards, policies and procedures",
+        tittle: " Collaborate with other creative teams: Head of Marketing, Social Media Specialist, Videographer and Copywriter.",
     },
     {
         id: 2,
-        tittle: "Developing and managed web accessibility testing plans and processes, including setting up and configuring tools",
+        tittle: "Create design needs according to brand identity for Marketing Campaign materials on Social Media: Instagram.",
     },
     {
         id: 3,
-        tittle: "Developing the websites using JavaScript, HTML, Tailwind CSS, React JS, Bootstrap 5 and PHP",
+        tittle: " Create print design requirements and ensure that the print results meet the quality desired by the company for offline promotion to clients.",
+    },
+    {
+        id: 4,
+        tittle: "Translating the concept ideas/briefs previously created by the Social Media team into designs.",
+    },
+    {
+        id: 5,
+        tittle: " Work on designs according to the deadlines set by the Head of Digital Marketing and Social Media Specialist with good results and according to the company's wishes.",
     },
 ]
 
 export const toolsFront1 = [
     {
-        tools: "HTML",
+        tools: "Photoshop",
     },
     {
-        tools: "CSS",
-    },
-    {
-        tools: "JavaScript",
-    },
-    {
-        tools: "PHP",
+        tools: "Illustration",
     },
 ]
 export const toolsFront2 = [
     {
-        tools: "Laravel",
+        tools: "Canva",
     },
     {
-        tools: "Bootstrap 5",
-    },
-    {
-        tools: "Tailwind CSS",
-    },
-    {
-        tools: "MySQL",
+        tools: "Figma",
     },
 ]
 
 export const DescDataIntegrasi = [
     {
         id: 1,
-        tittle: "Integrate Frontend components with backend APIs and Services",
+        tittle: " Create and send purchase forms for operational goods to vendors who work with the company and ensure timely delivery.",
     },
     {
         id: 2,
-        tittle: "Ensure accessibility standards and cross-browser compatibility are met",
+        tittle: "Make reports to the company's finance department for purchasing goods for the company's operational needs.",
     },
     {
         id: 3,
-        tittle: "Use Git for version control, code collaboration, and contributing to team workflows",
+        tittle: "Checking purchased goods according to company SOP and reviewing the stock availability of operational goods after purchasing goods.",
     },
     {
         id: 4,
-        tittle: "Develop responsive and high-performing web-based applications using React JS and Tailwind CSS",
+        tittle: "Carry out communication with the operational department regarding purchase order requests and be responsible for the availability of operational stock properly.",
     },
 ]
 
 export const toolsDataIntegrasi1 = [
     {
-        tools: "HTML",
+        tools: "Photoshop",
     },
     {
-        tools: "CSS",
-    },
-    {
-        tools: "JavaScript",
-    },
-    {
-        tools: "TypeScript",
+        tools: "Illustration",
     },
 ]
 
 export const toolsDataIntegrasi2 = [
     {
-        tools: "React JS",
+        tools: "Canva",
     },
     {
-        tools: "Next JS",
+        tools: "Figma",
+    },
+]
+
+export const DescLangit = [
+    {
+        id: 1,
+        tittle: " Create and send purchase forms for operational goods to vendors who work with the company and ensure timely delivery.",
     },
     {
-        tools: "Node JS",
+        id: 2,
+        tittle: "Make reports to the company's finance department for purchasing goods for the company's operational needs.",
     },
     {
-        tools: "Tailwind CSS",
-    }
+        id: 3,
+        tittle: "Checking purchased goods according to company SOP and reviewing the stock availability of operational goods after purchasing goods.",
+    },
+    {
+        id: 4,
+        tittle: "Carry out communication with the operational department regarding purchase order requests and be responsible for the availability of operational stock properly.",
+    },
+]
+
+export const toolsLangit1 = [
+    {
+        tools: "Photoshop",
+    },
+    {
+        tools: "Illustration",
+    },
+]
+
+export const toolsLangit2 = [
+    {
+        tools: "Canva",
+    },
+    {
+        tools: "Figma",
+    },
+]
+
+export const DescMyIceland = [
+    {
+        id: 1,
+        tittle: "Create designs according to briefs for social media needs: Instagram Feed and Instastory to introduce My Iceland Indonesia products to customers via social media platforms.",
+    },
+    {
+        id: 2,
+        tittle: " Collaborate with the purchasing and finance teams to ensure the printed design results are of the quality desired by the company and ensure costs do not exceed those set by the company.",
+    },
+    {
+        id: 3,
+        tittle: " Working on print design needs and ensuring that the print results meet the quality desired by the company.",
+    },
+    {
+        id: 4,
+        tittle: "Compiling a design data file for product catalog requirements for customer purchases when visiting the My Iceland Indonesia store.",
+    },
+]
+
+export const toolsMyIceland1 = [
+    {
+        tools: "Photoshop",
+    },
+    {
+        tools: "Illustration",
+    },
+]
+
+export const toolsMyIceland2 = [
+    {
+        tools: "Canva",
+    },
+    {
+        tools: "Figma",
+    },
 ]

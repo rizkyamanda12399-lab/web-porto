@@ -72,6 +72,7 @@ module.exports = {
 			},
 			backgroundImage: {
 				// 'puskur-gradient': 'linear-gradient(to top right, #0063B9, #0A0F3F)',
+				'ishigamaya-bg': 'url("/portfolio/Ishigamaya/bg-ishi.png")',
 				'puskur-gradient': 'url("/portfolio/BeautyPalace/bg.png")',
 				'kontrib-gradient': 'linear-gradient(to top right, #9678F5, #44366E)',
 				'bmk-gradient': 'linear-gradient(to top right, #0063B9, #001B33)',

@@ -17,17 +17,17 @@ const About = () => {
 
     const textAbout = [
         {
-            text: "Empowering brands to grow in the digital era. Together, we’ll craft distinctive designs that truly connect with your audience.",
+            text: "As a Graphic Designer. I focusing on developing a variety of visual design projects, from branding and promotional media to digital design. With the ability to understand client needs and transform ideas into compelling and functional visuals, I consistently strive to deliver designs that are not only beautiful but also communicate powerfully.",
             characters: "abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+",
             speed: 30,
             delay: 30,
         },
-        {
-            text: "Let’s bring your vision to life — starting now.",
-            characters: "abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+",
-            speed: 50,
-            delay: 50,
-        }
+        // {
+        //     text: "Let’s bring your vision to life — starting now.",
+        //     characters: "abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+",
+        //     speed: 50,
+        //     delay: 50,
+        // }
     ]
 
     return (
@@ -36,7 +36,7 @@ const About = () => {
             <AnimatedContent>
                 <div className="grid lg:grid-cols-12 gap-[40px]">
                     <div className="grid col-span-7 xl:gap-[40px] lg:gap-[30px] gap-[20px]">
-                        <div className="font-normal xl:text-[50px] lg:text-[36px] text-[22px] xl:leading-[70px] lg:leading-[55px]">
+                        <div className="font-normal xl:text-[32px] lg:text-[24px] text-[16px] xl:leading-[55px] lg:leading-[45px]">
                             {textAbout.map((item, index) => (
                                 <div key={index}>
                                     {/* <DecryptedText

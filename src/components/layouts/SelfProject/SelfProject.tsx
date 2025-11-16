@@ -18,14 +18,6 @@ const SelftProject = () => {
             id: 3,
             tittle: "Developed the actions on a website or web applications using programming languages such as PHP, Bootstrap 5 etc",
         },
-        {
-            id: 4,
-            tittle: "Involved with bug fixing on functionality, performance and designing issues with JavaScript, HTML and CSS",
-        },
-        {
-            id: 5,
-            tittle: "Created the programs and code that power the website’s databases, server, and any other applications it could contain",
-        },
     ]
     const toolsMix1 = [
         {
@@ -37,15 +29,6 @@ const SelftProject = () => {
         {
             tools: "JavaScript",
         },
-        {
-            tools: "PHP",
-        },
-        {
-            tools: "Laravel",
-        },
-        {
-            tools: "Tailwind CSS",
-        },
     ]
     const toolsMix2 = [
         {
@@ -56,15 +39,6 @@ const SelftProject = () => {
         },
         {
             tools: "Figma",
-        },
-        {
-            tools: "Adobe Illustrator",
-        },
-        {
-            tools: "Adobe Photoshop",
-        },
-        {
-            tools: "Canva",
         },
     ]
 
@@ -106,7 +80,7 @@ const SelftProject = () => {
             <div className="grid w-full xl:gap-[40px] lg:gap-[30px] gap-[16px]">
                 <h2 className="xl:text-[60px] lg:text-[45px] text-[36px] font-semibold xl:leading-[72px] lg:leading-[54px]">Self Project</h2>
                 <AnimatedContent>
-                    <Experience tittle="FnB" place="Freelance"
+                    <Experience tittle="Content Develop" place="Freelance"
                         li={jobMix.map((li) => (
                             <li key={li.id}>{li.tittle}</li>
                         ))}
@@ -124,7 +98,7 @@ const SelftProject = () => {
                 </AnimatedContent>
 
                 <AnimatedContent>
-                    <Experience tittle="Product Design" place="Freelance"
+                    <Experience tittle="Illustration" place="Freelance"
                         li={jobFull.map((li) => (
                             <li key={li.id}>{li.tittle}</li>
                         ))}

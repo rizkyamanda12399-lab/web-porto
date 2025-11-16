@@ -1,7 +1,7 @@
 import Experience from "@/components/elements/Experience"
 import Heading from "@/components/fragments/Heading"
 import dynamic from "next/dynamic";
-import { DescDataIntegrasi, jobFront, jobUiux, toolsDataIntegrasi1, toolsDataIntegrasi2, toolsFront1, toolsFront2, toolsUiux1, toolsUiux2 } from "./constant";
+import { DescDataIntegrasi, DescLangit, DescMyIceland, jobFront, jobUiux, toolsDataIntegrasi1, toolsDataIntegrasi2, toolsFront1, toolsFront2, toolsLangit1, toolsLangit2, toolsMyIceland1, toolsMyIceland2, toolsUiux1, toolsUiux2 } from "./constant";
 
 const Resume = () => {
     const AnimatedContent = dynamic(() => import("@/blocks/Animations/AnimatedContent/AnimatedContent"), {
@@ -16,7 +16,7 @@ const Resume = () => {
                 <h2 className="xl:text-[60px] lg:text-[45px] text-[36px] font-semibold xl:leading-[72px] lg:leading-[54px]">Experience</h2>
                 <div className="xl:h-[700px] lg:h-[600px] h-[400px] grid w-full xl:gap-[40px] lg:gap-[30px] gap-[16px] overflow-y-auto ">
                     <AnimatedContent>
-                        <Experience tittle="Graphic Design" place="PT. Kichiri Rizki Abadi (Jul 2025 - Till Now)"
+                        <Experience tittle="Graphic Design" place="PT. Kichiri Rizki Abadi (Jul 2025 - Oct 2025)"
                             li={jobUiux.map((li) => (
                                 <li key={li.id}>{li.tittle}</li>
                             ))}
@@ -34,7 +34,7 @@ const Resume = () => {
                     </AnimatedContent>
 
                     <AnimatedContent>
-                        <Experience tittle="Graphic Design" place="Beauty Palace (Apr 2024 - Nov 2024)"
+                        <Experience tittle="Graphic Design" place="Beauty Palace Aesthetic (Apr 2024 - Nov 2024)"
                             li={jobFront.map((li) => (
                                 <li key={li.id}>{li.tittle}</li>
                             ))}
@@ -71,13 +71,13 @@ const Resume = () => {
 
                     <AnimatedContent>
                         <Experience tittle="Graphic Design" place="Langit Entertainment (Mar 2022 - Sept 2022)"
-                            li={DescDataIntegrasi.map((li) => (
+                            li={DescLangit.map((li) => (
                                 <li key={li.id}>{li.tittle}</li>
                             ))}
-                            li2={toolsDataIntegrasi1.map((li, index) => (
+                            li2={toolsLangit1.map((li, index) => (
                                 <li key={index}>{li.tools}</li>
                             ))}
-                            li3={toolsDataIntegrasi2.map((li, index) => (
+                            li3={toolsLangit2.map((li, index) => (
                                 <li key={index}>{li.tools}</li>
                             ))}
                         />
@@ -88,14 +88,14 @@ const Resume = () => {
                     </AnimatedContent>
 
                     <AnimatedContent>
-                        <Experience tittle="Intern Graphic Design" place="My Iceland (Jan 2022 - Mar 2022)"
-                            li={DescDataIntegrasi.map((li) => (
+                        <Experience tittle="Intern Graphic Design" place="My Iceland Indonesia (Jan 2022 - Mar 2022)"
+                            li={DescMyIceland.map((li) => (
                                 <li key={li.id}>{li.tittle}</li>
                             ))}
-                            li2={toolsDataIntegrasi1.map((li, index) => (
+                            li2={toolsMyIceland1.map((li, index) => (
                                 <li key={index}>{li.tools}</li>
                             ))}
-                            li3={toolsDataIntegrasi2.map((li, index) => (
+                            li3={toolsMyIceland2.map((li, index) => (
                                 <li key={index}>{li.tools}</li>
                             ))}
                         />
