@@ -46,7 +46,7 @@ const Navbar = () => {
                             rootMargin="-50px" onLetterAnimationComplete={undefined}
                         /> */}
                         <SplitText
-                            text="Code by Ehan"
+                            text="Welcome to My Portfolio"
                         />
                     </div>
 

@@ -66,8 +66,6 @@ export const MyIceLandIcon = [
     src: "/icon/ps.svg",
   },
 ];
-
-
 export const KebayaIcon = [
   {
     src: "/icon/figma.svg",
@@ -80,100 +78,45 @@ export const KebayaIcon = [
   },
 ];
 
-export const CoffeehubIcon = [
-  {
-    src: "/icon/figma.svg",
-  },
-  {
-    src: "/icon/ai.svg",
-  },
-  {
-    src: "/icon/ps.svg",
-  },
-  {
-    src: "/icon/js.svg",
-  },
-  {
-    src: "/icon/tailwind.svg",
-  },
-  {
-    src: "/icon/react.svg",
-  },
-];
-export const HokbenIcon = [
-  {
-    src: "/icon/figma.svg",
-  },
-  {
-    src: "/icon/ai.svg",
-  },
-  {
-    src: "/icon/ps.svg",
-  },
-];
-export const StudyConnectionsIcon = [
-  {
-    src: "/icon/figma.svg",
-  },
-  {
-    src: "/icon/ai.svg",
-  },
-  {
-    src: "/icon/ps.svg",
-  },
-];
-export const TodolistIcon = [
-  {
-    src: "/icon/html.svg",
-  },
-  {
-    src: "/icon/tailwind.svg",
-  },
-  {
-    src: "/icon/js.svg",
-  },
-  {
-    src: "/icon/figma.svg",
-  },
-];
+// ============================================================
 export const Ishigamaya: PortfolioItem[] = [
   {
     href: "",
     src: "/portfolio/Ishigamaya/1.png",
     slides: [
       {
-        title: "Feed Design Beauty Palace",
-        description: "Image Resolution: 1920x1080px",
+        title: "Instastory Design",
+        description: "Static post: 1080 x 1920px",
         image: "/portfolio/Ishigamaya/2.png",
       },
       {
-        title: "Beauty Palace Cover Reels Design",
-        description: "Static post: 1080x1920px",
+        title: "Poster Design",
+        description: "Size: 30cm x 42cm",
         image: "/portfolio/Ishigamaya/3.png",
       },
       {
-        title: "Beauty Palace Carousel Design",
-        description: "Static post: 1080x1350px & 1080x1080px",
+        title: "Foam Board Banner",
+        description: "Size: 120cm x 415cm",
         image: "/portfolio/Ishigamaya/4.png",
       },
       {
-        title: "Beauty Palace Carousel Design",
-        description: "Static post: 1080x1350px & 1080x1080px",
+        title: "Stand Banner",
+        description: "Size: 147cm x 61cm",
         image: "/portfolio/Ishigamaya/5.png",
       },
       {
-        title: "Beauty Palace Carousel Design",
-        description: "Static post: 1080x1350px & 1080x1080px",
+        title: "Grand Menu Book",
+        description: "Size: 21cm x 30cm",
         image: "/portfolio/Ishigamaya/6.png",
       },
       {
-        title: "Beauty Palace Carousel Design",
-        description: "Static post: 1080x1350px & 1080x1080px",
+        title: "Grand Menu Book",
+        description: "Size: 21cm x 30cm",
         image: "/portfolio/Ishigamaya/7.png",
       },
       {
-        title: "Beauty Palace Carousel Design",
-        description: "Static post: 1080x1350px & 1080x1080px",
+        title: "Grand Menu Book",
+        description: "Size: 21cm x 30cm",
         image: "/portfolio/Ishigamaya/8.png",
       },
     ],
@@ -182,7 +125,7 @@ export const Ishigamaya: PortfolioItem[] = [
 
 export const BeautyPalace: PortfolioItem[] = [
   {
-    href: "https://puskur.kemdikbud.go.id/",
+    href: "",
     src: "/portfolio/BeautyPalace/1.png",
     slides: [
       {
@@ -191,38 +134,38 @@ export const BeautyPalace: PortfolioItem[] = [
         image: "/portfolio/BeautyPalace/2.png",
       },
       {
-        title: "Beauty Palace Cover Reels Design",
+        title: "Cover Reels Design",
         description: "Static post: 1080x1920px",
         image: "/portfolio/BeautyPalace/3.png",
       },
       {
-        title: "Beauty Palace Carousel Design",
+        title: "Carousel Design",
         description: "Static post: 1080x1350px & 1080x1080px",
         image: "/portfolio/BeautyPalace/4.png",
       },
       {
-        title: "Beauty Palace Carousel Design",
-        description: "Static post: 1080x1350px & 1080x1080px",
+        title: "Book Catalog Design",
+        description: "Size: 30cm x 42cm",
         image: "/portfolio/BeautyPalace/5.png",
       },
       {
-        title: "Beauty Palace Carousel Design",
-        description: "Static post: 1080x1350px & 1080x1080px",
+        title: "Book Catalog Design",
+        description: "Size: 30cm x 42cm",
         image: "/portfolio/BeautyPalace/6.png",
       },
       {
-        title: "Beauty Palace Carousel Design",
-        description: "Static post: 1080x1350px & 1080x1080px",
+        title: "Book Catalog Design",
+        description: "Size: 30cm x 42cm",
         image: "/portfolio/BeautyPalace/7.png",
       },
       {
-        title: "Beauty Palace Carousel Design",
-        description: "Static post: 1080x1350px & 1080x1080px",
+        title: "Voucher and Patient Record Design",
+        description: "Size:30cm x 42cm & Size: 6cm x 13,5cm",
         image: "/portfolio/BeautyPalace/8.png",
       },
       {
-        title: "Beauty Palace Carousel Design",
-        description: "Static post: 1080x1350px & 1080x1080px",
+        title: "Promotion Flyer Design",
+        description: "Size: 21cm x 30cm",
         image: "/portfolio/BeautyPalace/9.png",
       },
     ],
@@ -236,17 +179,17 @@ export const Langit: PortfolioItem[] = [
     slides: [
       {
         title: "Feeds Instagram Design",
-        description: "Image Resolution: 1080x1080px",
+        description: "Static Post: 1080x1080px",
         image: "/portfolio/Langit/2.png",
       },
       {
         title: "Instagram Story Design",
-        description: "Image Resolution: 1080x1920px",
+        description: "Static Post: 1080x1920px",
         image: "/portfolio/Langit/3.png",
       },
       {
         title: "Thumbnail Video Design",
-        description: "Image Resolution: 1920x1080px",
+        description: "Static Post: 1280 x 720px",
         image: "/portfolio/Langit/4.png",
       },
       {
@@ -264,44 +207,112 @@ export const MyIceLand: PortfolioItem[] = [
     src: "/portfolio/MyIceLand/1.png",
     slides: [
       {
-        title: "Social Media Design My Ice Land",
-        description: "Beautiful landscape of Iceland.",
+        title: "Social Media Design My Iceland",
+        description: "",
         image: "/portfolio/MyIceLand/2.png",
       },
       {
         title: "Feed Design",
-        description: "Another breathtaking view.",
+        description: "Static Post: 1080 x 1080px",
         image: "/portfolio/MyIceLand/3.png",
       },
       {
         title: "Instagram Story Design",
-        description: "Another breathtaking view.",
+        description: "Static Post: 1080 x 1920px",
         image: "/portfolio/MyIceLand/4.png",
       },
       {
         title: "Mockup Design",
-        description: "Another breathtaking view.",
+        description: "",
         image: "/portfolio/MyIceLand/5.png",
       },
       {
         title: "Print Design",
-        description: "Another breathtaking view.",
+        description: "",
         image: "/portfolio/MyIceLand/6.png",
       },
       {
         title: "Banner Design",
-        description: "Another breathtaking view.",
+        description: "",
         image: "/portfolio/MyIceLand/7.png",
       },
       {
         title: "Stand Banner Design",
-        description: "Another breathtaking view.",
+        description: "Size: 147cm x 61cm",
         image: "/portfolio/MyIceLand/8.png",
       },
     ],
   },
 ];
 
+export const BrandIdentity: PortfolioItem[] = [
+  {
+    href: "",
+    src: "/portfolio/BrandIdentity/1.png",
+    slides: [
+      {
+        title: "Brand Introduce",
+        description: "",
+        image: "/portfolio/BrandIdentity/2.png",
+      },
+      {
+        title: "Integrafts Logo",
+        description: "",
+        image: "/portfolio/BrandIdentity/3.png",
+      },
+      {
+        title: "Logo Variations - 1",
+        description: "",
+        image: "/portfolio/BrandIdentity/4.png",
+      },
+      {
+        title: "Logo Variations - 2",
+        description: "",
+        image: "/portfolio/BrandIdentity/5.png",
+      },
+      {
+        title: "Mockup Design",
+        description: "",
+        image: "/portfolio/BrandIdentity/6.png",
+      },
+      {
+        title: "Mockup Design",
+        description: "",
+        image: "/portfolio/BrandIdentity/7.png",
+      },
+      {
+        title: "Brand Introduce",
+        description: "",
+        image: "/portfolio/BrandIdentity/8.png",
+      },
+      {
+        title: "Quick Beer Logo",
+        description: "",
+        image: "/portfolio/BrandIdentity/9.png",
+      },
+      {
+        title: "Logo Variations - 1",
+        description: "",
+        image: "/portfolio/BrandIdentity/10.png",
+      },
+      {
+        title: "Logo Variations - 2",
+        description: "",
+        image: "/portfolio/BrandIdentity/11.png",
+      },
+      {
+        title: "Mockup Design",
+        description: "",
+        image: "/portfolio/BrandIdentity/12.png",
+      },
+      {
+        title: "Mockup Logo",
+        description: "",
+        image: "/portfolio/BrandIdentity/13.png",
+      },
+    ],
+  },
+];
 
 export const Kebaya: PortfolioItem[] = [
   {
@@ -312,14 +323,18 @@ export const Kebaya: PortfolioItem[] = [
         title: "Social Media Design My Ice Land",
         description: "Beautiful landscape of Iceland.",
         image: "/portfolio/Kebaya/2.png",
-        gif: "/portfolio/Kebaya/gif/2.gif",
+        // gif: "/portfolio/Kebaya/gif/2.gif",
         // image: "/portfolio/Kebaya/gif/2.gif",
       },
       {
         title: "Feed Design",
         description: "Another breathtaking view.",
         image: "/portfolio/Kebaya/3.png",
-        gif: "/portfolio/Kebaya/gif/3.gif",
+        gif: {
+          gifImage1: "/portfolio/Kebaya/gif/1.gif",
+          gifImage2: "/portfolio/Kebaya/gif/2.gif",
+          gifImage3: "/portfolio/Kebaya/gif/3.gif",
+        },
       },
       {
         title: "Instagram Story Design",
@@ -335,79 +350,13 @@ export const Kebaya: PortfolioItem[] = [
         title: "Print Design",
         description: "Another breathtaking view.",
         image: "/portfolio/Kebaya/6.png",
+        iconClick: "/portfolio/Kebaya/FOR-CLICK.png",
         href: "https://drive.google.com/drive/folders/1VgkhTrgk_Q2CYaSC1KwyytyU9Eou8V5I?usp=sharing",
       },
     ],
   },
 ];
-export const BrandIdentity: PortfolioItem[] = [
-  {
-    href: "",
-    src: "/portfolio/BrandIdentity/1.png",
-    slides: [
-      {
-        title: "Brand Introduce",
-        description: "Image Resolution: 1080x1080px",
-        image: "/portfolio/BrandIdentity/2.png",
-      },
-      {
-        title: "Logo",
-        description: "Image Resolution: 1080x1080px",
-        image: "/portfolio/BrandIdentity/3.png",
-      },
-      {
-        title: "Logo Variations - 1",
-        description: "Image Resolution: 1080x1080px",
-        image: "/portfolio/BrandIdentity/4.png",
-      },
-      {
-        title: "Logo Variations - 2",
-        description: "Image Resolution: 1080x1080px",
-        image: "/portfolio/BrandIdentity/5.png",
-      },
-      {
-        title: "Mockup Design",
-        description: "Image Resolution: 1080x1080px",
-        image: "/portfolio/BrandIdentity/6.png",
-      },
-      {
-        title: "Mockup Design",
-        description: "Image Resolution: 1350x1080px",
-        image: "/portfolio/BrandIdentity/7.png",
-      },
-      {
-        title: "Brand Introduce",
-        description: "Image Resolution: 1920x1080px",
-        image: "/portfolio/BrandIdentity/8.png",
-      },
-      {
-        title: "Logo",
-        description: "Image Resolution: 1350x1080px",
-        image: "/portfolio/BrandIdentity/9.png",
-      },
-      {
-        title: "Logo Variations - 1",
-        description: "Image Resolution: 1350x1080px",
-        image: "/portfolio/BrandIdentity/10.png",
-      },
-      {
-        title: "Logo Variations - 2",
-        description: "Image Resolution: 1080x1080px",
-        image: "/portfolio/BrandIdentity/11.png",
-      },
-      {
-        title: "Mockup Design",
-        description: "Image Resolution: 1080x1080px",
-        image: "/portfolio/BrandIdentity/12.png",
-      },
-      {
-        title: "Mockup Logo",
-        description: "Another breathtaking view.",
-        image: "/portfolio/BrandIdentity/13.png",
-      },
-    ],
-  },
-];
+
 
 export const PersonalProject: PortfolioItem[] = [
   {
@@ -520,7 +469,7 @@ export const DetailProjects = [
   },
   {
     headline: "Langit Entertainment - Social Media Design & Thumbnail Youtube Design",
-    job: "UI/UX Designer",
+    job: "Graphic Designer",
     colorPrimary: "bg-bmk-gradient",
     logoCompany: "/portfolio/BeautyPalace/logoHigh.png",
     tittle: "Langit",
@@ -533,7 +482,7 @@ export const DetailProjects = [
   },
   {
     headline: "My Iceland Indonesia - Social Media Design & Print Design",
-    job: "UI/UX Designer",
+    job: "Graphic Designer",
     colorPrimary: "bg-nuha-gradient",
     logoCompany: "/portfolio/BeautyPalace/logoHigh.png",
     tittle: "My Iceland",
@@ -545,7 +494,7 @@ export const DetailProjects = [
   },
   {
     headline: "Integrafts & Quick Beer - Brand Identity Design",
-    job: "UI/UX Designer & Frontend Developer",
+    job: "Logo Design & Brand Identity Designer",
     colorPrimary: "bg-kontrib-gradient",
     logoCompany: "/portfolio/BeautyPalace/logoHigh.png",
     tittle: "Integrafts & Quick Beer",

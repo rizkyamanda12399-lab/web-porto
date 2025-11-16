@@ -6,11 +6,11 @@ import Introduce from "@/components/layouts/Introduce/Introduce";
 import Portfolio from "@/components/layouts/Portfolio/Portfolio";
 import Resume from "@/components/layouts/Resume/Resume";
 import SelftProject from "@/components/layouts/SelfProject/SelfProject";
-import Skills from "@/components/layouts/Skills/Skills";
+// import Skills from "@/components/layouts/Skills/Skills";
 import WorkTogether from "@/components/layouts/WorkTogether/WorkTogether";
 import { Provider } from "react-redux";
 import store from "../redux/store";
-import FooterNew from "@/components/layouts/Footer/FooterNew";
+// import FooterNew from "@/components/layouts/Footer/FooterNew";
 
 const Home = () => {
 
@@ -30,9 +30,9 @@ const Home = () => {
               <Resume />
               <SelftProject />
               <Portfolio />
-              <Skills />
+              {/* <Skills /> */}
               <WorkTogether />
-              <FooterNew />
+              {/* <FooterNew /> */}
             </div>
           </div>
           <div className="relative col-span-1">
