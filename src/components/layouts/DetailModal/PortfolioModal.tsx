@@ -93,7 +93,7 @@ export const PortfolioModal: React.FC<PortfolioModalProps> = ({
                       className="h-auto w-full object-contain rounded-[16px]"
                     />
                     {slide.gif && (
-                      <div className="absolute xl:bottom-[16px] xl:scale-[53%] lg:bottom-[10px] lg:scale-[49%] lg:h-[200px] -bottom-[5px] scale-[28%] h-[120px] xl:h-[310px] object-center  ">
+                      <div className="absolute xl:bottom-[16px] xl:scale-[53%] lg:bottom-[50px] lg:scale-[55%] lg:h-[200px] md:bottom-[60px] md:scale-[45%] bottom-[10px] scale-[28%] h-[120px] xl:h-[310px] object-center  ">
                         <div className="flex justify-center items-center h-full w-full gap-[32px]">
                           {slide.gif.gifImage1 && (
                             <Image
@@ -126,14 +126,14 @@ export const PortfolioModal: React.FC<PortfolioModalProps> = ({
                       </div>
                     )}
                     {slide.iconClick && (
-                      <div className="absolute flex justify-center items-center h-full w-full bottom-0 scale-90 hover:scale-100 transition-all ease-linear duration-150">
+                      <div className="absolute flex justify-center items-center xl:h-full xl:w-full lg:w-full lg:h-full min-h-full  bottom-0 scale-90 hover:scale-100 transition-all ease-linear duration-150">
                         <a href={slide.href} className=" h-fit w-fit" target="_blank">
                           <Image
                             src={slide.iconClick}
                             alt=""
                             width={300}
                             height={800}
-                            className="xl:h-[70%] lg:h-[70%] h-[140px] w-full xl:object-contain lg:object-contain rounded-[16px]"
+                            className="xl:h-[70%] lg:h-[70%] h-[60px] w-full xl:object-contain lg:object-contain object-cover rounded-[16px]"
                           />
                         </a>
                       </div>

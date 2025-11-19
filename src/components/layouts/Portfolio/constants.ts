@@ -442,19 +442,23 @@ export const Todolist = [
 
 export const DetailProjects = [
   {
+    id: 1,
     headline: "Ishigamaya - Social Media Design & Print Design",
     job: "Graphic Designer",
     colorPrimary: "bg-ishigamaya-bg",
-    logoCompany: "/portfolio/BeautyPalace/logoHigh.png",
+    logoCompany: "/portfolio/Ishigamaya/logo.png",
     tittle: "Ishigamaya",
     sector: "F&B",
     year: "2025",
-    desc: `Beauty Palace Aesthetic is a profesional clinic of a beauty  located in Pluit North Jakarta. This clinic have a good service and there are many public figures or various professions that have successfully realized their dreams of getting healthy and good skin.  <br /><br />  I’m handle the design for social media instagram, cover reels and develop packaging beauty product and other.`,
+    desc: `Ishigamaya Indonesia is a Japanese No.1 Hamburg Restaurant Grilled in Speciality Stone Oven from Japan, head office located in South Jakarta. This restaurant serves the first hamburg with the grilled stone oven method in Indonesia with premium quality and a very luxurious place following Japanese restaurant standard.
+    <br /><br />
+    I’m handle the design for social media instagram, marketing concept for raised sales in store, print out design and other.`,
     img: Ishigamaya,
     src: IshigamayaIcon,
     // src: "PuskurIcon",
   },
   {
+    id: 2,
     headline: "Beauty Palace Aesthetic - Social Media Design & Packaging Beauty Product",
     job: "Graphic Designer",
     colorPrimary: "bg-puskur-gradient",
@@ -462,40 +466,49 @@ export const DetailProjects = [
     tittle: "Beauty Palace",
     sector: "Beauty",
     year: "2024",
-    desc: `Beauty Palace Aesthetic is a profesional clinic of a beauty  located in Pluit North Jakarta. This clinic have a good service and there are many public figures or various professions that have successfully realized their dreams of getting healthy and good skin.  <br /><br />  I’m handle the design for social media instagram, cover reels and develop packaging beauty product and other.`,
+    desc: `Beauty Palace Aesthetic is a profesional clinic of a beauty located in Pluit North Jakarta. This clinic have a good service and there are many public figures or various professions that have successfully realized their dreams of getting healthy and good skin.
+    <br /><br />
+    I’m handle the design for social media instagram, cover reels, marketing campaign, print out design and other.`,
     img: BeautyPalace,
     src: BeautyPalaceIcon,
     // src: "PuskurIcon",
   },
   {
+    id: 3,
     headline: "Langit Entertainment - Social Media Design & Thumbnail Youtube Design",
     job: "Graphic Designer",
-    colorPrimary: "bg-bmk-gradient",
-    logoCompany: "/portfolio/BeautyPalace/logoHigh.png",
+    colorPrimary: "bg-langit-bg",
+    logoCompany: "/portfolio/Langit/logo.png",
     tittle: "Langit",
     sector: "Digital Media",
     year: "2024",
-    desc: "Developing interface design and user experience for the website of Balai Media Budaya of the Ministry of Culture, Research and Technology. Collaborating with government teams and website development experts",
+    desc: `Langit Entertainment is a youtube content production, located in South Jakarta. This content get the sponsored like a Vibe, Crypto and a guest star come to this content is a star at the television and digital media.
+    <br /><br />
+    I’m handle the design for feed social media instagram, instastory instagram, youtube thumbnail and other.`,
     img: Langit,
     src: LangitIcon,
     // src: "PuskurIcon",
   },
   {
+    id: 4,
     headline: "My Iceland Indonesia - Social Media Design & Print Design",
     job: "Graphic Designer",
-    colorPrimary: "bg-nuha-gradient",
-    logoCompany: "/portfolio/BeautyPalace/logoHigh.png",
+    colorPrimary: "bg-myiceland-bg",
+    logoCompany: "/portfolio/MyIceLand/logo.png",
     tittle: "My Iceland",
     sector: "F&B",
     year: "2022",
-    desc: "When I worked as a Frontend Developer at PT Data Integrasi Inovasi. My team was pursuing a new Sprint, namely to completely update the company website. In this sprint, I was assigned to handle the UI/UX Designer for the website by my Product Manager.",
+    desc: `My Iceland indonesian is a restaurant sell sweet ice cream located in South Jakarta. This restaurant maybe company start up but they sell good product and process Research and Develop very good serve.
+    <br /><br />
+    I’m handle the design for social media instagram, instastory Instagram, print out design and other.`,
     img: MyIceLand,
     src: MyIceLandIcon,
   },
   {
+    id: 5,
     headline: "Integrafts & Quick Beer - Brand Identity Design",
     job: "Logo Design & Brand Identity Designer",
-    colorPrimary: "bg-kontrib-gradient",
+    colorPrimary: "bg-integrafts-bg",
     logoCompany: "/portfolio/BeautyPalace/logoHigh.png",
     tittle: "Integrafts & Quick Beer",
     sector: "Hair Transplant & Beverage",
@@ -506,9 +519,10 @@ export const DetailProjects = [
     // src: "PuskurIcon",
   },
   {
+    id: 6,
     headline: "ALS Sakuta - Boutique Kebaya",
     job: "Content Development & Video Editing",
-    colorPrimary: "bg-chill-gradient",
+    colorPrimary: "bg-kebaya-bg",
     logoCompany: "/portfolio/BeautyPalace/logoHigh.png",
     tittle: "ALS Sakuta",
     sector: "Boutique",
@@ -519,9 +533,10 @@ export const DetailProjects = [
     // src: "PuskurIcon",
   },
   {
+    id: 7,
     headline: "Personal Project",
     job: "Graphic Designer",
-    colorPrimary: "bg-chill-gradient",
+    colorPrimary: "bg-personalProject-bg",
     logoCompany: "/portfolio/BeautyPalace/logoHigh.png",
     tittle: "Personal Project",
     sector: "-",

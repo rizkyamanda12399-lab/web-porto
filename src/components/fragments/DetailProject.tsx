@@ -5,6 +5,7 @@ import Image from "next/image";
 import React from "react";
 
 type DetailProjectProps = {
+  id: number;
   headline: string;
   job: string;
   colorPrimary: string;
@@ -18,7 +19,7 @@ type DetailProjectProps = {
 };
 
 const DetailProject = (props: DetailProjectProps) => {
-  const { headline, job, colorPrimary, logoCompany, tittle, sector, year, desc, img, src } = props;
+  const { id, headline, job, colorPrimary, logoCompany, tittle, sector, year, desc, img, src } = props;
 
   const AnimatedContent = dynamic(
     () => import("@/blocks/Animations/AnimatedContent/AnimatedContent"),
@@ -46,9 +47,12 @@ const DetailProject = (props: DetailProjectProps) => {
           <div
             className={`grid items-start xl:col-span-4 lg:col-span-4 col-span-12 xl:p-[40px] lg:p-[30px] p-[20px] ${colorPrimary} xl:rounded-[32px] lg:rounded-[32px] rounded-[20px] xl:order-first lg:order-first order-last`}
           >
-            <div className="grid xl:gap-[24px] lg:gap-[20px] gap-[16px]">
+            <div
+              className={`grid xl:gap-[24px] lg:gap-[20px] gap-[16px] ${id === 3 ? 'text-[#000]' : id === 5 ? 'text-[#000]' : 'text-white'}`}
+            >
               <div className="flex items-center gap-5 xl:text-[20px] lg:text-[15px] text-[16px] font-semibold ">
-                <Image src={logoCompany} alt="" width={60} height={60} className="object-cover w-[85px] h-[85px] bg-black/[55%] rounded-[12px]" />
+                {id === 5 ? "" : id === 6 ? "" : id === 7 ? "" : <Image src={logoCompany} alt="" width={60} height={60} className="object-contain w-[85px] h-[85px] bg-black/[55%] rounded-[12px]" />}
+                {/* <Image src={logoCompany} alt="" width={60} height={60} className="object-contain w-[85px] h-[85px] bg-black/[55%] rounded-[12px]" /> */}
                 <div className="grid gap-1">
                   <div className="">Company: {tittle}</div>
                   <div className="">Sector: {sector}</div>
@@ -59,7 +63,7 @@ const DetailProject = (props: DetailProjectProps) => {
                 {desc}
               </p> */}
               <p
-                className="xl:text-[20px] lg:text-[16px] text-[16px] text-justify"
+                className={`xl:text-[20px] lg:text-[16px] text-[16px] text-justify `}
                 dangerouslySetInnerHTML={{ __html: desc }}
               />
             </div>

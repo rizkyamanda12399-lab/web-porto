@@ -43,6 +43,7 @@ const Portfolio = () => {
             <>
               <DetailProject
                 key={index}
+                id={project.id}
                 headline={project.headline}
                 job={project.job}
                 colorPrimary={project.colorPrimary}
