@@ -2,7 +2,7 @@
 import BlurText from "@/blocks/TextAnimations/BlurText/BlurText";
 // import DecryptedText from "@/blocks/TextAnimations/DecryptedText/DecryptedText";
 import DownloadCV from "@/components/elements/DownloadCV";
-import ShinyText from "@/components/elements/Reactbits/ShinyText";
+// import ShinyText from "@/components/elements/Reactbits/ShinyText";
 import Heading from "@/components/fragments/Heading"
 import dynamic from "next/dynamic";
 
@@ -67,12 +67,12 @@ const About = () => {
                         </div>
                     </div>
                     <div className="relative grid col-span-5 justify-center items-start gap-6 group ">
-                        <div className="border-l-2 flex flex-col border-gray pl-4 xl:text-[32px] lg:text-[24px] text-[16px] font-light xl:leading-[130%] lg:leading-[130&] text-gray">
+                        {/* <div className="border-l-2 flex flex-col border-gray pl-4 xl:text-[32px] lg:text-[24px] text-[16px] font-light xl:leading-[130%] lg:leading-[130&] text-gray">
                             <ShinyText text="My passion for Graphic Design," disabled={false} speed={3} className='custom-class' />
                             <ShinyText text="and interactive experiences puts me in a " disabled={false} speed={3} className='custom-class' />
                             <ShinyText text="unique position within the front-end" disabled={false} speed={3} className='custom-class' />
                             <ShinyText text="development field—where creativity meets functionality." disabled={false} speed={3} className='custom-class' />
-                        </div>
+                        </div> */}
                         <DownloadCV />
                     </div>
                 </div>

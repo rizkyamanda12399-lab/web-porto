@@ -17,7 +17,7 @@ const Skills = () => {
                 {/* Profile Card */}
                 <div className="w-fit">
                     <ProfileCard
-                        name="Rizky Amanda, S.Ds"
+                        name="Rizky Amanda"
                         title="Graphic Designer"
                         handle="Rizky Amanda"
                         status="Available"
@@ -25,7 +25,7 @@ const Skills = () => {
                         avatarUrl="/foto123.png"
                         showUserInfo={true}
                         enableTilt={true}
-                        onContactClick={() => window.open("https://wa.link/cuy3df", "_blank")}
+                        onContactClick={() => window.open("https://wa.link/467aov", "_blank")}
                     />
                 </div>
 

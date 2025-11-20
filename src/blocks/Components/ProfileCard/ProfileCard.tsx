@@ -300,7 +300,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
                     />
                   </div>
                   <div className="pc-user-text">
-                    <div className="pc-handle">@{handle}</div>
+                    <div className="pc-handle text-end">@{handle}</div>
                     <div className="pc-status">{status}</div>
                   </div>
                 </div>
@@ -317,14 +317,14 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
             )}
           </div>
           <div className="pc-content">
-            <div className="pc-details">
+            <div className="pc-details flex">
               <h3>{name}</h3>
               <p>{title}</p>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </section >
+    </div >
   );
 };
 

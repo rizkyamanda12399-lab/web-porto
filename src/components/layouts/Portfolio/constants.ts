@@ -130,17 +130,17 @@ export const BeautyPalace: PortfolioItem[] = [
     slides: [
       {
         title: "Feed Design Beauty Palace",
-        description: "Image Resolution: 1920x1080px",
+        description: "Static Post: 1920 x 1080px",
         image: "/portfolio/BeautyPalace/2.png",
       },
       {
         title: "Cover Reels Design",
-        description: "Static post: 1080x1920px",
+        description: "Static post: 1080 x 1920px",
         image: "/portfolio/BeautyPalace/3.png",
       },
       {
         title: "Carousel Design",
-        description: "Static post: 1080x1350px & 1080x1080px",
+        description: "Static post: 1080 x 1350px and 1080 x 1080px",
         image: "/portfolio/BeautyPalace/4.png",
       },
       {
@@ -160,7 +160,7 @@ export const BeautyPalace: PortfolioItem[] = [
       },
       {
         title: "Voucher and Patient Record Design",
-        description: "Size:30cm x 42cm & Size: 6cm x 13,5cm",
+        description: "Size:30cm x 42cm and Size: 6cm x 13,5cm",
         image: "/portfolio/BeautyPalace/8.png",
       },
       {
@@ -179,12 +179,12 @@ export const Langit: PortfolioItem[] = [
     slides: [
       {
         title: "Feeds Instagram Design",
-        description: "Static Post: 1080x1080px",
+        description: "Static Post: 1080 x 1080px",
         image: "/portfolio/Langit/2.png",
       },
       {
         title: "Instagram Story Design",
-        description: "Static Post: 1080x1920px",
+        description: "Static Post: 1080 x 1920px",
         image: "/portfolio/Langit/3.png",
       },
       {
@@ -233,7 +233,7 @@ export const MyIceLand: PortfolioItem[] = [
       },
       {
         title: "Banner Design",
-        description: "",
+        description: "Size: 300cm x 100cm",
         image: "/portfolio/MyIceLand/7.png",
       },
       {
@@ -320,15 +320,19 @@ export const Kebaya: PortfolioItem[] = [
     src: "/portfolio/Kebaya/1.png",
     slides: [
       {
-        title: "Social Media Design My Ice Land",
-        description: "Beautiful landscape of Iceland.",
+        title: "Video Editing",
+        description: "Static Post: 1080 x 1920px",
         image: "/portfolio/Kebaya/2.png",
-        // gif: "/portfolio/Kebaya/gif/2.gif",
-        // image: "/portfolio/Kebaya/gif/2.gif",
+        gif: {
+          gifImage4: "/portfolio/Kebaya/gif/4.gif",
+          gifImage5: "/portfolio/Kebaya/gif/5.gif",
+          gifImage6: "/portfolio/Kebaya/gif/6.gif",
+          gifImage7: "/portfolio/Kebaya/gif/7.gif",
+        },
       },
       {
-        title: "Feed Design",
-        description: "Another breathtaking view.",
+        title: "Motion Video",
+        description: "Static Post: 1080 x 1920px",
         image: "/portfolio/Kebaya/3.png",
         gif: {
           gifImage1: "/portfolio/Kebaya/gif/1.gif",
@@ -337,18 +341,18 @@ export const Kebaya: PortfolioItem[] = [
         },
       },
       {
-        title: "Instagram Story Design",
-        description: "Another breathtaking view.",
+        title: "Cover Video",
+        description: "Static Post: 1080 x 1920px",
         image: "/portfolio/Kebaya/4.png",
       },
       {
-        title: "Mockup Design",
-        description: "Another breathtaking view.",
+        title: "Cover Motion",
+        description: "Static Post: 1080 x 1920px",
         image: "/portfolio/Kebaya/5.png",
       },
       {
-        title: "Print Design",
-        description: "Another breathtaking view.",
+        title: "Preview to Drive",
+        description: "",
         image: "/portfolio/Kebaya/6.png",
         iconClick: "/portfolio/Kebaya/FOR-CLICK.png",
         href: "https://drive.google.com/drive/folders/1VgkhTrgk_Q2CYaSC1KwyytyU9Eou8V5I?usp=sharing",
@@ -364,33 +368,33 @@ export const PersonalProject: PortfolioItem[] = [
     src: "/portfolio/PersonalProject/1.png",
     slides: [
       {
-        title: "Brand Introduce",
-        description: "Image Resolution: 1080x1080px",
+        title: "Illustration for Band",
+        description: "",
         image: "/portfolio/PersonalProject/2.png",
       },
       {
-        title: "Logo",
-        description: "Image Resolution: 1080x1080px",
+        title: "Detail Illustration",
+        description: "",
         image: "/portfolio/PersonalProject/3.png",
       },
       {
-        title: "Logo Variations - 1",
-        description: "Image Resolution: 1080x1080px",
+        title: "Merchandise Design - T-Shirt",
+        description: "",
         image: "/portfolio/PersonalProject/4.png",
       },
       {
-        title: "Logo Variations - 2",
-        description: "Image Resolution: 1080x1080px",
+        title: "Description",
+        description: "",
         image: "/portfolio/PersonalProject/5.png",
       },
       {
-        title: "Mockup Design",
-        description: "Image Resolution: 1080x1080px",
+        title: "Detail Illustration",
+        description: "",
         image: "/portfolio/PersonalProject/6.png",
       },
       {
-        title: "Mockup Design",
-        description: "Image Resolution: 1350x1080px",
+        title: "Merchandise Design",
+        description: "",
         image: "/portfolio/PersonalProject/7.png",
       },
     ],
@@ -513,7 +517,9 @@ export const DetailProjects = [
     tittle: "Integrafts & Quick Beer",
     sector: "Hair Transplant & Beverage",
     year: "2021 & 2024",
-    desc: "Develop UI/UX designs for the Curriculum and Learning Center website. Develop actions on the website or web application using programming languages ​​such as HTML, Javascript, Tailwind CSS, etc. Involved in bug fixing of functionality, performance, and design issues with JavaScript, HTML, and CSS. Create programs and code that support the website database, server, and other applications it may contain",
+    desc: `I’m developed a complete visual identity for brand Integrafts and Quick Beer. The process began with brand personality research, creating the main logo and color tone. <br /> <br />
+    All of these elements are summarized in brand guidelines that ensure visual consistency in every application to the product, creating an identity that is not only beautiful, but also has a high value of exclusivity.
+    `,
     img: BrandIdentity,
     src: BrandIdentityIcon,
     // src: "PuskurIcon",
@@ -527,7 +533,9 @@ export const DetailProjects = [
     tittle: "ALS Sakuta",
     sector: "Boutique",
     year: "2024",
-    desc: "Developing a movie website using React JS, Tailwind CSS, Node JS, and Express JS. Implementing API integration to Design, Develop, and Maintain RESTful APIs to enable system interactions. Implementing atomic design principles, state management using react-redux. implementing login authentication using google. Creating a movie website for a final project as a full stack web developer",
+    desc: `I've been working on a video editing and motion graphics project for a boutique. I’m edited it using Adobe Premiere and After Effects with a 9:16 ratio for an Instagram reels and tiktok post.
+    <br /><br />
+    I'm very excited about this project because it allows me to explore the industrial fashion editing style, which falls into the formal category.`,
     img: Kebaya,
     src: KebayaIcon,
     // src: "PuskurIcon",
@@ -541,7 +549,9 @@ export const DetailProjects = [
     tittle: "Personal Project",
     sector: "-",
     year: "2021-2025",
-    desc: "Developing a movie website using React JS, Tailwind CSS, Node JS, and Express JS. Implementing API integration to Design, Develop, and Maintain RESTful APIs to enable system interactions. Implementing atomic design principles, state management using react-redux. implementing login authentication using google. Creating a movie website for a final project as a full stack web developer",
+    desc: `I worked on an illustration project for a band and music event that started with understanding the visual character and the message to be conveyed according to the merchandise needs.
+    <br /><br />
+    The final illustration is produced in print format on t-shirts and other merchandise.`,
     img: PersonalProject,
     src: PersonalProjectIcon,
     // src: "PuskurIcon",

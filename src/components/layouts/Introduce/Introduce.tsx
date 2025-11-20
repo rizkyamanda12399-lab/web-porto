@@ -23,11 +23,11 @@ const Introduce = () => {
 
     const textIntroduce = [
         {
-            text: "Hallo, I'm a Graphic Designer with a strong focus on visual branding, digital content, and creative problem-solving.",
+            text: `Hallo, I'm a Graphic Designer with a strong focus on visual branding, digital content, and creative problem-solving. Ready to collaborate with the team to produce visual content that related to the fast and dynamic digital era.`,
             delay: 50,
         },
         {
-            text: "Ready to collaborate with the team to produce visual content that related to the fast and dynamic digital era.",
+            text: "",
             delay: 100,
         },
     ]

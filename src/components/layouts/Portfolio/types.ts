@@ -8,6 +8,10 @@ export interface Slide {
     gifImage1?: string;
     gifImage2?: string;
     gifImage3?: string;
+    gifImage4?: string;
+    gifImage5?: string;
+    gifImage6?: string;
+    gifImage7?: string;
   };
   href?: string;
   iconClick?: string;

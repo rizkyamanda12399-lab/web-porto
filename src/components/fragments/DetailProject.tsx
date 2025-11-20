@@ -15,11 +15,11 @@ type DetailProjectProps = {
   tittle: string;
   desc: string;
   img: React.ReactNode;
-  src: React.ReactNode;
+  // src: React.ReactNode;
 };
 
 const DetailProject = (props: DetailProjectProps) => {
-  const { id, headline, job, colorPrimary, logoCompany, tittle, sector, year, desc, img, src } = props;
+  const { id, headline, job, colorPrimary, logoCompany, tittle, sector, year, desc, img } = props;
 
   const AnimatedContent = dynamic(
     () => import("@/blocks/Animations/AnimatedContent/AnimatedContent"),
@@ -71,7 +71,7 @@ const DetailProject = (props: DetailProjectProps) => {
           <div className="relative overflow-hidden h-fit grid xl:col-span-8 lg:col-span-8 col-span-12 bg-indigo-600  xl:rounded-[32px] lg:rounded-[32px] rounded-[20px] cursor-pointer group object-contain">
             {img}
             <div className="absolute flex xl:gap-[14px] gap-[4px] invisible group-hover:visible xl:left-[24px] xl:bottom-[40px] lg:left-[20px] lg:bottom-[30px] left-[10px] bottom-[20px] object-contain">
-              {src}
+              {/* {src} */}
             </div>
             {/* <div className="absolute w-full h-fit flex xl:p-4 lg:p-3 p-2 xl:text-[16px] lg:text-[14px] text-[12px] items-center xl:gap-[14px] gap-[4px] invisible group-hover:visible  xl:bottom-[10px]  lg:bottom-[10px] bottom-[10px] object-contain">
               <div className="bg-black/[44%] flex justify-between w-full h-full xl:px-6 lg:px-6 xl:py-4 lg:py-3 px-4 py-3 xl:rounded-[12px] lg:rounded-[10px] rounded-[6px]">

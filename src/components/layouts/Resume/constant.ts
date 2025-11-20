@@ -27,10 +27,13 @@ export const toolsUiux1 = [
     {
         tools: "Adobe Illustrator",
     },
+    {
+        tools: "Adobe Photoshop",
+    },
 ]
 export const toolsUiux2 = [
     {
-        tools: "Adobe Photoshop",
+        tools: "Adobe Indesign",
     },
     {
         tools: "Canva",
@@ -62,18 +65,21 @@ export const jobFront = [
 
 export const toolsFront1 = [
     {
-        tools: "Photoshop",
+        tools: "Figma",
     },
     {
-        tools: "Illustration",
+        tools: "Adobe Illustration",
+    },
+    {
+        tools: "Adobe Photoshop",
     },
 ]
 export const toolsFront2 = [
     {
-        tools: "Canva",
+        tools: "Adobe Indesign",
     },
     {
-        tools: "Figma",
+        tools: "Canva",
     },
 ]
 
@@ -98,19 +104,22 @@ export const DescDataIntegrasi = [
 
 export const toolsDataIntegrasi1 = [
     {
-        tools: "Photoshop",
+        tools: "Dropbox",
     },
     {
-        tools: "Illustration",
+        tools: "Ms Excel",
+    },
+    {
+        tools: "Ms Word",
     },
 ]
 
 export const toolsDataIntegrasi2 = [
     {
-        tools: "Canva",
+        tools: "Spreadsheet",
     },
     {
-        tools: "Figma",
+        tools: "Drive",
     },
 ]
 

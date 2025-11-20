@@ -1,4 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import Experience from "@/components/elements/Experience"
+import Experience2 from "@/components/elements/Experience2";
 import dynamic from "next/dynamic";
 
 const SelftProject = () => {
@@ -8,38 +10,30 @@ const SelftProject = () => {
     const jobMix = [
         {
             id: 1,
-            tittle: "Designing user interfaces and user experiences that are easy to use as information media for Curriculum and Learning Center websites",
+            tittle: "I've been working on a video editing and motion graphics project for a boutique. I’m edited it using Adobe Premiere and After Effects with a 9:16 ratio for an Instagram reels and tiktok post",
         },
         {
             id: 2,
-            tittle: "As a UI/UX Designer, developing Curriculum Pages and Learning Centers from the Ministry of Education, Culture, Research and  Technology",
-        },
-        {
-            id: 3,
-            tittle: "Developed the actions on a website or web applications using programming languages such as PHP, Bootstrap 5 etc",
+            tittle: "I've been working on a video editing and motion graphics project for a boutique. I’m edited it using Adobe Premiere and After Effects with a 9:16 ratio for an Instagram reels and tiktok post",
         },
     ]
     const toolsMix1 = [
         {
-            tools: "HTML",
+            tools: "Adobe Premiere Pro",
         },
         {
-            tools: "CSS",
+            tools: "Adobe After Effects",
         },
-        {
-            tools: "JavaScript",
-        },
+
     ]
     const toolsMix2 = [
         {
-            tools: "Bootstrap 5",
+            tools: "Adobe Photoshop",
         },
         {
-            tools: "MySql",
+            tools: "Capcut",
         },
-        {
-            tools: "Figma",
-        },
+
     ]
 
     const jobFull = [
@@ -54,25 +48,11 @@ const SelftProject = () => {
     ]
     const toolsFull1 = [
         {
-            tools: "HTML",
+            tools: "Adobe Photoshop",
         },
         {
-            tools: "CSS",
+            tools: "Adobe Illustration",
         },
-        {
-            tools: "JavaScript",
-        },
-    ]
-    const toolsFull2 = [
-        {
-            tools: "Tailwind CSS",
-        },
-        {
-            tools: "React JS",
-        },
-        {
-            tools: "Next JS",
-        }
     ]
 
     return (
@@ -80,10 +60,8 @@ const SelftProject = () => {
             <div className="grid w-full xl:gap-[40px] lg:gap-[30px] gap-[16px]">
                 <h2 className="xl:text-[60px] lg:text-[45px] text-[36px] font-semibold xl:leading-[72px] lg:leading-[54px]">Self Project</h2>
                 <AnimatedContent>
-                    <Experience tittle="Content Develop" place="Freelance"
-                        li={jobMix.map((li) => (
-                            <li key={li.id}>{li.tittle}</li>
-                        ))}
+                    <Experience2 tittle="Content Development" place="Freelance"
+                        li="I've been working on a video editing and motion graphics project for a boutique. I’m edited it using Adobe Premiere and After Effects with a 9:16 ratio for an Instagram reels and tiktok post. I'm very excited about this project because it allows me to explore the industrial fashion editing style, which falls into the formal category"
                         li2={toolsMix1.map((li, index) => (
                             <li key={index}>{li.tools}</li>
                         ))}
@@ -98,14 +76,9 @@ const SelftProject = () => {
                 </AnimatedContent>
 
                 <AnimatedContent>
-                    <Experience tittle="Illustration" place="Freelance"
-                        li={jobFull.map((li) => (
-                            <li key={li.id}>{li.tittle}</li>
-                        ))}
+                    <Experience2 tittle="Illustration" place="Freelance"
+                        li="I worked on an illustration project for a band and music event that started with understanding the visual character and the message to be conveyed according to the merchandise needs. The final illustration is produced in print format on t-shirts and other merchandise."
                         li2={toolsFull1.map((li, index) => (
-                            <li key={index}>{li.tools}</li>
-                        ))}
-                        li3={toolsFull2.map((li, index) => (
                             <li key={index}>{li.tools}</li>
                         ))}
                     />

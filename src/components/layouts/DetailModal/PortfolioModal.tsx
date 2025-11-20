@@ -12,6 +12,10 @@ interface SlideItem {
     gifImage1?: string;
     gifImage2?: string;
     gifImage3?: string;
+    gifImage4?: string;
+    gifImage5?: string;
+    gifImage6?: string;
+    gifImage7?: string;
   };
   href?: string;
   iconClick?: string;
@@ -110,12 +114,48 @@ export const PortfolioModal: React.FC<PortfolioModalProps> = ({
                               alt=""
                               width={300}
                               height={800}
-                              className="drop-shadow-(0 20px 13px rgb(0 0 0 / 0.3)) drop-shadow-[#000] rounded-[16px]"
+                              className="drop-shadow-xl rounded-[16px]"
                             />
                           )}
                           {slide.gif.gifImage3 && (
                             <Image
                               src={slide.gif.gifImage3}
+                              alt=""
+                              width={300}
+                              height={800}
+                              className="drop-shadow-xl rounded-[16px]"
+                            />
+                          )}
+                          {slide.gif.gifImage4 && (
+                            <Image
+                              src={slide.gif.gifImage4}
+                              alt=""
+                              width={300}
+                              height={800}
+                              className="drop-shadow-xl rounded-[16px]"
+                            />
+                          )}
+                          {slide.gif.gifImage5 && (
+                            <Image
+                              src={slide.gif.gifImage5}
+                              alt=""
+                              width={300}
+                              height={800}
+                              className="drop-shadow-xl rounded-[16px]"
+                            />
+                          )}
+                          {slide.gif.gifImage6 && (
+                            <Image
+                              src={slide.gif.gifImage6}
+                              alt=""
+                              width={300}
+                              height={800}
+                              className="drop-shadow-xl rounded-[16px]"
+                            />
+                          )}
+                          {slide.gif.gifImage7 && (
+                            <Image
+                              src={slide.gif.gifImage7}
                               alt=""
                               width={300}
                               height={800}
