@@ -82,4 +82,24 @@ export const AllSkills = [
         img: "icon/ps.svg",
         name: "Photoshop"
     },
+    {
+        img: "icon/PREMIERE.svg",
+        name: "Premiere Pro"
+    },
+    {
+        img: "icon/AFTER-EFFECT.svg",
+        name: "After Effect"
+    },
+    {
+        img: "icon/SPREADSHEET.svg",
+        name: "Spreadsheet"
+    },
+    {
+        img: "icon/CANVA.svg",
+        name: "Canva"
+    },
+    {
+        img: "icon/CAPCUT.svg",
+        name: "Capcut"
+    },
 ]
