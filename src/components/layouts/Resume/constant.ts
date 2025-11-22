@@ -144,10 +144,10 @@ export const DescLangit = [
 
 export const toolsLangit1 = [
     {
-        tools: "Photoshop",
+        tools: "Adobe Photoshop",
     },
     {
-        tools: "Illustration",
+        tools: "Adobe Illustration",
     },
 ]
 
@@ -181,10 +181,10 @@ export const DescMyIceland = [
 
 export const toolsMyIceland1 = [
     {
-        tools: "Photoshop",
+        tools: "Adobe Photoshop",
     },
     {
-        tools: "Illustration",
+        tools: "Adobe Illustration",
     },
 ]
 
