@@ -97,71 +97,73 @@ export const PortfolioModal: React.FC<PortfolioModalProps> = ({
                       className="h-auto w-full object-contain rounded-[16px]"
                     />
                     {slide.gif && (
-                      <div className="absolute xl:bottom-[16px] xl:scale-[53%] lg:bottom-[50px] lg:scale-[55%] lg:h-[200px] md:bottom-[60px] md:scale-[45%] bottom-[10px] scale-[28%] h-[120px] xl:h-[310px] object-center  ">
-                        <div className="flex justify-center items-center h-full w-full gap-[32px]">
-                          {slide.gif.gifImage1 && (
-                            <Image
-                              src={slide.gif.gifImage1}
-                              alt=""
-                              width={300}
-                              height={800}
-                              className="drop-shadow-xl rounded-[16px]"
-                            />
-                          )}
-                          {slide.gif.gifImage2 && (
-                            <Image
-                              src={slide.gif.gifImage2}
-                              alt=""
-                              width={300}
-                              height={800}
-                              className="drop-shadow-xl rounded-[16px]"
-                            />
-                          )}
-                          {slide.gif.gifImage3 && (
-                            <Image
-                              src={slide.gif.gifImage3}
-                              alt=""
-                              width={300}
-                              height={800}
-                              className="drop-shadow-xl rounded-[16px]"
-                            />
-                          )}
-                          {slide.gif.gifImage4 && (
-                            <Image
-                              src={slide.gif.gifImage4}
-                              alt=""
-                              width={300}
-                              height={800}
-                              className="drop-shadow-xl rounded-[16px]"
-                            />
-                          )}
-                          {slide.gif.gifImage5 && (
-                            <Image
-                              src={slide.gif.gifImage5}
-                              alt=""
-                              width={300}
-                              height={800}
-                              className="drop-shadow-xl rounded-[16px]"
-                            />
-                          )}
-                          {slide.gif.gifImage6 && (
-                            <Image
-                              src={slide.gif.gifImage6}
-                              alt=""
-                              width={300}
-                              height={800}
-                              className="drop-shadow-xl rounded-[16px]"
-                            />
-                          )}
-                          {slide.gif.gifImage7 && (
-                            <Image
-                              src={slide.gif.gifImage7}
-                              alt=""
-                              width={300}
-                              height={800}
-                              className="drop-shadow-xl rounded-[16px]"
-                            />
-                          )}
+                      <div className="absolute top-0 left-0 right-0 bottom-0 mb-[4%]">
+                        <div className="relative h-full">
+                          <div className="absolute bottom-0 pt-[22%] px-[22%] flex justify-center h-full xl:gap-[16px] lg:gap-[12px] gap-[8px]">
+                            {slide.gif.gifImage1 && (
+                              <Image
+                                src={slide.gif.gifImage1}
+                                alt=""
+                                width={300}
+                                height={800}
+                                className="drop-shadow-xl xl:rounded-[8px] rounded-[4px]"
+                              />
+                            )}
+                            {slide.gif.gifImage2 && (
+                              <Image
+                                src={slide.gif.gifImage2}
+                                alt=""
+                                width={300}
+                                height={800}
+                                className="drop-shadow-xl xl:rounded-[8px] rounded-[4px]"
+                              />
+                            )}
+                            {slide.gif.gifImage3 && (
+                              <Image
+                                src={slide.gif.gifImage3}
+                                alt=""
+                                width={300}
+                                height={800}
+                                className="drop-shadow-xl xl:rounded-[8px] rounded-[4px]"
+                              />
+                            )}
+                            {slide.gif.gifImage4 && (
+                              <Image
+                                src={slide.gif.gifImage4}
+                                alt=""
+                                width={300}
+                                height={800}
+                                className="drop-shadow-xl xl:rounded-[8px] rounded-[4px]"
+                              />
+                            )}
+                            {slide.gif.gifImage5 && (
+                              <Image
+                                src={slide.gif.gifImage5}
+                                alt=""
+                                width={300}
+                                height={800}
+                                className="drop-shadow-xl xl:rounded-[8px] rounded-[4px]"
+                              />
+                            )}
+                            {slide.gif.gifImage6 && (
+                              <Image
+                                src={slide.gif.gifImage6}
+                                alt=""
+                                width={300}
+                                height={800}
+                                className="drop-shadow-xl xl:rounded-[8px] rounded-[4px]"
+                              />
+                            )}
+                            {slide.gif.gifImage7 && (
+                              <Image
+                                src={slide.gif.gifImage7}
+                                alt=""
+                                width={300}
+                                height={800}
+                                className="drop-shadow-xl xl:rounded-[8px] rounded-[4px]"
+                              />
+                            )}
+                          </div>
                         </div>
                       </div>
                     )}
